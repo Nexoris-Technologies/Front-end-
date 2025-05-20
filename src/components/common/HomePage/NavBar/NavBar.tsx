@@ -79,7 +79,7 @@ export default function Navbar() {
                 href={"/"}
                 className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
               >
-                Blogs
+                Blog
               </Link>
             </li>
             <li>
