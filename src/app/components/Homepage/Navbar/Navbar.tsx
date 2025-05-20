@@ -57,8 +57,8 @@ export default function Navbar() {
                 Services
                 <span>
                   <Image
-                    src="/Arrow - Down 2.svg"
-                    alt="down arrow"
+                    src="/Arrow - Down 2.png"
+                    alt="arrow down"
                     width={17}
                     height={17}
                   />
@@ -84,7 +84,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/contact"}
                 className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
               >
                 Contact
