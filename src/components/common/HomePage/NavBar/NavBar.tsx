@@ -84,7 +84,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/Get_a_Quote"}
                 className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
               >
                 Contact
