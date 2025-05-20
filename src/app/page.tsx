@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import Tools from "@/components/common/HomePage/Tools/Tool";
 import Ourprocess from "@/components/common/HomePage/OurProcess/OurProcess";
@@ -47,3 +48,22 @@ function LandingPage() {
 };
 
 export default LandingPage;
+=======
+import HomePage from "./components/Homepage/Homepage";
+import ContactUs from "./contact/page";
+
+export default function page() {
+  return (
+    <div>
+      {/* Homepage */}
+      <div>
+        <HomePage />
+      </div>
+      {/* Contact us page */}
+      <div>
+        <ContactUs />
+      </div>
+    </div>
+  );
+}
+>>>>>>> 077f00efc951cba32ff027fd143e98cc0b3c3b13
