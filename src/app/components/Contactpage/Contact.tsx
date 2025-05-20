@@ -105,7 +105,7 @@ function Contact() {
                       </h5>
 
                       <p className="text-[16px] w-[230px] text-[#000000]">
-                        Lekki, Lagos, Nigeria
+                        Lekki, Lagos,
                       </p>
                     </div>
                     <p className="w-[235px] md:w-[280px]">
