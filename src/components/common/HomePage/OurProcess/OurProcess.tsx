@@ -3,11 +3,11 @@ import Image from "next/image";
 function Ourprocess() {
   return (
     <section className="bg-[#EAE8F7] w-full py-12">
-      <div className="container mx-auto flex flex-col gap-20 px-4">
+      <div className="container mx-auto flex flex-col gap-20 px-4 py-10">
         <h1 className="text-center text-[#543cda] font-bold text-3xl md:text-4xl">Our Process</h1>
 
         {/* Step 1 */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-2">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src="/process1.jpg"
@@ -22,7 +22,7 @@ function Ourprocess() {
               <h1 className="text-[#543CDA] font-bold text-3xl md:text-8xl">01</h1>
             </div>
             <h4 className="text-[#543CDA] font-medium text-xl md:text-2xl">A Real Conversation</h4>
-            <p className="text-base md:text-lg font-medium max-w-md">
+            <p className="text-base md:text-lg text-center font-medium max-w-md">
               We start with a call, not a pitch deck. Just tell us what&#39;s keeping you up at night, and we&#39;ll help you make sense of it.
             </p>
           </div>

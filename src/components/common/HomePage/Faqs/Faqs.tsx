@@ -55,7 +55,7 @@ const Faqs = () => {
         </h1>
       </div>
 
-      <div className="w-full max-w-3xl mx-auto">
+      <div className="w-full max-w-5xl mx-auto">
         <Collapse
           bordered={false}
           defaultActiveKey={['1']}

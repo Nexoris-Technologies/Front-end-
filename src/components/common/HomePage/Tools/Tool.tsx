@@ -42,9 +42,9 @@ function Tools() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-10 gap-12 w-full bg-white">
+    <section className="flex flex-col items-center justify-center  sm:px-6 py-36 gap-12 w-full bg-white">
       {/* Header */}
-      <div className="text-center space-y-2 max-w-xl">
+      <div className="text-center space-y-2 w-full">
         <h2 className="text-[#543CDA] font-extrabold text-xl sm:text-2xl md:text-3xl leading-snug">
           We Use Tools That Power the World's Best Products
         </h2>
