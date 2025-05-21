@@ -7,7 +7,7 @@ function Ourprocess() {
         <h1 className="text-center text-[#543cda] font-bold text-3xl md:text-4xl">Our Process</h1>
 
         {/* Step 1 */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-4 lg:gap-2">
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src="/process1.jpg"
