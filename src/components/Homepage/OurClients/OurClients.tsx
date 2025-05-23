@@ -16,21 +16,26 @@ const testimonials = [
     role: "CTO, NovaBuild",
     image: "/client2.jpg",
     quote:
-      "Our site used to take 9 seconds to load. We lost users constantly. Nexoris rebuilt everything.",
+      "Our site used to take 9 seconds to load. We lost users constantly. Nexoris rebuilt everything, we’re now under 2s, and conversions tripled.",
   },
   {
     name: "Maria O.",
     role: "Product Lead, FintaGo",
     image: "/client3.jpg",
     quote:
-      "Crashes were a daily thing. Since switching to Nexoris, users are actually sending compliments.",
+      "Crashes were a daily thing. Support tickets piled up. Since switching to Nexoris, users are actually sending compliments. Never thought I’d see that.",
   },
 ];
 
 // Single Card Component
 const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
+<<<<<<< HEAD:src/components/Homepage/OurClients/OurClients.tsx
   <div className="bg-[#EAE8F7] rounded-md shadow p-6 flex flex-col items-center gap-4 sm:gap-6 max-w-sm sm:max-w-md mx-auto">
     <div className="flex flex-col justify-center items-center">
+=======
+  <div className="bg-[#EAE8F7] rounded-md shadow p-6 flex flex-col items-center justify-center gap-8 sm:gap-6 max-w-sm sm:max-w-md mx-auto h-[28rem]">
+    <div className="flex flex-col justify-center items-center gap-2">
+>>>>>>> origin/master:src/components/common/HomePage/OurClients/OurClients.tsx
       <Image
         src={testimonial.image}
         alt={testimonial.name}
@@ -41,7 +46,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] 
       <h3 className="text-[#543CDA] font-semibold text-xl sm:text-2xl mt-2">{testimonial.name}</h3>
       <p className="text-base sm:text-lg text-center">{testimonial.role}</p>
     </div>
-    <p className="text-center text-sm sm:text-base">{testimonial.quote}</p>
+    <p className="text-center text-sm sm:text-base w-[19rem]">{testimonial.quote}</p>
     <div className="flex text-[#543CDA]">
       {[...Array(5)].map((_, i) => (
         <FaStar key={i} />
@@ -96,7 +101,7 @@ export default function TestimonialCarousel() {
   };
 
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-12 w-full max-w-7xl flex flex-col items-center gap-10 my-16 sm:my-20">
+    <section className="container mx-auto px-4 sm:px-6 lg:px-12 lg:py-24 w-full max-w-7xl flex flex-col items-center gap-10 my-16 sm:my-20">
       {/* Section Heading */}
       <div className="text-center flex flex-col gap-3 sm:gap-4">
         <h1 className="font-extrabold text-2xl sm:text-4xl text-[#543CDA]">
@@ -112,7 +117,7 @@ export default function TestimonialCarousel() {
         <div className="relative w-full overflow-x-hidden">
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide px-4 sm:px-6 py-4 scroll-smooth snap-x snap-mandatory w-full"
+            className="flex overflow-x-hidden scrollbar-hide px-4 sm:px-6 py-4 scroll-smooth snap-x snap-mandatory w-full"
           >
             {testimonials.map((t, i) => (
               <div key={i} className="flex-shrink-0 snap-center px-2 sm:px-4 w-[90vw] sm:w-auto">
