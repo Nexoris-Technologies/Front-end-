@@ -4,20 +4,11 @@ import Hero from "./Herosection/Hero";
 import Love from "./What you love/Love";
 import Startup from "./Why start up/Startup";
 import Tools from "@/components/common/HomePage/Tools/Tool";
-<<<<<<< HEAD
-import Ourprocess from "@/components/common/HomePage/OurProcess/OurProcess";
-import Insight from "@/components/common/HomePage/Insights/Insights";
-import Faqs from "@/components/common/HomePage/Faqs/Faqs";
-import StrategyCall from "@/components/common/HomePage/StrategyCall/StrategyCall";
-import Footer from "@/components/common/HomePage/Footer/Footer";
-import TestimonialCarousel from "@/components/common/HomePage/OurClients/OurClients";
-=======
 import OurProcess from "@/components/common/HomePage/OurProcess/OurProcess";
 import TestimonialCarousel from "@/components/common/HomePage/OurClients/OurClients";
 import Insight from "@/components/common/HomePage/Insights/Insights";
 import Faqs from "@/components/common/HomePage/Faqs/Faqs";
 import StrategyCall from "@/components/common/HomePage/StrategyCall/StrategyCall";
->>>>>>> origin/master
 
 export default function HomePage() {
   return (
@@ -34,22 +25,14 @@ export default function HomePage() {
       <div>
         <Everything />
       </div>
-<<<<<<< HEAD
-      <div className="">
-=======
       <div>
->>>>>>> origin/master
         <BuiltFor />
       </div>
       <div>
         <Tools />
       </div>
       <div>
-<<<<<<< HEAD
-        <Ourprocess />
-=======
         <OurProcess />
->>>>>>> origin/master
       </div>
       <div>
         <TestimonialCarousel />
@@ -63,12 +46,6 @@ export default function HomePage() {
       <div>
         <StrategyCall />
       </div>
-<<<<<<< HEAD
-      <div>
-        <Footer />
-      </div>
-=======
->>>>>>> origin/master
     </main>
   );
 }

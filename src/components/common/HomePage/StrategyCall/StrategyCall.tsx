@@ -2,13 +2,8 @@ import Link from "next/link";
 
 function StrategyCall() {
   return (
-<<<<<<< HEAD
-    <section className="flex items-center justify-center mb-12 p-4 sm:px-6">
-      <div className="w-full max-w-7xl bg-[#EAE8F7] rounded-md flex flex-col items-center justify-center gap-8 p-20 sm:px-8">
-=======
     <section className="flex items-center justify-center mb-12 px-4 sm:px-6 lg:py-24">
       <div className="w-full max-w-7xl bg-[#EAE8F7] rounded-md flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-10 py-12 px-4 sm:px-8 md:py-20 lg:py-36">
->>>>>>> origin/master
         <h2 className="text-[#543CDA] font-bold text-lg sm:text-xl md:text-2xl text-center">
           You’ve Been Thinking About This for Months, Let’s Finally Build It Right
         </h2>

@@ -55,11 +55,7 @@ const Faqs = () => {
         </h1>
       </div>
 
-<<<<<<< HEAD
-      <div className="w-full max-w-5xl mx-auto">
-=======
       <div className="w-full max-w-6xl mx-auto">
->>>>>>> origin/master
         <Collapse
           bordered={false}
           defaultActiveKey={['1']}
