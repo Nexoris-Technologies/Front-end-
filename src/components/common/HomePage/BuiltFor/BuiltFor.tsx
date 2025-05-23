@@ -7,16 +7,16 @@ import Image from "next/image";
 
 function BuiltFor() {
   return (
-    <section className="bg-[#EAE8F7] py-20 w-full flex flex-col items-center justify-center mt-10">
+    <section className="bg-[#EAE8F7] py-32 w-full flex flex-col items-center justify-center gap-8 mt-10">
       
       {/* Top Section */}
       <section className="flex flex-col lg:flex-row justify-between items-center gap-10 container mx-auto px-4 lg:px-40">
         {/* Card 1 */}
-        <div className="flex flex-col items-center justify-center px-6 py-8 w-full max-w-md bg-white shadow-2xl rounded-md">
+        <div className="flex flex-col items-center justify-center px-6 pb-8 gap-4 w-[421px] h-[405px] max-w-md bg-white shadow-2xl rounded-md">
           <IoIosRocket className="w-[60px] h-[60px] text-[#543CDA]" />
           <h3 className="font-bold text-[25px] text-[#543CDA] text-center">Startups & Founders</h3>
-          <p className="text-center">
-            Your business is scaling and your tech needs to keep up. We help growing teams modernize their systems, automate workflows, and build tools that support the next stage of growth.
+          <p className="text-center w-[335px]">
+          You have a bold idea and need a technical partner to bring it to life. From MVP to launch and beyond. Whether you’re building your first product or pivoting to a new direction, we’ll help you move fast, build smart, and avoid costly mistakes.
           </p>
         </div>
 
@@ -26,11 +26,11 @@ function BuiltFor() {
         </div>
 
         {/* Card 2 */}
-        <div className="flex flex-col items-center justify-center px-6 py-8 w-full max-w-md bg-white shadow-2xl rounded-md">
+        <div className="flex flex-col items-center justify-center px-6 pb-8 gap-4 w-[421px] h-[405px] max-w-md bg-white shadow-2xl rounded-md">
           <HiChartBar className="w-[60px] h-[60px] text-[#543CDA]" />
           <h3 className="font-bold text-[25px] text-[#543CDA] text-center">Growing Businesses</h3>
-          <p className="text-center">
-            You have a bold idea and need a technical partner to bring it to life. From MVP to launch and beyond. Whether you’re building your first product or pivoting to a new direction, we&#39;ll help you move fast, build smart, and avoid costly mistakes.
+          <p className="text-center w-[336px]">
+          Your business is scaling and your tech needs to keep up. We help growing teams modernize their systems, automate workflows, and build tools that support the next stage of growth.
           </p>
         </div>
       </section>
@@ -38,7 +38,7 @@ function BuiltFor() {
       {/* Middle Title & Text */}
       <div className="flex flex-col items-center justify-center my-12 px-4 text-center">
         <h1 className="text-[#543CDA] font-bold text-[25px]">Who We’re Built For</h1>
-        <p className="font-[400] text-[18px] max-w-xl">
+        <p className="font-[400] text-[18px] w-[370px]">
           At Nexoris, we partner with ambitious teams across different industries and stages of growth. While each client is unique, most fall into one of these four categories:
         </p>
       </div>
@@ -46,7 +46,7 @@ function BuiltFor() {
       {/* Bottom Section */}
       <section className="flex flex-col lg:flex-row justify-between items-center gap-10 container mx-auto px-4 lg:px-40">
         {/* Card 3 */}
-        <div className="flex flex-col items-center justify-center px-6 py-8 w-full max-w-md bg-white shadow-2xl rounded-md">
+        <div className="flex flex-col items-center justify-center px-6 pb-8 gap-4 w-[421px] h-[405px] max-w-md bg-white shadow-2xl rounded-md">
           <PiBankBold className="w-[60px] h-[60px] text-[#543CDA]" />
           <h3 className="font-bold text-[25px] text-[#543CDA] text-center">Agencies, Consultants & Partners</h3>
           <p className="text-center">
@@ -60,7 +60,7 @@ function BuiltFor() {
         </div>
 
         {/* Card 4 */}
-        <div className="flex flex-col items-center justify-center px-6 py-8 w-full max-w-md bg-white shadow-2xl rounded-md">
+        <div className="flex flex-col items-center justify-center px-6 pb-8 gap-4 w-[421px] h-[405px] max-w-md bg-white shadow-2xl rounded-md">
           <TbTriangleSquareCircleFilled className="w-[60px] h-[60px] text-[#543CDA]" />
           <h3 className="font-bold text-[25px] text-[#543CDA] text-center">Enterprises & Institutions</h3>
           <p className="text-center">

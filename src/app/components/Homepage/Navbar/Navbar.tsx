@@ -51,7 +51,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href={"/"}
+                href={"/services"}
                 className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white flex items-center justify-center gap-1"
               >
                 Services

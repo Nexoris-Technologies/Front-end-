@@ -8,10 +8,10 @@ const { Meta } = Card;
 
 function Insight() {
   return (
-    <section className='flex flex-col gap-12 items-center justify-center bg-[#EAE8F7] py-12 px-4'>
+    <section className='flex flex-col gap-12 items-center justify-center bg-[#EAE8F7] py-12 lg:py-32 px-4'>
       <h2 className='font-extrabold text-3xl text-[#543CDA] text-center'>Insights From The Nexoris Team</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
         {/* Card 1 */}
         <Card
           hoverable
@@ -34,9 +34,9 @@ function Insight() {
             </p>
           </div>
           <div>
-            <a href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
-              Read More <FaArrowRight className='text-[#543CDA]' />
-            </a>
+            <Link href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
+              <span className="text-[#543CDA]">Read More</span> <FaArrowRight className='text-[#543CDA]' />
+            </Link>
           </div>
         </Card>
 
@@ -62,9 +62,9 @@ function Insight() {
             </p>
           </div>
           <div>
-            <a href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
-              Read More <FaArrowRight className='text-[#543CDA]' />
-            </a>
+            <Link href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
+            <span className="text-[#543CDA]">Read More</span> <FaArrowRight className='text-[#543CDA]' />
+            </Link>
           </div>
         </Card>
 
@@ -90,9 +90,9 @@ function Insight() {
             </p>
           </div>
           <div>
-            <a href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
-              Read More <FaArrowRight className='text-[#543CDA]' />
-            </a>
+            <Link href="#" className="text-[#543CDA] text-sm underline mt-2 flex items-center gap-2">
+            <span className="text-[#543CDA]">Read More</span> <FaArrowRight className='text-[#543CDA]' />
+            </Link>
           </div>
         </Card>
       </div>
