@@ -1,4 +1,4 @@
-import HomePage from "./components/Homepage/Homepage";
+import HomePage from "../components/Homepage/Homepage";
 
 export default function Combinedpage() {
   return (
