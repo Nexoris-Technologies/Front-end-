@@ -6,7 +6,7 @@ function Contact() {
       {/* Housing all.. Contact Us and the forms */}
       <div className="container mx-auto flex flex-col justify-center items-center gap-4rem mt-[4rem] md:mt-[14rem]">
         {/* housing the Contact us */}
-        <div className="rounded-[10px] bg-[#543CDA]/70 py-[2rem] w-full hidden md:block">
+        <div className="rounded-[10px] bg-[#543CDA]/70 py-[2rem] px-[36rem] hidden md:block">
           <h1 className="text-white text-[18px] md:text-[56px] font-bold text-center ">
             Contact Us
           </h1>
@@ -32,249 +32,161 @@ function Contact() {
             </div>
           </div>
 
-          {/* Let's talk and Quick Message section */}
-          <div className="w-full md:max-w-[1224px] md:h-[756px] flex flex-col items-center  it md:flex-row gap-[24px] px-4 ">
-            {/* Lets Talk */}
-            <div className="w-[345px] md:max-w-[496px] order-2 md:order-1 h-[565px] md:h-[550px] rounded-[16px] border-[1px] py-[24px] px-[16px] flex-1 flex-col gap-[32px] border-[#D9D9D9] bg-[#D9D9D9]/4 ">
-              {/* Housing Let's Talk and paragraph */}
-              <div className=" flex flex-col gap-[8px]">
-                <h3 className="text-[24px] md:text-[32px]  font-semibold text-[#000000]">
+          {/* Let’s Talk & Quick Message Section */}
+          <div className="w-full max-w-[1224px] md:mb-[5rem] mb-[2rem]  flex flex-col md:flex-row gap-[24px] px-4">
+            {/* Let’s Talk */}
+            <div className="flex-1 rounded-[16px] md:h-[514px] order-2  md:order-1 border border-[#D9D9D9] bg-[#D9D9D9]/4 p-6 flex flex-col gap-8">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-[24px] md:text-[32px] font-semibold text-[#000000]">
                   Let's Talk
                 </h3>
-
-                {/* paragraph */}
-                <div>
-                  <p className="text-[16px]  text-[#000000]">
-                    Have a challenge worth solving? Let’s explore it together.
-                  </p>
-                </div>
+                <p className="text-[16px] text-[#000000]">
+                  Have a challenge worth solving? Let’s explore it together.
+                </p>
               </div>
 
-              {/* Emails, Phone, Office section */}
-              <div className="w-[311px] md:max-w-[464px] flex flex-col gap-[24px]">
-                {/* Email section */}
-                <div className=" flex gap-[16px]  items-center">
+              {/* Contact Details */}
+              <div className="flex flex-col gap-6">
+                {/* Email */}
+                <div className="flex items-center gap-4">
+                  <Image src="/Email.svg" alt="Email" width={40} height={40} />
                   <div>
-                    <Image
-                      src="/Email.svg"
-                      alt="Email-icon"
-                      width={60}
-                      height={60}
-                    />
-                  </div>
-                  {/* Email us text */}
-                  <div className=" ">
-                    <h5 className="text-[20px]  font-medium">Email Us</h5>
-                    <p className="text-[14px] md:text-[16px]">
-                      hello@nexoristech.com
-                    </p>
-                  </div>
-                </div>
-                {/* Call section */}
-                <div className=" flex  items-center gap-[16px]">
-                  <div>
-                    <Image src="/Call.svg" alt="Call" width={60} height={60} />
-                  </div>
-
-                  {/* Housing the phone and number */}
-                  <div>
-                    <h5 className="text-[20px] font-medium text-[#000000]">
-                      Phone
-                    </h5>
-                    <p className="text-[14px] md:text-[16px] text-[#000000]">
-                      +234 (0) 9138133224
-                    </p>
+                    <h5 className="text-[18px] font-medium">Email Us</h5>
+                    <p className="text-[16px]">hello@nexoristech.com</p>
                   </div>
                 </div>
 
-                {/* Office Address */}
-                <div className="flex items-center gap-[16px]">
+                {/* Phone */}
+                <div className="flex items-center gap-4">
+                  <Image src="/Call.svg" alt="Call" width={40} height={40} />
                   <div>
-                    <Image
-                      src="/Location.svg"
-                      alt="Location"
-                      width={65}
-                      height={65}
-                    />
+                    <h5 className="text-[18px] font-medium">Phone</h5>
+                    <p className="text-[16px]">+234 (0) 9138133224</p>
                   </div>
-                  {/* office address and location */}
-                  <div>
-                    <div>
-                      <h5 className="font-medium text-[20px] leading-[32px] text-[#000000]">
-                        Office Address
-                      </h5>
+                </div>
 
-                      <p className="text-[16px] w-[230px] text-[#000000]">
-                        Lekki, Lagos,
-                      </p>
-                    </div>
-                    <p className="w-[235px] md:w-[280px]">
+                {/* Address */}
+                <div className="flex items-start gap-4">
+                  <Image
+                    src="/Location.svg"
+                    alt="Location"
+                    width={40}
+                    height={40}
+                  />
+                  <div>
+                    <h5 className="text-[18px] font-medium">Office Address</h5>
+                    <p className="text-[16px]">Lekki, Lagos, Nigeria</p>
+                    <p className="text-[14px]">
                       (Remote-first, serving clients globally)
                     </p>
                   </div>
                 </div>
-              </div>
 
-              {/* Businesss sect */}
-              <div className="w-[311px] md:w-[464px] flex justify-center items-center gap-[16px]">
-                <div>
-                  <Image src="/Clock.svg" alt="Clock" width={60} height={60} />
-                </div>
-
-                {/* business and paragraph */}
-                <div className="w-[235px] md:w-[388px] flex flex-col gap-[4px]">
+                {/* Business Hours */}
+                <div className="flex items-start gap-4">
+                  <Image src="/Clock.svg" alt="Clock" width={40} height={40} />
                   <div>
-                    <h3 className="font-medium text-[20px] leading-[32px] text-[#000000]">
-                      Business Hours
-                    </h3>
-                    <p className="text-[16px] leading-[26px] text-[#000000]">
-                      Monday - Friday
+                    <h5 className="text-[18px] font-medium">Business Hours</h5>
+                    <p className="text-[16px]">Monday - Friday</p>
+                    <p className="text-[14px]">
+                      Timezone-friendly scheduling available worldwide.
                     </p>
                   </div>
-                  <p className=" text-[14px] md:text-[16px] leading-[22px] md:leading-[26px] text-[#000000] w-[200px]">
-                    Timezone-friendly scheduling available worldwide.
-                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Quick Message section */}
-
-            {/* Overall div housing the header, p, inputs, I agree and message button */}
-            <div className="w-[343px] md:max-w-[704px] order-1 md:order-2  h-[960px] md:h-[756px] rounded-[16px] border-[1px] py-[24px] px-[16px] flex flex-col  items-center gap-[32px] border-[#D9D9D9] bg-[#D9D9D9]/4">
-              {/* Housing the Quick message and the P tag */}
-              <div className="w-full md:max-w-[672px] flex flex-col gap-[16px]">
-                <h3 className="font-semibold text-[24px] md:text-[32px] leading-[32px] md:leading-[40px] text-[#000000]">
+            {/* Quick Message */}
+            <div className="flex-1 rounded-[16px] h-[700px] order-1 md:order-1 border border-[#D9D9D9] bg-[#D9D9D9]/4 p-6 flex flex-col gap-8">
+              <div className="flex flex-col gap-4">
+                <h3 className="text-[24px] md:text-[32px] font-semibold text-[#000000]">
                   Quick Message
                 </h3>
-                <p className="text-[16px] leading-[26px] w-[311px] md:w-[625px] tracking-wide ">
+                <p className="text-[16px] text-[#000000]">
                   Tell us what you're working on. A dedicated member of our team
                   will respond within one business day.
                 </p>
               </div>
 
-              {/* Housing the Inputs */}
-              <div className="w-[311px] md:max-w-[672px] flex flex-col  gap-[16px]">
-                {/* Housing the first name and the last name Input */}
-                <div className="flex flex-col md:flex-row gap-[24px] items-center">
-                  {/* First Name input */}
-                  <div className=" flex flex-col gap-[8px]">
-                    <label
-                      htmlFor="First Name"
-                      className="text-[16px] leading-[26px] md:leading-[16px] text-[#000000]"
-                    >
-                      First Name
-                    </label>
+              {/* Inputs */}
+              <div className="flex flex-col gap-4">
+                {/* First & Last Name */}
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex-1 flex flex-col gap-2">
+                    <label>First Name</label>
                     <input
                       type="text"
-                      className="w-[300px] h-[40px] rounded-[4px] border-[1px] focus:outline-none px-3 border-[#8F9092]/40"
+                      className="border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
                   </div>
-
-                  {/* Last Name */}
-                  <div className=" flex flex-col gap-[8px]">
-                    <label
-                      htmlFor="Last Name"
-                      className="text-[16px] leading-[26px] md:leading-[16px] text-[#000000]"
-                    >
-                      Last Name
-                    </label>
+                  <div className="flex-1 flex flex-col gap-2">
+                    <label>Last Name</label>
                     <input
                       type="text"
-                      className="w-[300px] h-[40px] rounded-[4px] border-[1px] focus:outline-none px-3 border-[#8F9092]/40"
+                      className="border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
                   </div>
                 </div>
-                {/* Housing the Email and Phone Number Input */}
-                <div className="flex flex-col md:flex-row gap-[24px] items-center">
-                  {/* Email input */}
-                  <div className=" flex flex-col gap-[8px]">
-                    <label
-                      htmlFor="Email"
-                      className="text-[16px] leading-[26px] md:leading-[16px] text-[#000000]"
-                    >
-                      Email
-                    </label>
+
+                {/* Email & Phone */}
+                <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex-1 flex flex-col gap-2">
+                    <label>Email</label>
                     <input
-                      type="text"
-                      className="w-[300px] h-[40px] rounded-[4px] border-[1px] focus:outline-none px-3 border-[#8F9092]/40"
+                      type="email"
+                      className="border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
                   </div>
-
-                  {/* Phone Number */}
-                  <div className=" flex flex-col gap-[8px]">
-                    <label
-                      htmlFor="First Name"
-                      className="text-[16px] leading-[26px] md:leading-[16px] text-[#000000]"
-                    >
-                      Phone Number
-                    </label>
+                  <div className="flex-1 flex flex-col gap-2">
+                    <label>Phone Number</label>
                     <input
                       type="text"
                       placeholder="+234"
-                      className="w-[300px] h-[40px] rounded-[4px] border-[1px] focus:outline-none px-3 border-[#8F9092]/40"
+                      className="border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
                   </div>
                 </div>
 
-                {/* Housing the What subject */}
-                <div className=" max-w-[672px] flex flex-col gap-[8px]">
-                  <label
-                    htmlFor="select Subject"
-                    className=" w-[113px]leading-[26px] text-[#000000]"
-                  >
-                    select Subject
-                  </label>
-                  <div className="max-w-[672px] flex items-center relative">
+                {/* Subject Select */}
+                <div className="flex flex-col gap-2">
+                  <label>Select Subject</label>
+                  <div className="relative">
                     <input
-                      type=""
-                      placeholder="select a subject"
-                      className=" w-full h-[40px] rounded-[4px] border-[1px] px-3 border-[#879092]/40  focus:outline-none"
+                      type="text"
+                      placeholder="Select a subject"
+                      className="w-full border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
-                    <span className="absolute left-[95%] w-[16px] h-[16px] md:w-[24px] md:h-[24px] ">
+                    <span className="absolute right-3 top-1/2 -translate-y-1/2">
                       <Image
                         src="/chevron-down.svg"
-                        alt="Arrow down"
-                        width={24}
-                        height={24}
+                        alt="Down"
+                        width={20}
+                        height={20}
                       />
                     </span>
                   </div>
                 </div>
 
-                {/* Housing the message text area */}
-                <div className=" md:max-w-[672px] flex flex-col gap-[8px]">
-                  <label
-                    htmlFor="Message"
-                    className="w-[72px]  leading-[26px] text-[#000000]"
-                  >
-                    Message
-                  </label>
+                {/* Message Textarea */}
+                <div className="flex flex-col gap-2">
+                  <label>Message</label>
                   <textarea
-                    name="Message"
-                    id="Message"
                     placeholder="Please describe what you need in detail"
-                    className="w-[311px] md:max-w-[672px] h-[120px] rounded-[4px] border-[1px] border-[#8F9092]/40 focus:outline-none px-3 py-3"
-                  ></textarea>
+                    className="w-full border border-[#8F9092]/40 px-3 py-2 rounded"
+                  />
                 </div>
 
-                {/* Checkbox and text beside it  */}
-                <div className="w-[311px] md:max-w-[531px] flex items-center gap-[16px]">
-                  <input
-                    type="checkbox"
-                    className="w-[24px] h-[24px] rounded-[4px] border-[1px] border-[#000000]"
-                  />
-                  <label
-                    htmlFor="agreement"
-                    className="max-w-[491px] text-[14px] md:text-[18px] leading-[22px] md:leading-[24px] text-[#000000] font-semibold"
-                  >
-                    I agree to be contacted by nexoris regarding my request
+                {/* Checkbox */}
+                <div className="flex items-start gap-3">
+                  <input type="checkbox" className="mt-1" />
+                  <label className="text-sm font-medium">
+                    I agree to be contacted by Nexoris regarding my request
                   </label>
                 </div>
 
-                {/* Send message button */}
-                <div className=" w-full md:w-[194px] mt-3 h-[44px] md:h-[56px] rounded-[8px] py-[17px]  md:py-[21.5px] px-[32px] flex items-center justify-center bg-[#543CDA]">
-                  <button className="font-bold text-[18px]  leading-[24px] text-[#FFFFFF]">
+                {/* Button */}
+                <div className="md:mt-[2rem]">
+                  <button className="bg-[#543CDA] text-white font-bold text-[16px] px-6 py-3 md:py-3 md:px-8 rounded w-full md:w-[200px]">
                     Send Message
                   </button>
                 </div>

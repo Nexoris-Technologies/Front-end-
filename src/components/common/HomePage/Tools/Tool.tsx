@@ -42,7 +42,11 @@ function Tools() {
   };
 
   return (
+<<<<<<< HEAD
     <section className="flex flex-col items-center justify-center  sm:px-6 py-36 gap-12 w-full bg-white">
+=======
+    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-32 gap-12 w-full bg-white">
+>>>>>>> origin/master
       {/* Header */}
       <div className="text-center space-y-2 w-full">
         <h2 className="text-[#543CDA] font-extrabold text-xl sm:text-2xl md:text-3xl leading-snug">
@@ -58,7 +62,7 @@ function Tools() {
         <div className="relative overflow-hidden">
           <div
             ref={scrollRef}
-            className="flex overflow-x-auto scrollbar-hide scroll-smooth px-2 sm:px-4 py-4 snap-x snap-mandatory"
+            className="flex overflow-x-hidden scrollbar-hide scroll-smooth px-2 sm:px-4 py-4 snap-x snap-mandatory"
           >
             {tools.map((tool, index) => (
               <div key={index} className="snap-start">

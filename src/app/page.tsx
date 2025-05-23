@@ -1,17 +1,27 @@
 import HomePage from "./components/Homepage/Homepage";
+<<<<<<< HEAD
 import ContactUs from "./contact/page";
 
 export default function Combinedpage() {
   return (
     <div>
       {/* Homepage */}
+=======
+
+function LandingPage() {
+  return (
+    <section>
+      {/* Navigation Content */}
+
+>>>>>>> origin/master
       <div>
         <HomePage />
       </div>
-      {/* Contact us page */}
-      <div>
-        <ContactUs />
-      </div>
-    </div>
+    </section>
   );
 }
+<<<<<<< HEAD
+=======
+
+export default LandingPage;
+>>>>>>> origin/master
