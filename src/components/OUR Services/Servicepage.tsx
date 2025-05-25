@@ -1,9 +1,12 @@
+import FaqsMobile from "./Faqservice/Faqsmobile";
 import HeroPage from "./HeroPage/Hero";
-import Benefits from "./Key Benefits/Benefits";
-import Problem from "./Problems solves/Problems";
+import Keys from "./Key Benefits/Benefits";
+import Problem from "../Custome Software Solutions/Problems solves/Problems";
 import OurProcess from "./Process/Process";
+import Launch from "./Ready to launch/Launch";
 import ServiceCovers from "./Service Covers/Covers";
 import Help from "./Who we help/Help";
+import WhyChoose from "./Why choose/Choose";
 
 export default function Serve() {
   return (
@@ -16,7 +19,7 @@ export default function Serve() {
           <Help />
         </div>
         <div>
-          <Benefits />
+          <Keys />
         </div>
         <div>
           <Problem />
@@ -26,6 +29,15 @@ export default function Serve() {
         </div>
         <div>
           <OurProcess />
+        </div>
+        <div>
+          <WhyChoose />
+        </div>
+        <div>
+          <FaqsMobile />
+        </div>
+        <div>
+          <Launch />
         </div>
       </section>
     </main>

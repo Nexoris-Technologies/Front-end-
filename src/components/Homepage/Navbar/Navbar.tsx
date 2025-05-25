@@ -63,7 +63,7 @@ export default function Navbar() {
                   <div className="absolute left-0 right-[-210%] mt-[24rem] bg-[#FFFFFF] text-[#543CDA] shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 flex flex-col gap-2 duration-200 rounded-[10px]">
                     <Link
                       className="block px-4 py-2 w-40 text-[14px] hover:underline "
-                      href={"/"}
+                      href={"/web-development"}
                     >
                       Web Development
                     </Link>
@@ -78,7 +78,7 @@ export default function Navbar() {
                     <div className="decoration-2 h-0.5 border-gray-300 border-[1px] border-b w-[14rem]   mx-auto "></div>
                     <Link
                       className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-2 decoration-[#9747FF]"
-                      href={"/"}
+                      href={"/ui-ux-design"}
                     >
                       UI/UX Design & Consulting
                     </Link>
@@ -86,7 +86,7 @@ export default function Navbar() {
                     <div className="decoration-2 h-0.5 border-gray-300 border-[1px] border-b w-[14rem] flex justify-center items-center  mx-auto "></div>
                     <Link
                       className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-2 decoration-[#9747FF]"
-                      href={"/"}
+                      href={"/seo-and-content-marketing"}
                     >
                       SEO & Content Marketing
                     </Link>
@@ -94,7 +94,7 @@ export default function Navbar() {
                     <div className="decoration-2 h-0.5 border-gray-300 border-[1px] border-b w-[14rem] flex justify-center items-center  mx-auto "></div>
                     <Link
                       className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-2 decoration-[#9747FF]"
-                      href={"/"}
+                      href={"/custom-software"}
                     >
                       Custom Software Solutions
                     </Link>

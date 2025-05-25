@@ -65,12 +65,12 @@ export default function HeroPage() {
           </div>
 
           {/* Housing the hero Image */}
-          <div className="rounded-[16px] w-full ">
+          <div className="relative w-[344px] h-[111px] md:w-full md:h-[300px] lg:w-[1224px] lg:h-[490px] rounded-[16px] overflow-hidden">
             <Image
               src="/Service-hero-image.webp"
               alt="Service hero image"
-              width={855}
-              height={799}
+              fill
+              className="object-cover rounded-[16px]"
             />
           </div>
         </div>

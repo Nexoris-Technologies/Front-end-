@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function () {
+export default function Keys() {
   return (
     <section className="lg:bg-[#EAE8F7]">
       {/* Housing the phone Icon, h3 and the cards */}

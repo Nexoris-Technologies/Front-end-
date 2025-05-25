@@ -28,14 +28,13 @@ const testimonials = [
 ];
 
 // Single Card Component
-const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
-<<<<<<< HEAD:src/components/Homepage/OurClients/OurClients.tsx
-  <div className="bg-[#EAE8F7] rounded-md shadow p-6 flex flex-col items-center gap-4 sm:gap-6 max-w-sm sm:max-w-md mx-auto">
-    <div className="flex flex-col justify-center items-center">
-=======
+const TestimonialCard = ({
+  testimonial,
+}: {
+  testimonial: (typeof testimonials)[0];
+}) => (
   <div className="bg-[#EAE8F7] rounded-md shadow p-6 flex flex-col items-center justify-center gap-8 sm:gap-6 max-w-sm sm:max-w-md mx-auto h-[28rem]">
     <div className="flex flex-col justify-center items-center gap-2">
->>>>>>> origin/master:src/components/common/HomePage/OurClients/OurClients.tsx
       <Image
         src={testimonial.image}
         alt={testimonial.name}
@@ -43,10 +42,14 @@ const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] 
         height={240}
         className="w-[5rem] sm:w-[6rem] h-[5rem] sm:h-[6rem] rounded-full"
       />
-      <h3 className="text-[#543CDA] font-semibold text-xl sm:text-2xl mt-2">{testimonial.name}</h3>
+      <h3 className="text-[#543CDA] font-semibold text-xl sm:text-2xl mt-2">
+        {testimonial.name}
+      </h3>
       <p className="text-base sm:text-lg text-center">{testimonial.role}</p>
     </div>
-    <p className="text-center text-sm sm:text-base w-[19rem]">{testimonial.quote}</p>
+    <p className="text-center text-sm sm:text-base w-[19rem]">
+      {testimonial.quote}
+    </p>
     <div className="flex text-[#543CDA]">
       {[...Array(5)].map((_, i) => (
         <FaStar key={i} />
@@ -108,7 +111,9 @@ export default function TestimonialCarousel() {
           What Our Clients Say After the Panic Fades
         </h1>
         <p className="font-medium text-base sm:text-xl text-[#262128] max-w-3xl mx-auto">
-          At Nexoris Technologies, our greatest measure of success is the satisfaction of our clients. Here’s what they have to say about working with us.
+          At Nexoris Technologies, our greatest measure of success is the
+          satisfaction of our clients. Here’s what they have to say about
+          working with us.
         </p>
       </div>
 
@@ -120,7 +125,10 @@ export default function TestimonialCarousel() {
             className="flex overflow-x-hidden scrollbar-hide px-4 sm:px-6 py-4 scroll-smooth snap-x snap-mandatory w-full"
           >
             {testimonials.map((t, i) => (
-              <div key={i} className="flex-shrink-0 snap-center px-2 sm:px-4 w-[90vw] sm:w-auto">
+              <div
+                key={i}
+                className="flex-shrink-0 snap-center px-2 sm:px-4 w-[90vw] sm:w-auto"
+              >
                 <TestimonialCard testimonial={t} />
               </div>
             ))}
