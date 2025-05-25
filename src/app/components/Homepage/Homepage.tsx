@@ -1,14 +1,14 @@
-import BuiltFor from "@/components/common/HomePage/BuiltFor/BuiltFor";
-import Everything from "./Everything to know/Everything";
-import Hero from "./Herosection/Hero";
-import Love from "./What you love/Love";
-import Startup from "./Why start up/Startup";
-import Tools from "@/components/common/HomePage/Tools/Tool";
-import OurProcess from "@/components/common/HomePage/OurProcess/OurProcess";
-import TestimonialCarousel from "@/components/common/HomePage/OurClients/OurClients";
 import Insight from "@/components/common/HomePage/Insights/Insights";
-import Faqs from "@/components/common/HomePage/Faqs/Faqs";
-import StrategyCall from "@/components/common/HomePage/StrategyCall/StrategyCall";
+import Tools from "@/components/common/HomePage/Tools/Tool";
+import BuiltFor from "@/components/Homepage/BuiltFor/BuiltFor";
+import Everything from "@/components/Homepage/Everything to know/Everything";
+import Faqs from "@/components/Homepage/Faqs/Faqs";
+import Hero from "@/components/Homepage/Herosection/Hero";
+import TestimonialCarousel from "@/components/Homepage/OurClients/OurClients";
+import Ourprocess from "@/components/Homepage/OurProcess/OurProcess";
+import StrategyCall from "@/components/Homepage/StrategyCall/StrategyCall";
+import Love from "@/components/Homepage/What you love/Love";
+import Startup from "@/components/Homepage/Why start up/Startup";
 
 export default function HomePage() {
   return (
@@ -32,7 +32,7 @@ export default function HomePage() {
         <Tools />
       </div>
       <div>
-        <OurProcess />
+        <Ourprocess />
       </div>
       <div>
         <TestimonialCarousel />

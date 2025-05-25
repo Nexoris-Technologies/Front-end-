@@ -55,17 +55,16 @@ function Process() {
                <div className="relative bg-white rounded-full w-full h-full flex items-center justify-center">
                  <div className="absolute top-[0.1rem] left-[0.1rem] bg-[#543CDACC] rounded-full w-full h-full flex items-center justify-center">
                    <h2 className="text-white font-bold">{step}</h2>
-                   
                  </div>
-                 <Image src="/Line 35.svg" alt="Line" width={200} height={200} />
+                 <span><Image src="/Line35.svg" alt="Line" width={200} height={800} /></span>
                </div>
              </div>
 
              <div className="flex flex-col gap-3">
                <h3 className="text-white font-bold text-lg md:text-xl">{title}</h3>
-               <p className="text-white text-sm md:text-base leading-relaxed">
+               <h5 className="text-white text-sm md:text-base leading-relaxed">
                  {description}
-               </p>
+               </h5>
              </div>
            </div>
          ))}
