@@ -1,5 +1,116 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --primary-purple: #543cda;
+  --secondary-purple: #7663e1;
+  --tertiary-purple: #988ae9;
+  --purple-4: #bbb1f0;
+  --purple-5: #ddd8f8;
+  --purple-6: #eeebfb;
+  --purple-dark: #040118;
+  --primary-blue: #0059f1;
+  --secondary-blue: #337af4;
+  --tertiary-blue: #669bf7;
+  --blue-4: #99bdf9;
+  --blue-5: #ccdefc;
+  --blue-6: #e5eefe;
+  --primary-gray: #434343;
+  --secondary-gray: #5a5a5a;
+  --tertiary-gray: #8f9092;
+  --gray-4: #d9d9d9;
+  --gray-5: #ededed;
+  --gray-6: #f7f8fa;
+  --primary-black: #000000;
+  --secondary-black: #333333;
+  --tertiary-black: #8f9092;
+  --black-4: #999999;
+  --black-5: #cccccc;
+  --black-6: #e5e5e5;
+  --heading-text: "Inter";
+  --body-font: "Poppins";
+  --heading-1: 56px;
+  --heading-2: 40px;
+  --heading-3: 32px;
+  --heading-4: 24px;
+  --button: 18px;
+  --body: 18px;
+  --body-md: 16px;
+  --body-sm: 14px;
+  --mobile-md: 14px;
+  --mobile-sm: 12px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --font-inter: var(--font-heading-text);
+  --font-poppins: var(--body-font);
+  --text-heading-1: var(--heading-1);
+  --text-heading-2: var(--heading-2);
+  --text-heading-3: var(--heading-3);
+  --text-heading-4: var(--heading-4);
+  --text-button: var(--button);
+  --text-body: var(--body);
+  --text-body-md: var(--body-md);
+  --text-body-sm: var(--body-sm);
+  --text-mobile-md: var(--mobile-md);
+  --text-mobile-sm: var(--mobile-sm);
+  --color-primary-purple: var(--primary-purple);
+  --color-secondary-purple: var(--secondary-purple);
+  --color-tertiarypurple: var(--tertiary-purple);
+  --color-purple-dark: var(--purple-dark);
+  --color-purple-4: var(--purple-4);
+  --color-purple-5: var(--purple-5);
+  --color-purple-6: var(--purple-6);
+  --color-primary-blue: var(--primary-blue);
+  --color-secondary-blue: var(--secondary-blue);
+  --color-tertiary-blue: var(--tertiary-blue);
+  --color-blue-4: var(--blue-4);
+  --color-blue-5: var(--blue-5);
+  --color-blue-6: var(--blue-6);
+  --color-primary-gray: var(--primary-gray);
+  --color-secondary-gray: var(--secondary-gray);
+  --color-tertiary-gray: var(--tertiary-gray);
+  --color-gray-4: var(--gray-4);
+  --color-gray-5: var(--gray-5);
+  --color-gray-6: var(--gray-6);
+  --color-primary-black: var(--primary-black);
+  --color-secondary-black: var(--secondary-black);
+  --color-tertiary-black: var(--tertiary-black);
+  --color-black-4: var(--black-4);
+  --color-black-5: var(--black-5);
+  --color-black-6: var(--black-6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter";
+}
+
+p,
+link,
+li,
+button {
+  font-family: "Poppins";
+}
+
 h1,
 h2,
 h5 {

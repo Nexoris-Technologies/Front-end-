@@ -3,7 +3,7 @@ import Everything from "./Everything to know/Everything";
 import Hero from "./Herosection/Hero";
 import Love from "./What you love/Love";
 import Startup from "./Why start up/Startup";
-import Tools from "@/components/Homepage/Tool";
+import Tools from "../common/HomePage/Tools/Tool";
 import Ourprocess from "@/components/Homepage/OurProcess/OurProcess";
 import Faqs from "@/components/Homepage/Faqs/Faqs";
 import StrategyCall from "@/components/Homepage/StrategyCall/StrategyCall";
