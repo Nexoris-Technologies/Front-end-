@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function HeroPage() {
   return (
     <main>
-      <section className="bg-[#543CDA]/32 lg:mt-[8.6rem] relative">
+      <section className="bg-[#543CDA]/32  relative">
         {/* Housing the hero textes and the image */}
-        <div className="flex  flex-col lg:flex-row md:gap-[4rem] items-center  mx-auto w-full container pt-[12rem] lg:pt-1  ">
+        <div className="flex  flex-col lg:flex-row md:gap-[4rem] items-center  mx-auto w-full container pt-[12rem] lg:pt-[5rem]  ">
           {/* Housing Hero header, paragraph text, button and the 3 cards */}
           <div className="flex flex-col gap-[32px]">
             {/* Housing the mobile development */}
-            <div className="rounded-[20px] border w-[199px] py-[4px] px-[24px] border-[#0059F1]/10  bg-[#0059F1]/10">
+            <div className="rounded-[20px] border w-[199px] py-[4px]  px-[24px] border-[#0059F1]/10  bg-[#0059F1]/10">
               <h6 className="text-[16px]  text-[#0059F1] font-semibold ">
                 Mobile Devlopment
               </h6>

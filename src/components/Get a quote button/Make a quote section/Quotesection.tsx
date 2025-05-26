@@ -6,7 +6,7 @@ export default function MakeQuote() {
   return (
     <section className="">
       {/* Get a quote, h3 and p-text */}
-      <div className="flex flex-col gap-[16px] md:gap-[40px] items-center justify-center mt-[4.6rem]  md:mt-[14rem] px-6 md:px-12 ">
+      <div className="flex flex-col gap-[16px] md:gap-[40px] items-center justify-center mt-[4.6rem]   px-6 md:px-12 ">
         {/* Image */}
 
         <div className="lg:hidden pt-[.6rem]">

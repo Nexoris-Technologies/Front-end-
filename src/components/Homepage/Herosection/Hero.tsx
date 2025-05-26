@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="absolute top-0 left-[calc(27.4%-335px)] w-[1500px] h-[180vh] z-0 bg-[repeating-linear-gradient(to_right,_rgba(0,89,241,0.10)_0px,_rgba(0,89,241,0.10)_1px,_transparent_-1px,_transparent_99.9px)]"></div>
 
         {/* Housing both the hero page and the icons borders */}
-        <div className=" pt-[116px]  container mx-auto">
+        <div className="   container mx-auto">
           {/* Housing only the heropage(textes, images) where the lines will be applied to */}
           <div className=" relative flex flex-col lg:flex-row h-auto justify-center items-center gap-[90px] md:gap-[24px]  px-4  md:py-36">
             {/* The first part of the hero section */}

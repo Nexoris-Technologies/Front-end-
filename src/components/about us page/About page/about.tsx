@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section className="">
       {/* Housing the About us, h3, p, images and the button */}
-      <div className=" mt-[8rem] lg:mt-[13rem] w-full max-w-[1350px] mx-auto px-[4rem] md:px-[1.7rem] ">
+      <div className=" mt-[8rem] lg: w-full max-w-[1350px] mx-auto px-[4rem] md:px-[1.7rem] ">
         {/* Housing About Us  */}
         <div className="rounded-[10px] bg-[#543CDA] flex items-center justify-center  md:py-[2rem]">
           <h3 className="font-bold text-[35px] md:text-[56px] text-center text-[#FFFFFF]">
