@@ -23,3 +23,13 @@ h3 {
 .bg-svg-dots {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23cccccc' /%3E%3C/svg%3E");
 }
+
+.seo--hero {
+  /* background-image: url("/Seo-Hero-Image.webp");
+  background-size: contain; */
+  background: linear-gradient(to right, #d7d2f9, rgba(84, 60, 218, 0)),
+    url("/Seo-Hero-Image.webp");
+  background-size: cover;
+
+  width: 50%;
+}

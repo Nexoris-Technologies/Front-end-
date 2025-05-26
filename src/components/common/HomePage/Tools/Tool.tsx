@@ -12,7 +12,7 @@ const tools = [
   { name: "Adobe XD", image: "/adobe-xd-logo.png" },
 ];
 
-const ToolCard = ({ tool }: { tool: (typeof tools)[0] }) => (
+const ToolCard = ({ tool }: { tool: typeof tools[0] }) => (
   <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 bg-[#EAE8F7] rounded-lg overflow-hidden group shadow-md flex items-center justify-center flex-shrink-0 mx-2">
     <Image
       src={tool.image}
@@ -22,9 +22,7 @@ const ToolCard = ({ tool }: { tool: (typeof tools)[0] }) => (
       className="w-16 h-16 object-contain"
     />
     <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      <p className="text-white text-sm sm:text-base font-semibold text-center px-2">
-        {tool.name}
-      </p>
+      <p className="text-white text-sm sm:text-base font-semibold text-center px-2">{tool.name}</p>
     </div>
   </div>
 );
@@ -44,23 +42,14 @@ function Tools() {
   };
 
   return (
-<<<<<<< HEAD:src/components/common/HomePage/Tools/Tool.tsx
     <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-32 gap-12 w-full bg-white">
-=======
-<<<<<<< HEAD:src/components/Homepage/Tool.tsx
-    <section className="flex flex-col items-center justify-center  sm:px-6 py-36 gap-12 w-full bg-white">
-=======
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-32 gap-12 w-full bg-white">
->>>>>>> origin/master:src/components/common/HomePage/Tools/Tool.tsx
->>>>>>> origin/william:src/components/Homepage/Tool.tsx
       {/* Header */}
       <div className="text-center space-y-2 w-full">
         <h2 className="text-[#543CDA] font-extrabold text-xl sm:text-2xl md:text-3xl leading-snug">
           We Use Tools That Power the World's Best Products
         </h2>
         <p className="text-sm sm:text-base font-medium text-gray-700">
-          We don't chase trends, we use modern, proven technologies that scale
-          beautifully and stay maintainable.
+          We don't chase trends, we use modern, proven technologies that scale beautifully and stay maintainable.
         </p>
       </div>
 

@@ -1,12 +1,15 @@
-import HomePage from "../components/Homepage/Homepage";
+import HomePage from "./components/Homepage/Homepage";
 
-export default function Combinedpage() {
+function LandingPage() {
   return (
     <section>
-      {/* Homepage */}
+      {/* Navigation Content */}
+
       <div>
         <HomePage />
       </div>
     </section>
   );
 }
+
+export default LandingPage;

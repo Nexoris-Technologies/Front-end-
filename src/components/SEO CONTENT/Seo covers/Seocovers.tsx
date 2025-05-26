@@ -261,6 +261,7 @@ export default function SeoCovers() {
                 Schema Markup & Semantic HTML Implementation
               </h5>
             </div>
+            <div className="w-[295px]"></div>
           </div>
         </div>
       </Marquee>

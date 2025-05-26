@@ -9,7 +9,7 @@ export default function MakeQuote() {
       <div className="flex flex-col gap-[16px] md:gap-[40px] items-center justify-center mt-[4.6rem]  md:mt-[14rem] px-6 md:px-12 ">
         {/* Image */}
 
-        <div className="lg:hidden ">
+        <div className="lg:hidden pt-[.6rem]">
           <Image
             src="/Get A Quote.webp"
             alt="Get Quote image"

@@ -9,7 +9,7 @@ import Help from "@/components/common/ServicePage1/WhoWeHelp/Help";
 import Choose from "@/components/common/ServicePage1/WhyChoose/Choose";
 import Website from "@/components/common/ServicePage1/YourWebsite/Website";
 
-function Services() {
+function WebDevelopment() {
  return(
   <section> 
    <Competition />
@@ -26,4 +26,4 @@ function Services() {
  );
 };
 
-export default Services;
+export default WebDevelopment;

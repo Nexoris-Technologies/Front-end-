@@ -1,6 +1,6 @@
 import SeoContent from "@/components/SEO CONTENT/Seo";
 
-export default function SeoAndContentMarket() {
+export default function SeoMarketing() {
   return (
     <main>
       <div>

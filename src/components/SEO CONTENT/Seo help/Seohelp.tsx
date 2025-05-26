@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function SeoHelp() {
   return (
-    <section className="bg-[#EAE8F7]">
+    <section className="bg-[#EAE8F7] w-full ">
       {/* Housing all */}
-      <div className="flex flex-col gap-[6rem] py-[5rem]">
+      <div className="flex flex-col  gap-[6rem] items-center py-[5rem]">
         <h3 className="text-center text-[22px] md:text-[40px] text-[#543CDA] font-extrabold">
           Who We Help
         </h3>
         {/* Housing the check image and the textes */}
-        <div className=" flex flex-col gap-[8rem] lg:flex-row items-center justify-center ">
+        <div className=" flex flex-col gap-[8rem] lg:flex-row items-center justify-center px-4 ">
           {/* Housing the main image image and p-text */}
-          <div className="flex mt-[4rem] lg:mt-[.2rem]  gap-[1rem] lg:gap-5  order-2 lg:order-1">
+          <div className="flex mt-[4rem] lg:mt-[.2rem]  gap-[1rem] lg:gap-5   order-2 lg:order-1">
             <div className="w-[56px] h-[375px] md:w-[85px] md:h-[636px]">
               <Image
                 src="/Seohelp check image.svg"
@@ -20,7 +20,7 @@ export default function SeoHelp() {
                 height={636}
               />
             </div>
-            <div className="flex flex-col  justify-center gap-[2.43rem] mt-[.7rem] md:gap-[4.8rem]">
+            <div className="flex flex-col  justify-center gap-[2.8rem] mt-[.7rem] md:gap-[4.8rem]">
               <p className="text-[13px] md:text-[20px] w-[270px] md:w-[402px]">
                 Startups launching new websites or products and need traffic.
               </p>

@@ -5,12 +5,15 @@ function StrategyCall() {
     <section className="flex items-center justify-center mb-12 px-4 sm:px-6 lg:py-24">
       <div className="w-full max-w-7xl bg-[#EAE8F7] rounded-md flex flex-col items-center justify-center gap-8 md:gap-16 lg:gap-10 py-12 px-4 sm:px-8 md:py-20 lg:py-36">
         <h2 className="text-[#543CDA] font-bold text-lg sm:text-xl md:text-2xl text-center">
-          You’ve Been Thinking About This for Months, Let’s Finally Build It Right
+          You’ve Been Thinking About This for Months, Let’s Finally Build It
+          Right
         </h2>
 
         <p className="font-medium text-center text-sm sm:text-base">
-          You’ve pitched it. Sketched it. Lost sleep over it. <br className="hidden sm:block" />
-          Now it’s time to bring it to life with a team that gets it, builds fast, and stays for the long haul.
+          You’ve pitched it. Sketched it. Lost sleep over it.{" "}
+          <br className="hidden sm:block" />
+          Now it’s time to bring it to life with a team that gets it, builds
+          fast, and stays for the long haul.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 w-full sm:w-auto justify-center items-center">
@@ -30,7 +33,8 @@ function StrategyCall() {
         </div>
 
         <p className="font-medium text-center text-sm sm:text-base px-2 sm:px-0">
-          No pressure. No fluff. Just real help, from people who’ve built what you’re building.
+          No pressure. No fluff. Just real help, from people who’ve built what
+          you’re building.
         </p>
       </div>
     </section>

@@ -188,7 +188,7 @@ export default function Hero() {
       </div>
 
       {/* Section for the Kiwi, cash etc images */}
-      <div className="pt-[4rem] pb-[1rem] max-w-[30rem] md:max-w-[80rem] mx-auto px-4">
+      <div className="pt-[4rem] pb-[1rem] max-w-[30rem] md:max-w-[97rem] mx-auto px-4">
         <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
           {/* Housing the various cards where flex will be done */}
           <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[3rem] lg:gap-[110px] px-2">

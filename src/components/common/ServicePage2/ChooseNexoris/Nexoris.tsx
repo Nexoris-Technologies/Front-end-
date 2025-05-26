@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Nexoris() {
   return (
-    <section className="flex items-center justify-center py-20 bg-[#EAE8F7] px-4">
+    <section className="flex items-center justify-center py-20 px-4">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28 max-w-7xl w-full">
         {/* Text Section */}
         <div className="flex flex-col gap-6 w-full lg:w-[45rem]">
@@ -61,7 +61,7 @@ function Nexoris() {
             <p className="text-sm sm:text-base italic">
             “Our mobile app used to be a source of complaints. Nexoris turned it into one of our biggest growth channels with 5x more engagement and zero major bugs after launch.”
             </p>
-            <h2 className="font-bold text-base sm:text-lg">
+            <h2 className="font-bold text-base sm:text-lg italic">
             — Maria O., Product Lead at FintaGo
             </h2>
           </div>

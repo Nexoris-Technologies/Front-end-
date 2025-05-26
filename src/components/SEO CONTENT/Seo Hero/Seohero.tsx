@@ -4,9 +4,9 @@ export default function SeoHero() {
   return (
     <section className="bg-[#d7d2f9]">
       {/* Housing all */}
-      <div className="flex py-[14rem] mx-auto justify-center gap-[6rem]">
+      <div className="flex ">
         {/* housing the text area */}
-        <div className="flex flex-col gap-[2rem]">
+        <div className="flex flex-col gap-[2rem] py-[4rem] w-1/2 pl-[12rem]">
           <div>
             <h6 className="py-[4px] px-[24px] bg-[#0059F1]/10 text-[#0059F1] w-[254px] rounded-[20px]">
               SEO and Content Marketing
@@ -49,15 +49,15 @@ export default function SeoHero() {
         </div>
 
         {/* Hero Images */}
-        <div className="relative overflow-hidden ">
-          <Image
+        <div className="relative seo--hero">
+          {/* <Image
             src="/Seo Hero Image.webp"
             alt="seo image"
             width={695}
             height={369}
             className="object-cover brightness-75"
-          />
-          <div className="absolute inset-0 bg-[#EAE8F7]/70"></div>
+          /> */}
+          {/* <div className="absolute inset-0 bg-[#EAE8F7]/70"></div> */}
         </div>
       </div>
     </section>

@@ -9,7 +9,7 @@ import Tired from "@/components/common/ServicePage2/Tired/Tired";
 import Audit from "@/components/common/ServicePage2/UXAudit/Audit";
 import WeHelp from "@/components/common/ServicePage2/WeHelp/WeHelp";
 
-function Services() {
+function UiUxDesign() {
  return(
   <section> 
    <Experiences />
@@ -26,4 +26,4 @@ function Services() {
  );
 };
 
-export default Services;
+export default UiUxDesign;

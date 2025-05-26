@@ -10,7 +10,7 @@ function WeSolve() {
  ];
 
  return (
-   <section className="py-28">
+   <section className="">
      {/* Main container */}
      <div className="flex flex-col items-center py-20 gap-10 max-w-6xl mx-auto">
        {/* Section heading */}

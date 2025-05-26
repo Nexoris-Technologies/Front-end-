@@ -333,6 +333,7 @@ export default function ServiceCovers() {
                   </p>
                 </div>
               </div>
+              <div className="w-[295px]"></div>
             </div>
           </Marquee>
         </div>
