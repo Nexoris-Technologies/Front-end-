@@ -1,14 +1,15 @@
-import BuiltFor from "@/components/Homepage/BuiltFor";
-import Everything from "./Everything";
-import Hero from "./Hero";
-import Love from "./Love";
-import Startup from "./Startup";
-import Tools from "@/components/Homepage/Tool";
-import Ourprocess from "@/components/Homepage/OurProcess";
-import Faqs from "@/components/Homepage/Faqs";
-import StrategyCall from "@/components/Homepage/StrategyCall";
+import Insight from "@/components/Homepage/Insights";
 
+import Everything from "@/components/Homepage/Everything";
+import Faqs from "@/components/Homepage/Faqs";
+import Hero from "@/components/Homepage/Hero";
 import TestimonialCarousel from "@/components/Homepage/OurClients";
+import Ourprocess from "@/components/Homepage/OurProcess";
+import StrategyCall from "@/components/Homepage/StrategyCall";
+import Love from "@/components/Homepage/Love";
+import Startup from "@/components/Homepage/Startup";
+import Tools from "@/components/Homepage/Tool";
+import BuiltFor from "./BuiltFor";
 
 export default function HomePage() {
   return (
@@ -25,7 +26,7 @@ export default function HomePage() {
       <div>
         <Everything />
       </div>
-      <div className="">
+      <div>
         <BuiltFor />
       </div>
       <div>
@@ -37,14 +38,15 @@ export default function HomePage() {
       <div>
         <TestimonialCarousel />
       </div>
-      <div></div>
+      <div>
+        <Insight />
+      </div>
       <div>
         <Faqs />
       </div>
       <div>
         <StrategyCall />
       </div>
-      <div></div>
     </main>
   );
 }

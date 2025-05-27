@@ -4,9 +4,9 @@ function Contact() {
   return (
     <section className="">
       {/* Housing all.. Contact Us and the forms */}
-      <div className="container mx-auto flex flex-col justify-center items-center gap-4rem mt-[4rem] ">
+      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[4rem] ">
         {/* housing the Contact us */}
-        <div className="rounded-[10px] bg-[#543CDA] py-[2rem] lg:px-[35rem] hidden md:block">
+        <div className="rounded-[10px] bg-[#543CDA] py-[2rem] lg:w-full hidden md:block">
           <h1 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
             Contact Us
           </h1>

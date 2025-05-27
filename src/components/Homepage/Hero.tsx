@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-[#EAE8F7]">
+    <section className="bg-[#EAE8F7] w-full">
       <div className="relative overflow-hidden">
         <div className="absolute top-0 left-[calc(27.4%-335px)] w-[1500px] h-[180vh] z-0 bg-[repeating-linear-gradient(to_right,_rgba(0,89,241,0.10)_0px,_rgba(0,89,241,0.10)_1px,_transparent_-1px,_transparent_99.9px)]"></div>
 

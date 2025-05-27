@@ -14,12 +14,12 @@ export default function Navbar() {
   return (
     <header className="bg-[#080C12] py-[10px] rounded-bl-[20px] rounded-br-[20px] sticky top-0 left-0 right-0 z-50">
       <div
-        className="flex justify-between items-center w-full px-4 py-3 h-[60px] md:h-[116clear
+        className="flex justify-between items-center w-full  py-3 h-[60px] md:h-[116clear
       px] container mx-auto"
       >
         {/* company logo */}
         <Image
-          src="/nexoris_logo_black_bg_with_tagkine_042915-Photoroom 1 (1).webp"
+          src="/nexoris-logo-black-bg-with-tagkine-042915-Photoroom-1-(1).webp"
           alt="Logo"
           width={140}
           height={92}

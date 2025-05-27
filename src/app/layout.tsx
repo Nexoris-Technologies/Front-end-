@@ -4,7 +4,7 @@ import "./globals.css";
 
 import "./globals.css";
 
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 
 export const metadata: Metadata = {
