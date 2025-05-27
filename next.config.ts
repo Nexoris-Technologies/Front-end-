@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  experimental: {
+    useLightningcss: false, // ✅ Correct property for Next.js 15.3.2
+  },
 };
 
 export default nextConfig;

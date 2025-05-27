@@ -5,7 +5,7 @@ import { Collapse, theme } from 'antd';
 
 const text = `Yes. We’re used to collaborating with PMs, engineers, and other designers who can either lead the design or plug in as needed.`;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
   {
     key: '1',
     label: <span className='font-bold text-lg sm:text-xl text-[#543CDA]'>Can you work with our existing product team?</span>,

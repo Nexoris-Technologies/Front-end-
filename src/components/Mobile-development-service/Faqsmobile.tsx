@@ -5,7 +5,7 @@ import { Collapse, theme } from "antd";
 
 const text = `We develop apps for iOS and Android using modern frameworks like React Native and Flutter, giving you one codebase across both ecosystems.`;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
   {
     key: "1",
     label: (

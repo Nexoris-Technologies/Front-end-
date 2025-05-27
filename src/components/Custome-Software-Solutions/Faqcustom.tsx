@@ -80,9 +80,9 @@ const FaqsCustom = () => {
     <section className="px-4 sm:px-6 md:px-8 lg:py-32 py-6 bg-white">
       <div className="flex flex-col gap-[40px]">
         <div className="text-center">
-          <h1 className="font-extrabold text-[#543CDA] mb-[3rem] text-[40px] text-center sm:text-2xl lg:text-3xl">
+          <h2 className="font-extrabold text-[#543CDA] mb-[3rem] text-[40px] text-center sm:text-2xl lg:text-3xl">
             FAQs
-          </h1>
+          </h2>
         </div>
 
         <div className="w-full max-w-6xl mx-auto">
