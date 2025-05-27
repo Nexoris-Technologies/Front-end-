@@ -1,4 +1,4 @@
-import AboutNexoris from "../../components/about us page/AboutNexoris";
+import AboutNexoris from "../../components/about-us-page/AboutNexoris";
 
 export default function AboutUs() {
   return (

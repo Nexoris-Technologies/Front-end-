@@ -1,4 +1,4 @@
-import Request from "../../components/Get a quote button/Get Quote Page/Quotebtn";
+import Request from "@/components/Get-a-quote-button/Quotebtn";
 
 export default function GetQ() {
   return (

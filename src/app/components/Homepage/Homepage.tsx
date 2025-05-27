@@ -1,14 +1,15 @@
-import Insight from "@/components/common/HomePage/Insights/Insights";
-import Tools from "@/components/common/HomePage/Tools/Tool";
-import BuiltFor from "@/components/Homepage/BuiltFor/BuiltFor";
-import Everything from "@/components/Homepage/Everything to know/Everything";
-import Faqs from "@/components/Homepage/Faqs/Faqs";
-import Hero from "@/components/Homepage/Herosection/Hero";
-import TestimonialCarousel from "@/components/Homepage/OurClients/OurClients";
-import Ourprocess from "@/components/Homepage/OurProcess/OurProcess";
-import StrategyCall from "@/components/Homepage/StrategyCall/StrategyCall";
-import Love from "@/components/Homepage/What you love/Love";
-import Startup from "@/components/Homepage/Why start up/Startup";
+import Insight from "@/components/Homepage/Insights";
+
+import BuiltFor from "@/components/Homepage/BuiltFor";
+import Everything from "@/components/Homepage/Everything";
+import Faqs from "@/components/Homepage/Faqs";
+import Hero from "@/components/Homepage/Hero";
+import TestimonialCarousel from "@/components/Homepage/OurClients";
+import Ourprocess from "@/components/Homepage/OurProcess";
+import StrategyCall from "@/components/Homepage/StrategyCall";
+import Love from "@/components/Homepage/Love";
+import Startup from "@/components/Homepage/Startup";
+import Tools from "@/components/Homepage/Tool";
 
 export default function HomePage() {
   return (

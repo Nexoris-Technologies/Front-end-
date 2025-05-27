@@ -1,4 +1,4 @@
-import SeoContent from "@/components/SEO CONTENT/Seo";
+import SeoContent from "@/components/Seo-content-service/Seo";
 
 export default function SeoMarketing() {
   return (

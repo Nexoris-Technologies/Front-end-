@@ -1,29 +1,30 @@
-import BackedBy from "@/components/common/ServicePage1/BackedBy/BackedBy";
-import Competition from "@/components/common/ServicePage1/Competition/competition";
-import Faqs from "@/components/common/ServicePage1/FAQs/Faqs";
-import Benefits from "@/components/common/ServicePage1/KeyBenefits/Benefits";
-import Process from "@/components/common/ServicePage1/OurProcess/Process";
-import Problems from "@/components/common/ServicePage1/ProblemsWeSolve/Problems";
-import ServiceCover from "@/components/common/ServicePage1/WhatServiceCover/ServiceCover";
-import Help from "@/components/common/ServicePage1/WhoWeHelp/Help";
-import Choose from "@/components/common/ServicePage1/WhyChoose/Choose";
-import Website from "@/components/common/ServicePage1/YourWebsite/Website";
+import Competition from "@/components/Web-development-service/competition";
+import Faqs from "@/components/Web-development-service/Faqs";
+import Benefits from "@/components/Web-development-service/Benefits";
+import Process from "@/components/Web-development-service/Process";
+import Problems from "@/components/Web-development-service/Problems";
+import ServiceCover from "@/components/Web-development-service/ServiceCover";
+import Help from "@/components/Web-development-service/Help";
+import Choose from "@/components/Web-development-service/Choose";
+
+import Website from "@/components/Web-development-service/Website";
+import BackedBy from "@/components/Web-development-service/BackedBy";
 
 function WebDevelopment() {
- return(
-  <section> 
-   <Competition />
-   <BackedBy />
-   <Help />
-   <ServiceCover />
-   <Benefits />
-   <Process />
-   <Problems />
-   <Choose />
-   <Faqs />
-   <Website />
-  </section>
- );
-};
+  return (
+    <section>
+      <Competition />
+      <BackedBy />
+      <Help />
+      <ServiceCover />
+      <Benefits />
+      <Process />
+      <Problems />
+      <Choose />
+      <Faqs />
+      <Website />
+    </section>
+  );
+}
 
 export default WebDevelopment;

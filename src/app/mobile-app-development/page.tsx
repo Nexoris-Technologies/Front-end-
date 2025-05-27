@@ -1,4 +1,4 @@
-import Serve from "@/components/OUR Services/Servicepage";
+import Serve from "@/components/Mobile-development-service/Servicepage";
 
 export default function ServiceMobileApplication() {
   return (
