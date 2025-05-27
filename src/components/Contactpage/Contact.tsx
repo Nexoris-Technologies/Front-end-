@@ -25,7 +25,7 @@ function Contact() {
               <p className="text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-center">
                 At Nexoris, we work with ambitious companies around the world to
                 design, build, and scale digital solutions that make an impact.
-                Whether you’re launching a new product, modernizing legacy
+                Whether you&apos;re launching a new product, modernizing legacy
                 infrastructure, or building your next big idea, our team is
                 ready.
               </p>
@@ -38,10 +38,10 @@ function Contact() {
             <div className="flex-1 rounded-[16px] md:h-[514px] order-2  md:order-1 border border-[#D9D9D9] bg-[#D9D9D9]/4 p-6 flex flex-col gap-8">
               <div className="flex flex-col gap-2">
                 <h3 className="text-[24px] md:text-[32px] font-semibold text-[#000000]">
-                  Let's Talk
+                  Let&apos;s Talk
                 </h3>
                 <p className="text-[16px] text-[#000000]">
-                  Have a challenge worth solving? Let’s explore it together.
+                  Have a challenge worth solving? Let&apos;s explore it together.
                 </p>
               </div>
 
@@ -103,7 +103,7 @@ function Contact() {
                   Quick Message
                 </h3>
                 <p className="text-[16px] text-[#000000]">
-                  Tell us what you're working on. A dedicated member of our team
+                  Tell us what you&apos;re working on. A dedicated member of our team
                   will respond within one business day.
                 </p>
               </div>

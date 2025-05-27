@@ -18,18 +18,18 @@ export default function Love() {
         {/* Text Content */}
         <div className="w-full max-w-2xl flex flex-col justify-center items-center md:items-start gap-10 mt-10 md:mt-0">
           <h2 className="font-extrabold  md:max-w-[750px] text-[22px] leading-[32px] md:text-[40px] md:leading-[55px] text-center md:text-left tracking-tight">
-            What You'll Actually Love About Working With Us
+            What You&apos;ll Actually Love About Working With Us
           </h2>
 
           <div className="w-full flex flex-col gap-6 justify-center items-center md:items-start ">
             {/* Section 1 */}
             <div>
               <h3 className="font-semibold text-[16px] md:text-[25px] leading-[25px] md:leading-[35px] text-center md:text-left text-[#000000]">
-                Built for What's Next
+                Built for What&apos;s Next
               </h3>
               <p className="text-[11px] w-[330px] md:w-[550px] md:text-[15px] leading-[20px] md:leading-[26px] text-center md:text-left mt-1">
                 Every product we build is designed to scale with you. So when
-                growth comes, you're ready, not rebuilding.
+                growth comes, you&apos;re ready, not rebuilding.
               </p>
             </div>
 

@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+
 
 export default function Navbar() {
   const pathname = usePathname();
   const specialPages = pathname === "/quote";
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen] = useState(false);
 
   return (
     <header className="bg-[#080C12] py-[10px] rounded-bl-[20px] rounded-br-[20px] sticky top-0 left-0 right-0 z-50">

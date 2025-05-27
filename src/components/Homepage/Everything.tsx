@@ -340,7 +340,7 @@ export default function Everything() {
             </div>
             <div className="max-w-[336] md:max-w-[730px] ">
               <p className="text-[11px] md:text-[18px] leading-[20px] md:leading-[32px] tracking-wide text-center md:text-left ">
-                Tell us where you are and where you want to go. We’ll help you
+                Tell us where you are and where you want to go. We&apos;ll help you
                 map the way forward.
               </p>
             </div>
@@ -350,7 +350,7 @@ export default function Everything() {
         <div className="container mx-auto max-w-[390px] w-[207px]  rounded-[8px] border-[2px] py-[12px] md:py-[20px] px-[31px] border-[#543CDA] flex justify-center items-center">
           <div className="w-[77px] h-[26px] ">
             <button className="font-bold text-[12px] md:text-[17px] leading-[100%]  text-[#543CDA]">
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </div>
         </div>

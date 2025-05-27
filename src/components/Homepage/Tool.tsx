@@ -46,10 +46,10 @@ function Tools() {
       {/* Header */}
       <div className="text-center space-y-2 w-full">
         <h2 className="text-[#543CDA] font-extrabold text-xl sm:text-2xl md:text-3xl leading-snug">
-          We Use Tools That Power the World's Best Products
+          We Use Tools That Power the World&apos;s Best Products
         </h2>
         <p className="text-sm sm:text-base font-medium text-gray-700">
-          We don't chase trends, we use modern, proven technologies that scale beautifully and stay maintainable.
+          We don&apos;t chase trends, we use modern, proven technologies that scale beautifully and stay maintainable.
         </p>
       </div>
 
@@ -91,7 +91,7 @@ function Tools() {
           Have a preferred stack or legacy codebase?
         </h1>
         <p className="text-sm sm:text-base text-gray-800 font-medium">
-          We'll meet you where you are and help take it where it needs to go.
+          We&apos;ll meet you where you are and help take it where it needs to go.
         </p>
       </div>
     </section>

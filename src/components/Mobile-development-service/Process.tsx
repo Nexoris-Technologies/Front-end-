@@ -23,7 +23,7 @@ export default function OurProcess() {
               Define the Vision
             </h6>
             <p className="text-[16px] text-center">
-              We get aligned on your app's core purpose, user flows, and success
+              We get aligned on your app&apos;s core purpose, user flows, and success
               metrics.
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function OurProcess() {
               Launch and Maintain
             </h6>
             <p className="text-[14px] md:text-[16px] text-center w-[243px]">
-              From app store approvals to post-launch updates, we’ve got you
+              From app store approvals to post-launch updates, we&apos;ve got you
               covered.
             </p>
           </div>

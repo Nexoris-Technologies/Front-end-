@@ -14,9 +14,9 @@ export default function CustomeHeroPage() {
           </div>
           {/* Build software heading text */}
           <div className="w-[343px] lg:w-[900px]">
-            <h2 className=" text-[32px] lg:text-[56px]  font-bold text-center ">
+            <h1 className=" text-[32px] lg:text-[56px]  font-bold text-center ">
               Build Software That Solves Your Real Business Problems
-            </h2>
+            </h1>
           </div>
           <div className="">
             <p className="text-[16px] md:text-[18px] text-center w-[300px] lg:w-[800px]">
@@ -27,7 +27,7 @@ export default function CustomeHeroPage() {
           </div>
           <div className=" flex justify-center items-center gap-2 bg-[#543CDA] text-[#FFFFFF] py-[14px] md:py-[21.5px] px-[32px] rounded-[8px] w-[302px] lg:w-[340px]">
             <button className="text-[14px] lg:text-[18px]">
-              Let's Build Your Solution
+              Let&apos;s Build Your Solution
             </button>
             <span>
               <Image

@@ -1,13 +1,6 @@
 import Image from "next/image";
 
 function WeSolve() {
- // Problems list for easy expansion/maintenance
- const problems = [
-   "Our website is painfully slow and users are dropping off.",
-   "We’re invisible on Google and losing business to competitors.",
-   "We need to update content, but every change requires a dev.",
-   "Our site breaks on mobile and we’re not sure how to fix it.",
- ];
 
  return (
    <section className="">

@@ -28,7 +28,7 @@ export default function HeroPage() {
             {/* Housing the hero button */}
             <div>
               <button className="bg-[#543CDA]  text-[#FFFFFF] rounded-[8px] py-[14px] text-[14px] md:text-[18px] md:py-[21.5px]  w-[200px]  md:w-[260px] flex justify-center items-center gap-[10px]">
-                Let's Build You App
+                Let&apos;s Build You App
                 <span>
                   <Image
                     src="/Arrow right.svg"

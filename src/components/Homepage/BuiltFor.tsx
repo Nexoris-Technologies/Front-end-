@@ -18,8 +18,8 @@ function BuiltFor() {
           </h3>
           <p className="text-center w-[335px]">
             You have a bold idea and need a technical partner to bring it to
-            life. From MVP to launch and beyond. Whether you’re building your
-            first product or pivoting to a new direction, we’ll help you move
+            life. From MVP to launch and beyond. Whether you&apos;re building your
+            first product or pivoting to a new direction, we&apos;ll help you move
             fast, build smart, and avoid costly mistakes.
           </p>
         </div>
@@ -52,7 +52,7 @@ function BuiltFor() {
       {/* Middle Title & Text */}
       <div className="flex flex-col items-center justify-center my-12 px-4 text-center">
         <h1 className="text-[#543CDA] font-bold text-[25px]">
-          Who We’re Built For
+          Who We&apos;re Built For
         </h1>
         <p className="font-[400] text-[18px] w-[370px]">
           At Nexoris, we partner with ambitious teams across different
@@ -108,14 +108,14 @@ function BuiltFor() {
         </h1>
         <p className="max-w-2xl">
           That&#39;s okay. We work with a wide range of businesses, and we’d
-          love to hear your story. Tell us what you're working on, and we&#39;ll
+          love to hear your story. Tell us what you&apos;re working on, and we&#39;ll
           figure out how to help.
         </p>
         <Link
           href="#"
           className="text-[#543CDA] font-bold text-[17px] mt-6 py-3 px-6 border border-[#543CDA] rounded-md"
         >
-          Let's Talk
+          Let&apos;s Talk
         </Link>
       </div>
     </section>

@@ -16,12 +16,12 @@ export default function SeoHero() {
           <p className="text-[18px] w-[490px]">
             At Nexoris, we combine technical SEO and high-converting content to
             drive visibility, clicks, and compounding growth. So your site
-            doesn’t just rank, it performs.
+            doesn&apos;t just rank, it performs.
           </p>
           {/* Hero button */}
           <div className="rounded-[8px] py-[20px] px-[31px] bg-[#543CDA] w-[289px]">
             <button className="text-[17px] font-bold text-[#FFFFFF]">
-              Let's optimize Your Growth
+              Let&apos;s optimize Your Growth
             </button>
           </div>
 

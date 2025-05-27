@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa6";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -27,7 +28,7 @@ const testimonials = [
   },
 ];
 
-// Single Card Component
+// Card Component
 const TestimonialCard = ({
   testimonial,
 }: {
@@ -58,7 +59,7 @@ const TestimonialCard = ({
   </div>
 );
 
-// Carousel Component
+// Main Component
 export default function TestimonialCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -74,7 +75,6 @@ export default function TestimonialCarousel() {
     }
   };
 
-  // Track active card based on scroll position
   useEffect(() => {
     const container = scrollRef.current;
     if (!container) return;
@@ -82,7 +82,6 @@ export default function TestimonialCarousel() {
     const onScroll = () => {
       const scrollLeft = container.scrollLeft;
       const containerWidth = container.offsetWidth;
-
       const index = Math.round(scrollLeft / (containerWidth / 1.2));
       setActiveIndex(index);
     };
@@ -91,11 +90,9 @@ export default function TestimonialCarousel() {
     return () => container.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Dot navigation scroll
   const scrollToIndex = (index: number) => {
     const container = scrollRef.current;
     if (!container) return;
-
     const scrollAmount = index * (container.offsetWidth / 1.2);
     container.scrollTo({
       left: scrollAmount,
@@ -112,13 +109,21 @@ export default function TestimonialCarousel() {
         </h1>
         <p className="font-medium text-base sm:text-xl text-[#262128] max-w-3xl mx-auto">
           At Nexoris Technologies, our greatest measure of success is the
-          satisfaction of our clients. Here’s what they have to say about
+          satisfaction of our clients. Here&apos;s what they have to say about
           working with us.
         </p>
       </div>
 
       {/* Carousel Container */}
-      <div className="w-full flex flex-col items-center gap-6 sm:gap-8">
+      <div className="w-full flex flex-col items-center gap-6 sm:gap-8 relative">
+        <button
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full p-2 shadow"
+          onClick={() => scroll("left")}
+          aria-label="Scroll left"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+
         <div className="relative w-full overflow-x-hidden">
           <div
             ref={scrollRef}
@@ -134,6 +139,14 @@ export default function TestimonialCarousel() {
             ))}
           </div>
         </div>
+
+        <button
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border rounded-full p-2 shadow"
+          onClick={() => scroll("right")}
+          aria-label="Scroll right"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
 
         {/* Dot Indicators */}
         <div className="flex gap-3 mt-4">

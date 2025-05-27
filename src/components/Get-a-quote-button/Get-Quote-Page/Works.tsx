@@ -22,7 +22,7 @@ export default function Works() {
 
               <p className="w-[250px] text-[14px] md:text-[16px] text-center">
                 We assess your goals, budget, and timeline to perfectly
-                understand what you’re building, and why.
+                understand what you&apos;re building, and why.
               </p>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default function Works() {
               </h3>
 
               <p className="w-[260px] text-[14px] md:text-[16px] text-center">
-                You'll receive a clear, itemized quote based on your
+                You&apos;ll receive a clear, itemized quote based on your
                 requirements. No vague estimates. No hidden fees.
               </p>
             </div>
@@ -57,7 +57,7 @@ export default function Works() {
               </h3>
 
               <p className="w-[270px] text-[14px] md:text-[16px] text-center">
-                Wherever you're based, we'll align availability to meet you on
+                Wherever you&apos;re based, we&apos;ll align availability to meet you on
                 your terms, virtually, and on your schedule.
               </p>
             </div>

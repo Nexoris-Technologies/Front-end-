@@ -35,7 +35,7 @@ export default function Who() {
                 beautifully.
               </p>
               <p className="md:w-[550px]">
-                Whether you're starting from scratch or transforming an existing
+                Whether you&apos;re starting from scratch or transforming an existing
                 solution, our cross-functional team ensures every product we
                 deliver is functional, future-ready, and people-centered.
               </p>
@@ -57,8 +57,8 @@ export default function Who() {
             </h1>
             <div className="md:text-[16px] text-[18px] text-[#000000] w-[340px] flex flex-col gap-2 md:w-[580px] ">
               <p>
-                We started Nexoris because we’ve lived the frustration of laggy
-                systems, missed deadlines, and tech teams that just don’t
+                We started Nexoris because we&apos;ve lived the frustration of laggy
+                systems, missed deadlines, and tech teams that just don&apos;t
                 listen. We knew there had to be a better way. So, we built it.
               </p>
               <p>

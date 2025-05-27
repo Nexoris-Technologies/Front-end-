@@ -30,18 +30,18 @@ export default function MakeQuote() {
         {/* Housing the h3 and the paragraph text */}
         <div className="md:flex flex-col gap-[32px] justify-center items-center max-w-[805px] text-center hidden">
           <h3 className="font-semibold text-[20px] md:text-[32px] text-center  md:max-w-[750px] ">
-            Let’s bring structure to ambition, one smart decision at a time.
+            Let&apos;s bring structure to ambition, one smart decision at a time.
           </h3>
           <p className="text-[18px] text-center md:max-w-[700px] ">
             From startup concepts to enterprise transformations, Nexoris helps
-            turn vision into roadmaps and roadmaps into results. Whether you’re
+            turn vision into roadmaps and roadmaps into results. Whether you&apos;re
             building a custom platform, optimizing performance, or launching
             your next product, our quoting process is fast, transparent, and
             built around you.
           </p>
           <p className="text-[18px] text-center  md:max-w-[700px] ">
             We know choosing a tech partner is a big step. Our job is to make it
-            easier, not harder. Let’s define the path forward, clearly,
+            easier, not harder. Let&apos;s define the path forward, clearly,
             confidently, and with total transparency.
           </p>
         </div>
