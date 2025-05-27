@@ -5,7 +5,7 @@ import { Collapse, theme } from 'antd';
 
 const text = `We tailor our tech stack based on what’s best for your business goals, users, and long-term vision. While we often work with frameworks like React, Next.js, TypeScript, Tailwind CSS, and headless CMS platforms such as Strapi or Sanity, the stack we recommend will always depend on what solves your problem most effectively.`;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
   {
     key: '1',
     label: <span className='font-bold text-lg sm:text-xl text-[#543CDA]'>Do you only work with startups?</span>,

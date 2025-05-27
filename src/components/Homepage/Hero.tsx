@@ -23,7 +23,7 @@ export default function Hero() {
                 {/* Paragraph text */}
                 <div className="max-w-[362px]   text-center md:text-left  md:max-w-[536px] ">
                   <p className="text-[16px] leading-[27px] md:text-[18px] md:leading-[32px] tracking-wider ">
-                    You’ve been sketching, pitching, overthinking. Maybe even
+                    You've been sketching, pitching, overthinking. Maybe even
                     burned by slow devs or unstable builds. At Nexoris, we don’t
                     just launch MVPs, we build fast, scalable products that are
                     easy to grow, easy to love, and ready for whatever’s next.

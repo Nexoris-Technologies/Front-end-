@@ -5,7 +5,7 @@ import { Collapse, theme } from "antd";
 
 const text = `We build internal tools, SaaS products, operational dashboards, customer portals, and more tailored entirely to your workflow, users, and data.`;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: React.CSSProperties) => [
   {
     key: "1",
     label: (
@@ -22,7 +22,7 @@ const getItems = (panelStyle) => [
     key: "2",
     label: (
       <span className="font-bold text-lg sm:text-xl text-[#543CDA]">
-        Do you work with existing systems and APIs? 
+        Do you work with existing systems and APIs?
       </span>
     ),
     children: (
@@ -70,22 +70,22 @@ const getItems = (panelStyle) => [
 
 const FaqsCustom = () => {
   const { token } = theme.useToken();
-  const panelStyle = {
+  const panelStyle: React.CSSProperties = {
     marginBottom: 24,
     borderRadius: token.borderRadiusLG,
     border: "1.6px solid #543CDA",
   };
 
   return (
-    <section className="  px-4 sm:px-6 md:px-8 lg:py-32 py-6 bg-white">
+    <section className="px-4 sm:px-6 md:px-8 lg:py-32 py-6 bg-white">
       <div className="flex flex-col gap-[40px]">
-        <div className="text-center ">
+        <div className="text-center">
           <h1 className="font-extrabold text-[#543CDA] mb-[3rem] text-[40px] text-center sm:text-2xl lg:text-3xl">
             FAQs
           </h1>
         </div>
 
-        <div className="w-full max-w-6xl mx-auto ">
+        <div className="w-full max-w-6xl mx-auto">
           <Collapse
             bordered={false}
             defaultActiveKey={["1"]}

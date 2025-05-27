@@ -6,7 +6,7 @@ import { Collapse, theme } from "antd";
 const text = `Most MVPs take 3–6 weeks. Full-scale products land between 10–16. 
 We give you a clear timeline, no black holes.`;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
   {
     key: "1",
     label: (
