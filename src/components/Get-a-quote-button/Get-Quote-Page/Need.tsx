@@ -13,7 +13,7 @@ export default function Needs() {
           <p className="text-[18px] text-center max-w-[700px]">
             Fill out the short form below, and a Nexoris strategist will respond
             within 1–2 business days.No pressure. Just clear, human answers from
-            a Nexoris expert. You bring the vision. We’ll bring the code,
+            a Nexoris expert. You bring the vision. We&apos;ll bring the code,
             clarity, and commitment.
           </p>
         </div>
@@ -190,12 +190,12 @@ export default function Needs() {
             Not Just a Quote, But a Smarter Beninning
           </h3>
           <p className="text-[16px] md:text-[18px] text-center md:max-w-[620px]">
-            At Nexoris, we don’t just price projects, we help shape them. From
+            At Nexoris, we don&apos;t just price projects, we help shape them. From
             the first message to final deployment, we work as your strategic
             technology partner.
           </p>
           <p className="text-[14px] md:text-[18px] font-semibold text-center md:max-w-[620px] tracking-tight">
-            Let's turn ambition into architecture, clearly, confidently, and
+            Let&apos;s turn ambition into architecture, clearly, confidently, and
             fast.
           </p>
         </div>
