@@ -6,7 +6,7 @@ import { Collapse, theme } from "antd";
 const text = `We conduct in-depth keyword research based on search volume, buyer intent, and competitive analysis. Every keyword is mapped to a specific stage in your funnel. So you don’t just attract visitors, you attract buyers.
 `;
 
-const getItems = (panelStyle) => [
+const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
   {
     key: "1",
     label: (

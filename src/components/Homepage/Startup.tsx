@@ -31,7 +31,7 @@ export default function Startup() {
           </div>
           <div className="w-[313px] h-[78px]">
             <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              We don’t just build something that “works.” We build clean,
+              We don&apos;t just build something that works. We build clean,
               flexible systems that scale. No brittle code, no dead-ends.
             </p>
           </div>
@@ -99,7 +99,7 @@ export default function Startup() {
           </div>
           <div className="w-[324px] h-[70px]">
             <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              We Don't Vanish After Launch
+              We Don&apos;t Vanish After Launch
             </h3>
           </div>
           <div className="w-[313px] h-[78px]">
@@ -128,9 +128,9 @@ export default function Startup() {
           </div>
           <div className="w-[313px] h-[78px]">
             <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              Before we touch a line of code, we ask the tough questions. That’s
-              how you avoid budget burns, endless rewrites, and painful "how did
-              we miss that?" moments.
+              Before we touch a line of code, we ask the tough questions. That&rsquo;s
+              how you avoid budget burns, endless rewrites, and painful &ldquo;how did
+              we miss that?&rdquo; moments.
             </p>
           </div>
         </div>

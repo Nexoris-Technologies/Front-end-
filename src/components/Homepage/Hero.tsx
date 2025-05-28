@@ -23,16 +23,16 @@ export default function Hero() {
                 {/* Paragraph text */}
                 <div className="max-w-[362px]   text-center md:text-left  md:max-w-[536px] ">
                   <p className="text-[16px] leading-[27px] md:text-[18px] md:leading-[32px] tracking-wider ">
-                    You've been sketching, pitching, overthinking. Maybe even
-                    burned by slow devs or unstable builds. At Nexoris, we don’t
+                    You&apos;ve been sketching, pitching, overthinking. Maybe even
+                    burned by slow devs or unstable builds. At Nexoris, we don&apos;t
                     just launch MVPs, we build fast, scalable products that are
-                    easy to grow, easy to love, and ready for whatever’s next.
+                    easy to grow, easy to love, and ready for whatever&apos;s next.
                   </p>
                 </div>
                 {/* build button */}
                 <div className="w-[208px] md:w-[289px] mx-auto md:mx-0 rounded-[8px] py-[20px] px-[31px] flex items-center justify-center gap-[10px] bg-[#543CDA]">
                   <button className="w-[160px] text-[11px] md:w-[228px]  md:text-[17px] leading-[100%] tracking-wide text-[#FFFFFF] font-medium ">
-                    Let's Build Something Great
+                    Let&apos;s Build Something Great
                   </button>
                 </div>
               </div>
@@ -139,9 +139,9 @@ export default function Hero() {
                 <div className="w-[177px] h-[77px] md:w-[335px] md:h-[131px]  md:p-4 py-[7px] px-[19px] md:px-[13px] flex flex-col gap-[12px] md:gap-[35px] rounded-[20px] absolute top-[102%]  md:top-[98%] -left-[2%] md:left-[-8%] -translate-y-1/2 bg-[#ffffff]">
                   <div className="w-[153px] h-[24px]">
                     <p className=" text-[7px] leading-[10px] md:w-[310px] md:h-[57px] md:leading-[14px] md:text-[11px] text-[#080C11]">
-                      “Before Nexoris, we were constantly patching bugs and
+                      &ldquo;Before Nexoris, we were constantly patching bugs and
                       bleeding traffic. They rebuilt our site from scratch. Now
-                      we rank in Google’s top 7. And conversions? Tripled.”
+                      we rank in Google&apos;s top 7. And conversions? Tripled.&ldquo;
                     </p>
                   </div>
                   <div className="flex gap-[8px] w-[78px] h-[25px] md-[126px] md:h-[45px]">
