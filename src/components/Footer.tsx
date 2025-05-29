@@ -24,9 +24,9 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           {/* Logo + Social */}
           <div className="flex flex-col items-start">
-            <div className="relative w-28 h-8 sm:w-32 sm:h-10 md:w-36 md:h-12 lg:w-40 lg:h-14 xl:w-44 xl:h-16 -ml-8 lg:-ml-10">
+            <div className="relative w-28 h-8 sm:w-32 sm:h-10 md:w-36 md:h-12 lg:w-40 lg:h-14 xl:w-44 xl:h-16">
               <Image
-                src="/nexoris-logo-black-bg-with-tagkine-042915-Photoroom-1-(1).webp"
+                src="/nexoris-nav-logo.webp"
                 alt="Nexoris Technologies Logo"
                 fill
                 className="object-contain"
@@ -41,34 +41,34 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="bg-purple-6 rounded-full p-2 text-primary-blue"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-6 rounded-full flex items-center justify-center text-primary-blue"
               >
                 <FaFacebookF className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://x.com"
+                href="https://x.com/Nexoristech"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X"
-                className="bg-purple-6 rounded-full p-2 sm:p-3 text-purple-dark"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-6 rounded-full flex items-center justify-center text-purple-dark"
               >
                 <FaXTwitter className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/nexoristechnologies/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="bg-purple-6 rounded-full p-2 sm:p-3 text-[#E1306C]"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-6 rounded-full flex items-center justify-center text-[#E1306C]"
               >
                 <FaInstagram className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/nexoris-technologies/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="bg-purple-6 rounded-full p-2 sm:p-3 text-secondary-blue"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-6 rounded-full flex items-center justify-center text-secondary-blue"
               >
                 <FaLinkedinIn className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
@@ -77,7 +77,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className="bg-purple-6 rounded-full p-2 sm:p-3 text-purple-dark"
+                className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-6 rounded-full flex items-center justify-center text-purple-dark"
               >
                 <FaTiktok className="w-4 h-4 sm:w-5 sm:h-5" />
               </Link>
@@ -88,9 +88,9 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 flex-1 text-body-sm lg:mt-4 lg:ml-16 xl:ml-20">
             {/* Company */}
             <div>
-              <h4 className="font-semibold text-tertiary-gray mb-3 text-body">
+              <p className="font-semibold text-tertiary-gray mb-3 text-body">
                 Company
-              </h4>
+              </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
                   <Link href="/">Home</Link>
@@ -112,9 +112,9 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
 
             {/* Services */}
             <div>
-              <h4 className="font-semibold text-tertiary-gray mb-3 text-body">
+              <p className="font-semibold text-tertiary-gray mb-3 text-body">
                 Services
-              </h4>
+              </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
                   <Link href="/web-development">Web Development</Link>
@@ -152,9 +152,9 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
 
             {/* Resources */}
             <div>
-              <h4 className="font-semibold text-tertiary-gray mb-3 text-body">
+              <p className="font-semibold text-tertiary-gray mb-3 text-body">
                 Resources
-              </h4>
+              </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
                   <Link href="/privacy-policy">Privacy Policy</Link>
@@ -175,8 +175,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
           <div className="flex items-center justify-center gap-2">
             <FaRegCopyright size={16} aria-hidden="true" />
             <span>
-              {new Date().getFullYear()} Nexoris Technologies. All rights
-              reserved.
+              {new Date().getFullYear()} Nexoris Technologies. All rights reserved.
             </span>
           </div>
         </div>

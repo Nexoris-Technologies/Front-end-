@@ -42,19 +42,19 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="bg-purple-dark shadow-lg fixed top-0 z-10 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
+      className="bg-purple-dark shadow-lg fixed top-0 z-20 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
       role="navigation"
       aria-label="Main navigation"
     >
       <div
         ref={navRef}
-        className="contain flex justify-between items-center w-full px-4 md:px-6 lg:px-12 xl:px-20 mx-auto h-12 lg:h-18 xl:h-22 "
+        className="contain mx-auto flex justify-between items-center w-full h-12 lg:h-18 xl:h-22"
       >
         {/* Logo */}
         <Link href="/" aria-label="Nexoris Home" className="relative">
           <div className="  ">
             <Image
-              src="/nexoris-logo-black-bg-with-tagkine-042915-Photoroom-1-(1).webp"
+              src="/nexoris-nav-logo.webp"
               alt="Nexoris Technologies Logo"
               fill
               className="object-contain block"

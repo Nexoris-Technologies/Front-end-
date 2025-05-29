@@ -1,101 +1,144 @@
-"use client";
-import Image from "next/image";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { useRef } from "react";
+'use client';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import Image from 'next/image';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { useRef, useEffect, useState } from 'react';
 
 const tools = [
-  { name: "Visual Studio Code", image: "/vs-code-logo.png" },
-  { name: "GitLab", image: "/gitlab_icon-logo.png" },
-  { name: "Figma", image: "/figma-logo.png" },
-  { name: "Python", image: "/python-logo.png" },
-  { name: "Adobe XD", image: "/adobe-xd-logo.png" },
-  { name: "Adobe XD", image: "/adobe-xd-logo.png" },
+  { name: 'VS Code', image: '/vs-code-logo.png' },
+  { name: 'GitLab', image: '/gitlab-icon-logo.png' },
+  { name: 'Figma', image: '/figma-logo.png' },
+  { name: 'Python', image: '/python-logo.png' },
+  { name: 'Adobe XD', image: '/adobe-xd-logo.png' },
+  { name: 'Adobe XD', image: '/adobe-xd-logo.png' },
 ];
 
-const ToolCard = ({ tool }: { tool: typeof tools[0] }) => (
-  <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 bg-[#EAE8F7] rounded-lg overflow-hidden group shadow-md flex items-center justify-center flex-shrink-0 mx-2">
+const ToolCard = ({ tool, isActive }: { tool: typeof tools[0]; isActive: boolean }) => (
+  <div
+    className={`group relative w-24 sm:w-28 md:w-32 aspect-square bg-purple-6 rounded-lg overflow-hidden shadow flex items-center justify-center transition-all duration-300 ${
+      isActive ? 'scale-120 z-10' : 'scale-90'
+    } cursor-pointer`}
+    aria-label={tool.name}
+  >
     <Image
       src={tool.image}
-      alt={`${tool.name}-Logo`}
-      width={240}
-      height={288}
-      className="w-16 h-16 object-contain"
+      alt={`${tool.name} Logo`}
+      width={120}
+      height={120}
+      className="w-14 h-14 sm:w-16 sm:h-16 object-contain group-hover:opacity-0 transition-opacity duration-300"
+      priority
     />
-    <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-      <p className="text-white text-sm sm:text-base font-semibold text-center px-2">{tool.name}</p>
+    <div className="absolute inset-0 bg-primary-purple opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white px-2 text-center">
+      <span className="font-bold text-base sm:text-lg transform group-hover:scale-110 transition-transform">
+        {tool.name}
+      </span>
     </div>
   </div>
 );
 
-function Tools() {
-  const scrollRef = useRef<HTMLDivElement>(null);
+export default function Tools() {
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const [swiperReady, setSwiperReady] = useState(false);
 
-  const scroll = (dir: "left" | "right") => {
-    const container = scrollRef.current;
-    if (container) {
-      const scrollAmount = container.offsetWidth / 1.5;
-      container.scrollBy({
-        left: dir === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
+  useEffect(() => {
+    setSwiperReady(true);
+  }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center px-4 sm:px-6 py-32 gap-12 w-full bg-white">
-      {/* Header */}
-      <div className="text-center space-y-2 w-full">
-        <h2 className="text-[#543CDA] font-extrabold text-xl sm:text-2xl md:text-3xl leading-snug">
+    <section
+      className="flex flex-col items-center mx-auto overflow-hidden justify-center px-4 sm:px-6 py-24 gap-10 bg-white w-full"
+      aria-labelledby="tools-heading"
+    >
+      <div className="text-center space-y-2 w-full max-w-3xl mx-auto">
+        <h2
+          id="tools-heading"
+          className="text-primary-purple font-extrabold text-xl sm:text-2xl md:text-2xl leading-snug"
+        >
           We Use Tools That Power the World&apos;s Best Products
         </h2>
-        <p className="text-sm sm:text-base font-medium text-gray-700">
-          We don&apos;t chase trends, we use modern, proven technologies that scale beautifully and stay maintainable.
+        <p className="text-sm sm:text-base font-medium text-purple-dark">
+          We don&apos;t chase trends — we use modern, proven technologies that scale beautifully and stay maintainable.
         </p>
       </div>
 
-      {/* Carousel */}
-      <div className="w-full max-w-5xl">
-        <div className="relative overflow-hidden">
-          <div
-            ref={scrollRef}
-            className="flex overflow-x-hidden scrollbar-hide scroll-smooth px-2 sm:px-4 py-4 snap-x snap-mandatory"
-          >
-            {tools.map((tool, index) => (
-              <div key={index} className="snap-start">
-                <ToolCard tool={tool} />
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* Swiper */}
+      <div className="w-full flex justify-center my-8">
+        <div className="w-full max-w-[1280px] mx-auto">
+          {swiperReady && (
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              spaceBetween={4}
+              slidesPerView={3}
+              centeredSlides
+              loop
+              speed={700}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              onBeforeInit={(swiper) => {
+              // @ts-expect-error - Swiper types don't include navigation DOM refs
+              swiper.params.navigation.prevEl = prevRef.current;
 
-        {/* Arrows */}
-        <div className="flex justify-center gap-6 mt-4">
-          <button
-            onClick={() => scroll("left")}
-            className="border-2 border-[#543CDA] w-8 h-8 flex items-center justify-center rounded-full"
-          >
-            <FaArrowLeft className="text-[#543CDA]" />
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            className="border-2 border-[#543CDA] w-8 h-8 flex items-center justify-center rounded-full"
-          >
-            <FaArrowRight className="text-[#543CDA]" />
-          </button>
+              // @ts-expect-error - Swiper types don't include navigation DOM refs
+              swiper.params.navigation.nextEl = nextRef.current;
+
+              }}
+              breakpoints={{
+                320: { slidesPerView: 2 },
+                640: { slidesPerView: 3 },
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 5 },
+              }}
+              className="!overflow-visible"
+            >
+              {tools.map((tool, index) => (
+                <SwiperSlide key={index} className="flex justify-center">
+                  {({ isActive }) => <ToolCard tool={tool} isActive={isActive} />}
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          )}
         </div>
       </div>
 
-      {/* Footer text */}
-      <div className="text-center space-y-2 max-w-lg mt-6">
-        <h1 className="font-bold text-lg sm:text-xl text-[#543CDA]">
+      {/* Arrows below */}
+      <div className="flex justify-center gap-4 mt-4">
+        <button
+          ref={prevRef}
+          aria-label="Previous Tool"
+          className="w-9 h-9 flex items-center justify-center border-2 border-primary-purple text-primary-purple rounded-full hover:bg-primary-purple hover:text-purple-6 transition"
+        >
+          <FaArrowLeft />
+        </button>
+        <button
+          ref={nextRef}
+          aria-label="Next Tool"
+          className="w-9 h-9 flex items-center justify-center border-2 border-primary-purple text-primary-purple rounded-full hover:bg-primary-purple hover:text-purple-6 transition"
+        >
+          <FaArrowRight />
+        </button>
+      </div>
+
+      {/* Footer */}
+      <div className="text-center space-y-2 max-w-lg">
+        <h3 className="font-bold text-lg sm:text-xl text-primary-purple">
           Have a preferred stack or legacy codebase?
-        </h1>
-        <p className="text-sm sm:text-base text-gray-800 font-medium">
+        </h3>
+        <p className="text-sm sm:text-base text-purple-dark font-medium">
           We&apos;ll meet you where you are and help take it where it needs to go.
         </p>
       </div>
     </section>
   );
 }
-
-export default Tools;

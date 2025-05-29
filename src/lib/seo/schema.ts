@@ -23,7 +23,7 @@ export function generateStructuredData(post: BlogPost) {
       name: "Nexoris Technologies",
       logo: {
         "@type": "ImageObject",
-        url: `${siteUrl}/logo.png`, // Adjust this path to your logo
+        url: `${siteUrl}/images/nexoris-logo.webp`,
       },
     },
     datePublished: post.publishedDate,
@@ -74,4 +74,95 @@ export function generateStructuredData(post: BlogPost) {
   };
 
   return [articleSchema, faqSchema, breadcrumbSchema].filter(Boolean);
+}
+
+// Organization Schema
+export function generateOrganizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Nexoris Technologies",
+    url: "https://nexoristech.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://nexoristech.com/images/nexoris-logo.webp",
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/nexoris-technologies/",
+      "https://twitter.com/nexoristech",
+    ],
+    "@id": "https://nexoristech.com/#organization"
+  };
+}
+
+// Services Schema
+export function generateServicesSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        serviceType: "Web Development",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+          }
+      },
+      {
+        "@type": "Service",
+        serviceType: "Mobile App Development",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      },
+      {
+        "@type": "Service",
+        serviceType: "Custom Software Solutions",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      },
+      {
+        "@type": "Service",
+        serviceType: "UI/UX Design and Consulting",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+          }
+      },
+      {
+        "@type": "Service",
+        serviceType: "SEO and Content Marketing",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      },
+      {
+        "@type": "Service",
+        serviceType: "Digital Transformation Consulting",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+          }
+      },
+      {
+        "@type": "Service",
+        serviceType: "Product Design and Management",
+        provider: { "@id": "https://nexoristech.com/#organization" },
+        areaServed:  {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      }
+    ]
+  };
 }

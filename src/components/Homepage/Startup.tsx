@@ -2,139 +2,87 @@ import Image from "next/image";
 
 export default function Startup() {
   return (
-    <section className="mt-[3rem] md:mt-[5rem]  lg:mt-[12rem] container mx-auto flex flex-col justify-center items-center">
-      {/* Why start up text */}
-      <div className="md:w-[900px] lg:max-w-[1200px] max-w-[344px] ">
-        <h2 className="text-[22px] md:text-[40px] leading-[32px] md:leading-[55px] font-extrabold tracking-tight text-center">
+    <section
+      id="why-startups"
+      aria-labelledby="why-startups-heading"
+      className="w-full py-12 bg-background px-4"
+    >
+      <div className="text-center max-w-4xl mx-auto mb-14">
+        <h2
+          id="why-startups-heading"
+          className="text-[1.8rem] font-extrabold tracking-tight"
+        >
           Why Startups and Scale-Ups Stick With Us
         </h2>
       </div>
 
-      {/* Cards in the why startup section */}
+      <div className="flex flex-wrap justify-center gap-8">
+        {cards.map((card, index) => (
+          <div
+            key={index}
+            role="group"
+            aria-labelledby={`card-title-${index}`}
+            className="w-full md:max-w-[20rem] h-[25rem] border-[1.5px] border-primary-purple rounded-xl py-8 px-4 flex flex-col items-center justify-center gap-5 bg-white"
+          >
+            <div
+              className="w-[100px] h-[100px] rounded-full bg-[#543CDA]/10 flex items-center justify-center"
+              aria-hidden="true"
+            >
+              <Image
+                src={card.icon}
+                alt=""
+                width={60}
+                height={60}
+                className="w-[3rem] h-[3rem]"
+              />
+            </div>
 
-      <div className="max-w-[1118px] flex flex-row flex-wrap justify-center gap-[16px] md:gap-[20px] mt-4 md:mt-8 lg:mt-14">
-        {/* Card 1 */}
-        <div className="max-w-[358px] h-[374px] rounded-[10px] border-[1.5px] py-[44px] flex flex-col justify-center items-center gap-[22px] border-[#543CDA]">
-          <div className="w-[101px] h-[100px] rounded-full p-[19px] flex justify-center items-center gap-[10px] bg-[#543CDA]/10">
-            <Image
-              src="/Shield-Done.svg"
-              alt="Shield"
-              width={46}
-              height={54}
-              className="w-[65px] h-[65px]"
-            />
-          </div>
-          <div className="w-[324px] h-[70px]">
-            <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              From MVP to a Million Users
+            <h3
+              id={`card-title-${index}`}
+              className="text-primary-purple text-2xl font-semibold text-center"
+            >
+              {card.title}
             </h3>
-          </div>
-          <div className="w-[313px] h-[78px]">
-            <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              We don&apos;t just build something that works. We build clean,
-              flexible systems that scale. No brittle code, no dead-ends.
+
+            <p className="text-[15px] leading-[26px] text-center max-w-[313px] text-gray-800">
+              {card.description}
             </p>
           </div>
-        </div>
-
-        {/* Card 2 */}
-        <div className="max-w-[358px] h-[374px] rounded-[10px] border-[1.5px] py-[44px] flex flex-col justify-center items-center gap-[22px] border-[#543CDA]">
-          <div className="w-[101px] h-[100px] rounded-full p-[19px] flex justify-center items-center gap-[10px] bg-[#543CDA]/10">
-            <Image
-              src="/Time-Square.svg"
-              alt="Time Square"
-              width={54.17}
-              height={54.17}
-              className="w-[65px] h-[65px]"
-            />
-          </div>
-          <div className="w-[324px] h-[70px]">
-            <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              Speed Without the Tech Debt
-            </h3>
-          </div>
-          <div className="w-[313px] h-[78px]">
-            <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              You need to move fast but not at the cost of broken architecture
-              or handoff chaos. Our builds are fast, structured, and built to
-              last.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 3 */}
-        <div className="max-w-[358px] h-[374px] rounded-[10px] border-[1.5px] py-[44px] flex flex-col justify-center items-center gap-[22px] border-[#543CDA]">
-          <div className="w-[101px] h-[100px] rounded-full p-[19px] flex justify-center items-center gap-[10px] bg-[#543CDA]/10">
-            <Image
-              src="/password.svg"
-              alt="Password"
-              width={52.81}
-              height={52.81}
-              className="w-[65px] h-[65px]"
-            />
-          </div>
-          <div className="w-[324px] h-[70px]">
-            <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              Outcomes You Can Feel
-            </h3>
-          </div>
-          <div className="w-[313px] h-[78px]">
-            <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              Bounce rates drop. Load times shrink. Conversions rise. Your team
-              gets tools they actually enjoy using.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 4 */}
-        <div className="max-w-[358px] h-[374px] rounded-[10px] border-[1.5px] py-[44px] flex flex-col justify-center items-center gap-[22px] border-[#543CDA]">
-          <div className="w-[101px] h-[100px] rounded-full p-[19px] flex justify-center items-center gap-[10px] bg-[#543CDA]/10">
-            <Image
-              src="/Handshake.svg"
-              alt="Handshake"
-              width={60}
-              height={42.45}
-              className="w-[60px] h-[60px]"
-            />
-          </div>
-          <div className="w-[324px] h-[70px]">
-            <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              We Don&apos;t Vanish After Launch
-            </h3>
-          </div>
-          <div className="w-[313px] h-[78px]">
-            <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              Many dev companies ship and split. We stay. We test, improve, and
-              grow with you like a real partner should.
-            </p>
-          </div>
-        </div>
-
-        {/* Card 5 */}
-        <div className="max-w-[358px] h-[374px] rounded-[10px] border-[1.5px] py-[44px] flex flex-col justify-center items-center gap-[22px] border-[#543CDA]">
-          <div className="w-[101px] h-[100px] rounded-full p-[19px] flex justify-center items-center gap-[10px] bg-[#543CDA]/10">
-            <Image
-              src="/Vector.svg"
-              alt="Strategy"
-              width={48.69}
-              height={45.87}
-              className="w-[65px] h-[65px]"
-            />
-          </div>
-          <div className="w-[324px] h-[70px]">
-            <h3 className="font-semibold text-[25px] leading-[35px] tracking-wide text-center text-[#543CDA]">
-              Strategy First. Code Second.
-            </h3>
-          </div>
-          <div className="w-[313px] h-[78px]">
-            <p className="text-[15px] leading-[26px] tracking-wide text-center">
-              Before we touch a line of code, we ask the tough questions. That&rsquo;s
-              how you avoid budget burns, endless rewrites, and painful &ldquo;how did
-              we miss that?&rdquo; moments.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
 }
+
+const cards = [
+  {
+    icon: "/Shield-Done.svg",
+    title: "From MVP to a Million Users",
+    description:
+      "We don't just build something that works. We build clean, flexible systems that scale. No brittle code, no dead-ends.",
+  },
+  {
+    icon: "/Time-Square.svg",
+    title: "Speed Without the Tech Debt",
+    description:
+      "You need to move fast but not at the cost of broken architecture or handoff chaos. Our builds are fast, structured, and built to last.",
+  },
+  {
+    icon: "/password.svg",
+    title: "Outcomes You Can Feel",
+    description:
+      "Bounce rates drop. Load times shrink. Conversions rise. Your team gets tools they actually enjoy using.",
+  },
+  {
+    icon: "/Handshake.svg",
+    title: "We Don’t Vanish After Launch",
+    description:
+      "Many dev companies ship and split. We stay. We test, improve, and grow with you like a real partner should.",
+  },
+  {
+    icon: "/Vector.svg",
+    title: "Strategy First. Code Second.",
+    description:
+      "Before we touch a line of code, we ask the tough questions. That’s how you avoid budget burns, endless rewrites, and painful “how did we miss that?” moments.",
+  },
+];

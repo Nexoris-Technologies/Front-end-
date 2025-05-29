@@ -4,8 +4,6 @@ import { FaArrowRight } from "react-icons/fa6";
 import Image from 'next/image';
 import Link from 'next/link';
 
-
-
 function Insight() {
   return (
     <section className='flex flex-col gap-12 items-center justify-center bg-[#EAE8F7] py-12 lg:py-32 px-4'>

@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -59,7 +58,7 @@
   --text-mobile-sm: var(--mobile-sm);
   --color-primary-purple: var(--primary-purple);
   --color-secondary-purple: var(--secondary-purple);
-  --color-tertiarypurple: var(--tertiary-purple);
+  --color-tertiary-purple: var(--tertiary-purple);
   --color-purple-dark: var(--purple-dark);
   --color-purple-4: var(--purple-4);
   --color-purple-5: var(--purple-5);
@@ -86,7 +85,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
+    --background: #ffffff;
   }
 }
 
@@ -113,6 +112,8 @@ button {
 
 h1,
 h2,
+h3,
+h4,
 h5 {
   font-family: "Inter", sans-serif;
 }
@@ -123,7 +124,7 @@ h4 {
 }
 
 p {
-  color: #000000;
+  /* color: var(--purple-dark); */
 }
 
 p,
@@ -144,3 +145,18 @@ h3 {
 
   width: 55%;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+

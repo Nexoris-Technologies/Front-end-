@@ -1,158 +1,261 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import { useState, useRef } from "react";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, ChevronDown, ChevronUp, CheckCircle } from "lucide-react";
 
+interface ServiceItem {
+  label: string;
+  path: string;
+}
 
-export default function Navbar() {
+const services: ServiceItem[] = [
+  { label: "Web Development", path: "/web-development" },
+  { label: "Mobile App Development", path: "/mobile-app-development" },
+  { label: "UI/UX Design & Consulting", path: "/ui-ux-design-consulting" },
+  { label: "SEO & Content Marketing", path: "/seo-content-marketing" },
+  { label: "Custom Software Solutions", path: "/custom-software-solutions" },
+  {
+    label: "Product Design and Management",
+    path: "/product-design-management",
+  },
+];
+
+const Navbar: React.FC = () => {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const navRef = useRef<HTMLDivElement | null>(null);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const pathname = usePathname();
-  const specialPages = pathname === "/quote";
-  const [isOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsServicesOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setIsServicesOpen(false), 300);
+  };
 
   return (
-    <header className="bg-[#080C12] py-[10px] rounded-bl-[20px] rounded-br-[20px] sticky top-0 left-0 right-0 z-50">
-      <div
-        className="flex justify-between items-center w-full  py-3 h-[60px] md:h-[116clear
-      px] container mx-auto"
+    <header>
+      <nav
+        className="bg-purple-dark shadow-lg fixed top-0 z-10 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
+        role="navigation"
+        aria-label="Main navigation"
       >
-        {/* company logo */}
-        <Image
-          src="/nexoris-logo-black-bg-with-tagkine-042915-Photoroom-1-(1).webp"
-          alt="Logo"
-          width={140}
-          height={92}
-          style={{ objectFit: "contain" }}
-          className="w-[59.16px] h-auto md:w-[140px] md:h-[92px] object-contain"
-        />
-
-        {/* Nav Links */}
-        <nav
-          className={`${
-            isOpen ? "flex" : "hidden"
-          } flex-col md:flex-row lg:block`}
+        <div
+          ref={navRef}
+          className="contain flex justify-between items-center w-full px-4 md:px-6 lg:px-12 xl:px-20 mx-auto h-16 lg:h-20"
         >
-          <ul className="flex absolute top-[100%] left-0 right-0 z-50 w-full bg-red-800 flex-col md:flex-row items-center md:static md:bg-transparent gap-[37px] text-gray-300 cursor-pointer md:w-[563px] md:h-[26px] text-[17px] font-medium">
-            <li>
-              <Link
-                href="/"
-                className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
-              >
-                Home
-              </Link>
-            </li>
-
-            <li className="relative group flex items-center justify-center gap-2 text-gray-300 hover:text-white cursor-pointer">
-              <span className="inline-flex items-center gap-2 whitespace-nowrap ">
-                Services
+          <div className="flex items-center gap-4 lg:gap-8 w-full justify-between">
+            <Link href="/" aria-label="Nexoris Home" className="relative flex-shrink-0">
+              <div className="relative w-28 h-8 sm:w-32 sm:h-10 md:w-36 md:h-12 lg:w-40 lg:h-14 xl:w-44 xl:h-16">
                 <Image
-                  src="/Arrow - Down 2.png"
-                  alt="arrow down"
-                  width={17}
-                  height={17}
+                  src="/nexoris-nav-logo.webp"
+                  alt="Nexoris Technologies Logo"
+                  fill
+                  className="object-contain block"
+                  priority
                 />
-              </span>
-              <div className="absolute left-0 right-[-210%] mt-[24rem]  bg-[#FFFFFF] text-[#543CDA] shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all z-50 flex flex-col  gap-2 duration-200 rounded-[10px]">
-                {/* Housing the overall links to be flexed in part */}
-                <div>
-                  {/* Housing the first part to be flexed */}
-                  <div>
-                    <Link
-                      className="block px-4 py-2 w-40 text-[14px] hover:underline"
-                      href="/web-development"
-                    >
-                      Web Development
-                    </Link>
-                    <div className="h-0.5 border-gray-300 border-[1px] border-b w-[14rem] mx-auto" />
-                    <Link
-                      className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-[#9747FF]"
-                      href="/mobile-app-development"
-                    >
-                      Mobile App Development
-                    </Link>
-                    <div className="h-0.5 border-gray-300 border-[1px] border-b w-[14rem] mx-auto" />
-                    <Link
-                      className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-[#9747FF]"
-                      href="/ui-ux-design"
-                    >
-                      UI/UX Design & Consulting
-                    </Link>
-                  </div>
-                  {/* Housing the second part to be flexed */}
-                  <div>
-                    <div className="h-0.5 border-gray-300 border-[1px] border-b w-[14rem] mx-auto" />
-                    <Link
-                      className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-[#9747FF]"
-                      href="/seo-and-content-marketing"
-                    >
-                      SEO & Content Marketing
-                    </Link>
-                    <div className="h-0.5 border-gray-300 border-[1px] border-b w-[14rem] mx-auto" />
-                    <Link
-                      className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-[#9747FF]"
-                      href="/custom-software"
-                    >
-                      Custom Software Solutions
-                    </Link>
-                    <div className="h-0.5 border-gray-300 border-[1px] border-b w-[14rem] mx-auto" />
-                    <Link
-                      className="block px-4 py-2 w-64 text-[14px] hover:underline decoration-[#9747FF]"
-                      href="/product-design-management"
-                    >
-                      Product Design & Management
-                    </Link>
-                  </div>
-                </div>
               </div>
-            </li>
+            </Link>
 
-            <li>
-              <Link
-                href="/about-us"
-                className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/insights"
-                className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
-              >
-                Insights
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact-us"
-                className="hover:underline decoration-[#9747FF] decoration-2 decoration-solid hover:font-semibold hover:text-white"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
+            {/* Desktop Nav Links */}
+            <ul
+              className="hidden lg:flex gap-6 text-purple-6 font-medium font-poppins items-center"
+              role="menubar"
+            >
+              <li>
+                <Link
+                  href="/"
+                  className={`text-purple-6 ${
+                    pathname === "/"
+                      ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                      : ""
+                  }`}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about-us"
+                  className={`text-purple-6 ${
+                    pathname === "/about-us"
+                      ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                      : ""
+                  }`}
+                >
+                  About Us
+                </Link>
+              </li>
 
-        {/* Quote button */}
-        {!specialPages && (
-          <div className="flex-shrink-0 bg-[#543CDA] rounded-md py-1 px-3 md:py-[12px] md:px-[34px]">
+              <li
+                className="relative"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <button
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  className={`flex items-center text-purple-6 cursor-pointer ${
+                    services.some((s) => s.path === pathname)
+                      ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                      : ""
+                  }`}
+                >
+                  Services
+                  {isServicesOpen ? (
+                    <ChevronUp size={20} />
+                  ) : (
+                    <ChevronDown size={20} />
+                  )}
+                </button>
+
+                {isServicesOpen && (
+                  <div
+                    className="absolute left-1/2 transform -translate-x-1/2 bg-background text-body shadow-lg z-50 rounded-lg flex justify-center py-4 lg:mt-8"
+                    style={{
+                      width: navRef.current?.offsetWidth
+                        ? `${navRef.current.offsetWidth * 0.6}px`
+                        : "60%",
+                    }}
+                  >
+                    <div className="grid grid-cols-2 gap-x-5 lg:gap-x-10 gap-y-1 p-4 text-body items-center">
+                      {services.map((service) => (
+                        <Link
+                          key={service.path}
+                          href={service.path}
+                          className="group flex items-center gap-2 hover:bg-primary-purple text-body hover:text-purple-6 rounded-lg px-3 py-2 transition-colors duration-200 w-full text-purple-dark"
+                          onClick={() => setIsServicesOpen(false)}
+                        >
+                          <CheckCircle
+                            className="text-heading group-hover:text-secondary-text h-5 transition-colors duration-200"
+                            size={16}
+                          />
+                          {service.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </li>
+
+              <li>
+                <Link
+                  href="/contact-us"
+                  className={`text-purple-6 ${
+                    pathname === "/contact-us"
+                      ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                      : ""
+                  }`}
+                >
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/insights"
+                  className={`text-purple-6 ${
+                    pathname === "/insights"
+                      ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                      : ""
+                  }`}
+                >
+                  Insights
+                </Link>
+              </li>
+            </ul>
+
+            {/* Desktop CTA */}
             <Link
-              href="/quote"
-              className="text-[#ffffff] font-semibold text-[12px] md:text-[17px] w-[70px] md:w-[98px] flex items-center justify-center"
+              href="/get-a-quote"
+              className="hidden lg:inline-block bg-primary-purple text-purple-6 px-5 py-2 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors"
             >
               Get a Quote
             </Link>
+
+            {/* Mobile CTA centered */}
+            <Link
+              href="/get-a-quote"
+              className="lg:hidden absolute left-1/2 -translate-x-1/5 bg-primary-purple text-purple-6 px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors z-10"
+              aria-label="Get a Quote"
+            >
+              Get a Quote
+            </Link>
+
+            {/* Mobile Toggle */}
+            <button
+              className="lg:hidden text-purple-6 relative"
+              onClick={() => {
+                setIsMobileMenuOpen(!isMobileMenuOpen);
+                setIsMobileServicesOpen(false);
+              }}
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="bg-purple-6 px-4 w-full z-20 absolute top-16 rounded mx-auto">
+            <nav
+              className="flex flex-col gap-y-3 py-5 bg-purple-6 text-body text-purple-dark font-medium"
+              aria-label="Mobile navigation"
+            >
+              <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                Home
+              </Link>
+              <Link href="/about-us" onClick={() => setIsMobileMenuOpen(false)}>
+                About Us
+              </Link>
+              <button
+                onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                className="flex items-center justify-between w-full cursor-pointer"
+                aria-expanded={isMobileServicesOpen}
+                aria-label="Toggle services submenu"
+              >
+                <span>Services</span>
+                {isMobileServicesOpen ? (
+                  <ChevronUp size={20} />
+                ) : (
+                  <ChevronDown size={20} />
+                )}
+              </button>
+              {isMobileServicesOpen && (
+                <div className="flex flex-col gap-y-2 ml-4 mt-2">
+                  {services.map((service) => (
+                    <Link
+                      key={service.path}
+                      href={service.path}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        setIsMobileServicesOpen(false);
+                      }}
+                      className="text-purple-dark"
+                    >
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+              <Link href="/contact-us" onClick={() => setIsMobileMenuOpen(false)}>
+                Contact Us
+              </Link>
+              <Link href="/insights" onClick={() => setIsMobileMenuOpen(false)}>
+                Insights
+              </Link>
+            </nav>
           </div>
         )}
-
-        {/* Hamburger icon */}
-        {/* <div className="visible lg:hidden flex-shrink-0 flex items-center bg-white">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <GiHamburgerMenu />
-          </button>
-        </div> */}
-      </div>
+      </nav>
     </header>
   );
-}
+};
+
+export default Navbar;
