@@ -30,7 +30,7 @@ export default function CustomProcess() {
               <p style={{ color: "#FFFFFF" }} className="text-[16px] w-[320px]">
                 We start by deeply understanding your goals, users, and pain
                 points so we can design a site that works exactly the way your
-                team and customers need it to."
+                team and customers need it to.
               </p>
             </div>
           </div>
@@ -126,9 +126,9 @@ export default function CustomProcess() {
                 Launch & Support
               </h3>
               <p style={{ color: "#FFFFFF" }} className="text-[16px] w-[320px]">
-                Once your site is live, we don’t disappear. We provide technical
-                documentation, performance monitoring, and ongoing support to
-                keep things running smoothly.
+                Once your site is live, we don&apos;t disappear. We provide
+                technical documentation, performance monitoring, and ongoing
+                support to keep things running smoothly.
               </p>
             </div>
           </div>
