@@ -52,7 +52,7 @@ function WhyChoose() {
         {/* Image and Testimonial */}
         <div className="w-[400px] h-[420px]  md:w-[600px] md:h-[600px]">
           <Image
-            src="/mobile app photo.webp"
+            src="/mobile-app-photo.webp"
             alt="Service Image"
             width={600}
             height={600}

@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
   },
 
   experimental: {
-    useLightningcss: false, 
+    useLightningcss: false,
   },
 };
 

@@ -46,10 +46,10 @@ export default function About() {
             {/* First image */}
             <div className="w-[164px] h-[176px] md:w-[260px] md:h-[260px] relative md:mt-[6.9rem]">
               <Image
-                src="/about us first.webp"
+                src="/about-us-first.webp"
                 alt="about-us-first"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>
@@ -57,10 +57,10 @@ export default function About() {
             {/* Second image */}
             <div className="w-[164px] h-[176px] md:w-[260px] md:h-[369px] relative">
               <Image
-                src="/about us second.webp"
+                src="/about-us-second.webp"
                 alt="about-us-second"
                 layout="fill"
-                objectFit="cover"
+                style={{ objectFit: "cover" }}
                 className="rounded-lg"
               />
             </div>

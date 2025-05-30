@@ -6,9 +6,9 @@ export default function WhyChooseCustom() {
       <div className="flex flex-col justify-center items-center  lg:flex-row gap-12 lg:gap-[30px]   py-[6rem] ">
         {/* Text Section */}
         <div className="flex flex-col gap-[32px]  lg:max-w-[1224px] px-4 md:px-0">
-          <h1 className="text-[24px] md:w-[600px] md:text-[28px] lg:text-[32px] font-bold text-center md:text-left leading-snug">
+          <h3 className="text-[24px] md:w-[600px] md:text-[28px] lg:text-[32px] font-bold text-center md:text-left leading-snug">
             Why Choose Nexoris for Custom Software Development?
-          </h1>
+          </h3>
 
           {/* Paragraph section */}
           <div className="flex flex-col gap-[24px]">
@@ -53,7 +53,7 @@ export default function WhyChooseCustom() {
         {/* Image and Testimonial */}
         <div className="w-[343px] h-[420px]  md:w-[600px] md:h-[600px]">
           <Image
-            src="/mobile app photo.webp"
+            src="/mobile-app-photo.webp"
             alt="Service Image"
             width={600}
             height={600}

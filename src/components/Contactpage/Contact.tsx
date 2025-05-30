@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Button from "../Button/Button";
 
 function Contact() {
   return (
-    <section className="">
+    <section className="lg:mt-[9rem] ">
       {/* Housing all.. Contact Us and the forms */}
-      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[4rem] ">
+      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] ">
         {/* housing the Contact us */}
-        <div className="rounded-[10px] bg-[#543CDA] py-[2rem] lg:w-full hidden md:block">
+        <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-[2rem] lg:w-full ">
           <h1 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
             Contact Us
           </h1>
@@ -15,13 +16,13 @@ function Contact() {
         {/* Housing the Get in touch, the p-tag, the cards and the button */}
         <div className="flex flex-col gap-[60px]">
           {/* Housing Get in touch and the paragraph text */}
-          <div className="flex flex-col justify-center items-center gap-[24px] mt-[3rem]">
+          <div className="flex flex-col justify-center items-center gap-[24px] mt-[2rem] lg:mt-[3rem]">
             <div className="max-w-[20rem] md:max-w-[50rem]">
               <h3 className="text-[24px] md:text-[40px] text-center font-bold leading-[32px] md:leading-[48px]">
                 Get in Touch with Nexoris Technologies
               </h3>
             </div>
-            <div className="max-w-[19rem] md:max-w-[65rem]">
+            <div className="max-w-[18rem] md:max-w-[65rem]">
               <p className="text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-center">
                 At Nexoris, we work with ambitious companies around the world to
                 design, build, and scale digital solutions that make an impact.
@@ -41,7 +42,8 @@ function Contact() {
                   Let&apos;s Talk
                 </h3>
                 <p className="text-[16px] text-[#000000]">
-                  Have a challenge worth solving? Let&apos;s explore it together.
+                  Have a challenge worth solving? Let&apos;s explore it
+                  together.
                 </p>
               </div>
 
@@ -103,8 +105,8 @@ function Contact() {
                   Quick Message
                 </h3>
                 <p className="text-[16px] text-[#000000]">
-                  Tell us what you&apos;re working on. A dedicated member of our team
-                  will respond within one business day.
+                  Tell us what you&apos;re working on. A dedicated member of our
+                  team will respond within one business day.
                 </p>
               </div>
 
@@ -185,10 +187,10 @@ function Contact() {
                 </div>
 
                 {/* Button */}
-                <div className="md:mt-[2rem]">
-                  <button className="bg-[#543CDA] text-white font-bold text-[16px] px-6 py-3 md:py-3 md:px-8 rounded w-full md:w-[200px]">
+                <div className="mt-[1rem] w-[300px] mx-auto lg:mx-0  md:mt-[2rem]">
+                  <Button className="bg-[#543CDA] text-white font-bold text-[16px] px-6 py-3 md:py-3 md:px-8 rounded lg:w-[250px] md:w-[200px]">
                     Send Message
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>

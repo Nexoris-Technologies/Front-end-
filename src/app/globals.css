@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   --primary-purple: #543cda;
@@ -140,10 +139,8 @@ h3 {
   /* background-image: url("/Seo-Hero-Image.webp");
   background-size: contain; */
   background: linear-gradient(to right, #d7d2f9, rgba(84, 60, 218, 0)),
-    url("/Seo-Hero-Image.webp");
+    url("/seo-hero-image.webp");
   background-size: cover;
-
-  width: 55%;
 }
 
 @keyframes marquee {
@@ -158,5 +155,3 @@ h3 {
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
-
-

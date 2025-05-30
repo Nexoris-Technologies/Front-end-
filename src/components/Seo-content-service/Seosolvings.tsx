@@ -13,7 +13,7 @@ export default function SeoProblemsSolves() {
         <div className="flex flex-col lg:flex-row gap-[95px] lg:gap-[82px] mx-auto">
           <div className="rounded-[10px] w-[343px] h-[280px] md:w-[529px] md:h-[540px]">
             <Image
-              src="/seo problem image.webp"
+              src="/seo-problem-image.webp"
               alt="Solved problems image"
               width={529}
               height={540}

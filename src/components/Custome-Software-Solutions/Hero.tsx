@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button/Button";
 
 export default function CustomeHeroPage() {
   return (
@@ -25,10 +26,10 @@ export default function CustomeHeroPage() {
               and move your business forward — on your terms.
             </p>
           </div>
-          <div className=" flex justify-center items-center gap-2 bg-[#543CDA] text-[#FFFFFF] py-[14px] md:py-[21.5px] px-[32px] rounded-[8px] w-[302px] lg:w-[340px]">
-            <button className="text-[14px] lg:text-[18px]">
+          <div className=" flex justify-center items-center gap-2 bg-[#543CDA] text-[#FFFFFF] lg:py-[14px] md:py-[21.5px] px-[32px] rounded-[8px] w-[275px] lg:w-[340px]">
+            <Button className="text-[14px] lg:text-[18px]">
               Let&apos;s Build Your Solution
-            </button>
+            </Button>
             <span>
               <Image
                 src="/Arrow right.svg"

@@ -21,7 +21,8 @@ function Choose() {
             <div className="flex items-start gap-4">
               <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
               <p className="text-base sm:text-lg">
-                Sites optimized to pass Google’s Core Web Vitals with flying colors.
+                Sites optimized to pass Google’s Core Web Vitals with flying
+                colors.
               </p>
             </div>
 
@@ -52,9 +53,9 @@ function Choose() {
           />
           <div className="absolute bottom-30 w-[90%] bg-white rounded-xl py-1 px-4 flex flex-col gap-3 shadow-md">
             <p className="text-sm sm:text-base italic">
-              “The Nexoris team rebuilt our site from scratch and helped us climb
-              from page 6 to the top 3 on Google all while improving speed and
-              conversions.”
+              “The Nexoris team rebuilt our site from scratch and helped us
+              climb from page 6 to the top 3 on Google all while improving speed
+              and conversions.”
             </p>
             <h2 className="font-bold text-base sm:text-lg">
               — John A., CTO at NovaBuild

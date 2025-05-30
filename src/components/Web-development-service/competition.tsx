@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import Button from "../Button/Button";
 
 function Competition() {
   return (
@@ -18,15 +19,18 @@ function Competition() {
               Build Websites That <br /> Outrun the Competition.
             </h1>
             <p className="font-normal text-sm sm:text-base text-gray-700 px-2">
-              At Nexoris, we don’t just build websites—we create lightning-fast, Google- <br /> optimized digital experiences that scale with your business and help you attract, <br /> engage, and convert more customers.
+              At Nexoris, we don’t just build websites—we create lightning-fast,
+              Google- <br /> optimized digital experiences that scale with your
+              business and help you attract, <br /> engage, and convert more
+              customers.
             </p>
           </div>
 
           {/* Button */}
           <Link href="#">
-            <button className="flex items-center gap-2 bg-[#543CDA] py-4 sm:px-12 rounded-md text-white font-bold text-sm sm:text-base">
-              Let’s Build Yours <BsArrowRight className="text-lg" />
-            </button>
+            <Button className="flex items-center gap-3 bg-[#543CDA] py- sm:px-18 rounded-md text-white font-bold text-[12px] sm:text-base">
+              Let’s Build Yours <BsArrowRight className="text-sm" />
+            </Button>
           </Link>
 
           {/* Image */}

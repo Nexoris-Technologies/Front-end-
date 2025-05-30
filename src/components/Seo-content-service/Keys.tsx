@@ -8,7 +8,7 @@ export default function SeoKey() {
         {/* Key image */}
         <div className="w-[343px] h-[280px] md:w-[529px] md:h-[540px]">
           <Image
-            src="/Seo key image.webp"
+            src="/Seo-key-image.webp"
             alt="Key Image"
             width={529}
             height={540}

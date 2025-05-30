@@ -4,7 +4,7 @@ export default function Why() {
   return (
     <section>
       {/* Housing All what we do */}
-      <div className="flex flex-col lg:flex-row gap-[32px] md:gap-[8rem] items-center justify-center mt-[2rem] lg:mt-[10rem]  mx-auto w-full ">
+      <div className="flex flex-col lg:flex-row gap-[50px] md:gap-[8rem] items-center justify-center mt-[2rem] lg:mt-[10rem]  mx-auto w-full ">
         {/* Housing Why we do ALL textes */}
         <div className="flex flex-col gap-[24px]   ">
           {/* Housing Why we do */}
@@ -55,9 +55,9 @@ export default function Why() {
         </div>
 
         {/* Housing Why we do image */}
-        <div className="rounded-[24px] w-[343px] h-[454px] md:w-[560px] md:h-[741px]">
+        <div className="rounded-[24px] w-[300px] h-[454px] md:w-[560px] md:h-[741px]">
           <Image
-            src="/Why we image.webp"
+            src="/Why-we-image.webp"
             alt="Why we do Image"
             width={560}
             height={741}

@@ -1,46 +1,47 @@
 import Image from "next/image";
 
-export default function CustomBenefits() {
+export default function Keys() {
   return (
-    <section className="">
-      {/* Housing the phone Icon, h3 and the cards */}
-      <div className="flex flex-col items-center gap-[60px] py-[3rem] lg:pt-[4rem] ">
-        {/* Housing the Benefit text */}
-        <div>
-          <h3 className="font-bold text-[24px] lg:text-[40px] text-center">
-            Key Benefits at a Glance
-          </h3>
-        </div>
-        {/* Housing the four cards */}
-        <div className="flex flex-col lg:flex-row gap-[24px]  ">
-          {/* First card */}
-          <div className="flex flex-col gap-[10px] bg-[#FFFFFF] shadow-2xl p-4 border-t-[#543CDA] rounded-tl-[16px] rounded-tr-[16px]  border-t-12">
+    <section className="px-4">
+      <div className="flex flex-col items-center gap-12 py-12 lg:py-24">
+        {/* Heading */}
+        <h3 className="font-bold text-xl sm:text-2xl lg:text-4xl text-center">
+          Key Benefits at a Glance
+        </h3>
+
+        {/* Cards Container */}
+        <div className="flex flex-col lg:flex-row gap-6 items-center">
+          {/* Card 1 */}
+          <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
             <Image src="/Number 1.svg" alt="Number 1" width={40} height={40} />
-            <p className="text-[18px] w-[330px] lg:w-[252px]">
+            <p className="text-base leading-relaxed">
               Custom-Fit to Your Workflow: Built specifically around your
               workflows, not the other way around.
             </p>
           </div>
-          {/* Secondcard */}
-          <div className="flex flex-col gap-[10px] bg-[#FFFFFF] shadow-2xl p-4 border-t-[#543CDA] rounded-tl-[16px] rounded-tr-[16px]  border-t-12">
-            <Image src="/Number 2.svg" alt="Number 1" width={40} height={40} />
-            <p className="text-[18px] w-[330px] lg:w-[240px]">
+
+          {/* Card 2 */}
+          <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
+            <Image src="/Number 2.svg" alt="Number 2" width={40} height={40} />
+            <p className="text-base leading-relaxed">
               Designed to Scale with You: Flexible foundations that grow as your
               team, data, and needs evolve.
             </p>
           </div>
-          {/* Third card */}
-          <div className="flex flex-col gap-[10px] bg-[#FFFFFF] shadow-2xl p-4 border-t-[#543CDA] rounded-tl-[16px] rounded-tr-[16px]  border-t-12">
-            <Image src="/Number 3.svg" alt="Number 1" width={40} height={40} />
-            <p className="text-[18px] w-[330px] lg:w-[252px]">
+
+          {/* Card 3 */}
+          <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
+            <Image src="/Number 3.svg" alt="Number 3" width={40} height={40} />
+            <p className="text-base leading-relaxed">
               Seamless System Integration: We connect your CRMs, ERPs, APIs, and
               third-party platforms securely.
             </p>
           </div>
-          {/* Fourth card */}
-          <div className="flex flex-col gap-[10px] bg-[#FFFFFF] shadow-2xl p-4 border-t-[#543CDA] rounded-tl-[16px] rounded-tr-[16px]  border-t-12">
-            <Image src="/Number 4.svg" alt="Number 1" width={40} height={40} />
-            <p className="text-[18px] w-[340px] lg:w-[250px]">
+
+          {/* Card 4 */}
+          <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
+            <Image src="/Number 4.svg" alt="Number 4" width={40} height={40} />
+            <p className="text-base leading-relaxed">
               Built for Operational Impact: Reduce manual processes, automate
               repetitive tasks, and uncover new efficiencies.
             </p>

@@ -46,7 +46,7 @@ export default function SeoHelp() {
           {/* Who er help image */}
           <div className=" w-[343px] h-[280px] md:w-[529px] md:h-[540px]  order-1 lg:order-2">
             <Image
-              src="/Seo Help Image.webp"
+              src="/seo-help-image.webp"
               alt="Seo Help image"
               width={529}
               height={540}

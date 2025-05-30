@@ -87,7 +87,7 @@ function WhyChoose() {
         {/* Image and Testimonial */}
         <div className="w-[344px] h-[280px]  md:w-[530px] md:h-[540px]">
           <Image
-            src="/Seo choose image.webp"
+            src="/seo-choose-image.webp"
             alt="Service Image"
             width={530}
             height={540}

@@ -4,9 +4,9 @@ export default function What() {
   return (
     <section className="">
       {/* Housing the What images and textes */}
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-[5rem] md:mt-[4rem] lg:mt-[12rem] ">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-[3rem] lg:gap-[5rem] mt-[4rem] lg:mt-[12rem] ">
         {/* The image */}
-        <div className="rounded-[24px] order-2 lg:order-1 w-[343px] h-[240px] md:w-[590px] md:h-[630px] ">
+        <div className="rounded-[24px] order-2 lg:order-1 w-[300px] h-[240px] md:w-[590px] md:h-[630px] ">
           <Image
             src="/What-we-image.webp"
             alt="What Image"
@@ -17,7 +17,7 @@ export default function What() {
 
         {/* Housing What makes us different */}
         <div className="flex flex-col  order-1 lg:order-2 gap-[38px] ">
-          <h3 className="w-[343px] md:w-full text-[40px] font-bold ">
+          <h3 className="w-[343px] md:w-full text-[24px] lg:text-[40px] font-bold ">
             What Makes Us Diffferent
           </h3>
 
