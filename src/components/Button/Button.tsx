@@ -18,7 +18,7 @@ export default function Button({
     <button
       type={type}
       onClick={onClick}
-      className={` text-white px-5 py-2  font-poppins hover:bg-[#543CDA]/90 transition ${className}`}
+      className={` text-white px-5 py-2 cursor-pointer  animate-pulse pulse-slow font-poppins hover:bg-[#543CDA]/60 transition ${className}`}
     >
       {children}
     </button>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CgCheckO } from "react-icons/cg";
 
 export default function WhyChooseCustom() {
   return (
@@ -13,28 +14,36 @@ export default function WhyChooseCustom() {
           {/* Paragraph section */}
           <div className="flex flex-col gap-[24px]">
             <div className="flex gap-[16px] items-start">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
               <p className="text-[16px] md:text-[18px]">
                 We don’t just code, we solve problems that hurt your business
               </p>
             </div>
 
             <div className="flex gap-[16px] items-start">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
               <p className="text-[16px] md:text-[18px]">
                 Deep focus on systems thinking and operational value
               </p>
             </div>
 
             <div className="flex gap-[16px] items-start">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
               <p className="text-[16px] md:text-[18px]">
                 UX designed for the way your team actually works
               </p>
             </div>
 
             <div className="flex gap-[16px] items-start">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
               <p className="text-[16px] md:text-[18px]">
                 Senior engineers who can build, integrate, and scale complex
                 platforms
@@ -42,7 +51,9 @@ export default function WhyChooseCustom() {
             </div>
 
             <div className="flex gap-[16px] items-start">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
               <p className="text-[16px] md:text-[18px]">
                 Long-term partnership, from V1 to full enterprise transformation
               </p>

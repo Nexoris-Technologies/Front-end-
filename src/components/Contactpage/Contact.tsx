@@ -8,9 +8,9 @@ function Contact() {
       <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] lg:px-[7.8rem]">
         {/* housing the Contact us */}
         <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-[2rem] lg:w-full ">
-          <h1 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
+          <h3 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
             Contact Us
-          </h1>
+          </h3>
         </div>
 
         {/* Housing the Get in touch, the p-tag, the cards and the button */}

@@ -54,6 +54,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { BsArrowRight } from "react-icons/bs";
+import Button from "../Button/Button";
 
 function Experiences() {
   const images = [
@@ -89,9 +90,9 @@ function Experiences() {
 
           {/* Button */}
           <Link href="#">
-            <button className="flex items-center gap-2 bg-[#543CDA] py-4 px-8 sm:px-12 rounded-md text-white font-bold text-sm sm:text-base">
+            <Button className="flex items-center gap-2 bg-[#543CDA] py-4 px-8 sm:px-12 rounded-md text-white font-bold text-sm sm:text-base">
               Let’s Design Something Better <BsArrowRight className="text-lg" />
-            </button>
+            </Button>
           </Link>
 
           {/* Marquee with Images */}

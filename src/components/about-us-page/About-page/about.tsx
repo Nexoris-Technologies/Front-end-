@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import Image from "next/image";
 
 export default function About() {
@@ -28,7 +29,7 @@ export default function About() {
               mission: turning bold ideas into real-world solutions.
             </p>
 
-            <button className="bg-[#543CDA] text-[#FFFFFF] rounded-[8px] py-[10px] text-[14px] md:text-[18px] md:py-[21.5px] w-[200px]  md:w-[300px] flex justify-center items-center gap-[10px]">
+            <Button className="bg-[#543CDA] text-[#FFFFFF] rounded-[8px] py-[10px] text-[14px] md:text-[18px] md:py-[21.5px] w-[200px]  md:w-[300px] flex justify-center items-center gap-[10px]">
               GET STARTED
               <span>
                 <Image
@@ -38,7 +39,7 @@ export default function About() {
                   height={16}
                 />
               </span>
-            </button>
+            </Button>
           </div>
 
           {/* Hero images */}

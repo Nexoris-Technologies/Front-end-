@@ -22,7 +22,7 @@ export default function SeoHero() {
           </p>
 
           <div className="rounded-[8px] py-2 lg:py-[12px] px-[31px] bg-[#543CDA] w-[320px]">
-            <Button className="text-[17px] font-bold hover:bg-[#EAE8F7] text-[#FFFFFF]">
+            <Button className="text-[17px] font-bold text-[#FFFFFF]">
               Let&apos;s optimize Your Growth
             </Button>
           </div>

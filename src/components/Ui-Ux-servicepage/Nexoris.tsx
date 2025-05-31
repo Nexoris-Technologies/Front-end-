@@ -65,24 +65,14 @@ function Nexoris() {
         </div>
 
         {/* Image and Testimonial */}
-        <div className="relative flex items-center justify-center w-full max-w-[28rem]">
+        <div className="">
           <Image
-            src="/ManChoose.png"
+            src="/uichoose.webp"
             alt="Service Image"
-            width={300}
-            height={100}
-            className="w-full h-130 rounded-4xl"
+            width={600}
+            height={600}
+            className="w-[343px] h-[420]  lg:w-[600px] lg:h-[600px]"
           />
-          <div className="absolute bottom-30 w-[90%] bg-white rounded-xl py-1 px-4 flex flex-col gap-3 shadow-md">
-            <p className="text-sm sm:text-base italic">
-              “Our mobile app used to be a source of complaints. Nexoris turned
-              it into one of our biggest growth channels with 5x more engagement
-              and zero major bugs after launch.”
-            </p>
-            <h2 className="font-bold text-base sm:text-lg italic">
-              — Maria O., Product Lead at FintaGo
-            </h2>
-          </div>
         </div>
       </div>
     </section>

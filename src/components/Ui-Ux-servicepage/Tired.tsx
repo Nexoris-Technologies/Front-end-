@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
+import Button from "../Button/Button";
 
 function Tired() {
   return (
@@ -14,10 +15,10 @@ function Tired() {
 
         {/* Call-to-action button wrapped in Link */}
         <Link href="#">
-          <button className="flex items-center gap-3 bg-[#543CDA] text-white px-6 py-3 md:px-12 md:py-4 rounded-md hover:bg-[#432bb6] transition-colors duration-300">
+          <Button className="flex items-center gap-3 bg-[#543CDA] text-white px-6 py-3 md:px-12 md:py-4 rounded-md hover:bg-[#432bb6] transition-colors duration-300">
             Talk To Our Design Experts
             <BsArrowRight className="text-lg" />
-          </button>
+          </Button>
         </Link>
       </div>
     </section>

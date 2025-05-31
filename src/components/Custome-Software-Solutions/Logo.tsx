@@ -65,7 +65,7 @@ export default function CustomLogo() {
               </div>
               <div className=" ">
                 <Image
-                  src="/Group 96.webp"
+                  src="/rails.webp"
                   alt="Rails-image"
                   width={125}
                   height={20}
