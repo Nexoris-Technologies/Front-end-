@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="lg:mt-[9rem] ">
       {/* Housing all.. Contact Us and the forms */}
-      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] ">
+      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] lg:px-[7.8rem]">
         {/* housing the Contact us */}
         <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-[2rem] lg:w-full ">
           <h1 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
@@ -17,7 +17,7 @@ function Contact() {
         <div className="flex flex-col gap-[60px]">
           {/* Housing Get in touch and the paragraph text */}
           <div className="flex flex-col justify-center items-center gap-[24px] mt-[2rem] lg:mt-[3rem]">
-            <div className="max-w-[20rem] md:max-w-[50rem]">
+            <div className="">
               <h3 className="text-[24px] md:text-[40px] text-center font-bold leading-[32px] md:leading-[48px]">
                 Get in Touch with Nexoris Technologies
               </h3>
@@ -34,7 +34,7 @@ function Contact() {
           </div>
 
           {/* Let’s Talk & Quick Message Section */}
-          <div className="w-full max-w-[1224px] md:mb-[5rem] mb-[2rem]  flex flex-col lg:flex-row gap-[24px] px-4">
+          <div className="md:mb-[5rem] mb-[2rem]  flex flex-col lg:flex-row gap-[24px] px-4">
             {/* Let’s Talk */}
             <div className="flex-1 rounded-[16px] md:h-[514px] order-2  md:order-1 border border-[#D9D9D9] bg-[#D9D9D9]/4 p-6 flex flex-col gap-8">
               <div className="flex flex-col gap-2">

@@ -5,7 +5,7 @@ export default function WhatWeDo() {
   return (
     <section>
       {/* Housing What we do */}
-      <div className="flex flex-col items-center gap-[48px] mt-8 md:mt-[13rem] lg:mt-[17rem] w-full mx-auto">
+      <div className="flex flex-col items-center gap-[48px] mt-8 md:mt-[13rem] lg:mt-[17rem] w-full mx-auto container">
         {/* Housing What we do and paragraph text */}
         <div className="flex flex-col  gap-[16px]">
           <h3 className="text-[24px] md:text-[48px] text-center font-semibold text-[#000000]">

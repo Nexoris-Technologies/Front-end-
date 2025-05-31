@@ -159,7 +159,6 @@
 
 // // export default WeHelp;
 
-
 import Image from "next/image";
 
 export default function WeHelp() {
@@ -167,63 +166,102 @@ export default function WeHelp() {
     <section>
       {/* Housing the Problems and the cards */}
       <div className="flex flex-col gap-[32px] md:gap-[40px] py-[6rem]">
-       <div className="shadow-xl rounded-full flex items-center justify-center max-w-[20rem] gap-2 p-4 container mx-auto">
-        <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-        <h1 className="font-bold text-3xl">Who We Help</h1>
-        <Image src="/Ellipse 41.svg" alt="Ellipse 43" width={20} height={20} />
-       </div>
+        <div className="shadow-xl rounded-full flex items-center justify-center max-w-[20rem] gap-2 p-4 container mx-auto">
+          <Image
+            src="/Ellipse 43.svg"
+            alt="Ellipse 43"
+            width={20}
+            height={20}
+          />
+          <h1 className="font-bold text-3xl">Who We Help</h1>
+          <Image
+            src="/Ellipse 41.svg"
+            alt="Ellipse 43"
+            width={20}
+            height={20}
+          />
+        </div>
         {/* Housing  the card  */}
         <div className="max-w-[1224px] flex flex-col lg:flex-row flex-wrap justify-center mx-auto gap-12 bg-svg-dots py-16">
           {/* First card */}
           <div className="shadow-xl transform skew-y-2 flex flex-col gap-4 p-8 bg-white rounded-2xl">
             <div className="border-b mb-4 pb-1 border-dashed border-gray-400 flex items-center justify-between">
-               <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-               <h1 className="font-bold text-xl">UI/UX</h1>
-             </div>
-             <p>
-               Founders building their first MVP and <br /> need expert UI to stand out
-             </p>
-           </div>
+              <Image
+                src="/Ellipse 43.svg"
+                alt="Ellipse 43"
+                width={20}
+                height={20}
+              />
+              <h3 className="font-bold text-xl">UI/UX</h3>
+            </div>
+            <p>
+              Founders building their first MVP and <br /> need expert UI to
+              stand out
+            </p>
+          </div>
           {/* second card */}
           <div className="shadow-xl transform skew-x-2 flex flex-col gap-4 p-8 bg-white rounded-2xl">
             <div className="border-b mb-4 pb-1 border-dashed border-gray-400 flex items-center justify-between">
-               <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-               <h1 className="font-bold text-xl">UI/UX</h1>
-             </div>
-             <p>
-             SaaS teams overwhelmed by <br /> inconsistent UX and design debt
-             </p>
-           </div>
+              <Image
+                src="/Ellipse 43.svg"
+                alt="Ellipse 43"
+                width={20}
+                height={20}
+              />
+              <h1 className="font-bold text-xl">UI/UX</h1>
+            </div>
+            <p>
+              SaaS teams overwhelmed by <br /> inconsistent UX and design debt
+            </p>
+          </div>
           {/* third card */}
           <div className="shadow-xl transform skew-y-2 flex flex-col gap-4 p-8 bg-white rounded-2xl">
             <div className="border-b mb-4 pb-1 border-dashed border-gray-400 flex items-center justify-between">
-               <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-               <h1 className="font-bold text-xl">UI/UX</h1>
-             </div>
-             <p>
-             Enterprises looking to modernize <br /> legacy systems with user-friendly <br /> interfaces
-             </p>
-           </div>
+              <Image
+                src="/Ellipse 43.svg"
+                alt="Ellipse 43"
+                width={20}
+                height={20}
+              />
+              <h1 className="font-bold text-xl">UI/UX</h1>
+            </div>
+            <p>
+              Enterprises looking to modernize <br /> legacy systems with
+              user-friendly <br /> interfaces
+            </p>
+          </div>
           {/* fourth card */}
           <div className="shadow-xl transform skew-x-2 flex flex-col gap-4 p-8 bg-white rounded-2xl">
             <div className="border-b mb-4 pb-1 border-dashed border-gray-400 flex items-center justify-between">
-               <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-               <h1 className="font-bold text-xl">UI/UX</h1>
-             </div>
-             <p>
-             Founders building their first MVP and <br /> need expert UI to stand out
-             </p>
-           </div>
+              <Image
+                src="/Ellipse 43.svg"
+                alt="Ellipse 43"
+                width={20}
+                height={20}
+              />
+              <h1 className="font-bold text-xl">UI/UX</h1>
+            </div>
+            <p>
+              Founders building their first MVP and <br /> need expert UI to
+              stand out
+            </p>
+          </div>
           {/* fifth card */}
           <div className="shadow-xl transform skew-y-2 flex flex-col gap-4 p-8 bg-white rounded-2xl">
             <div className="border-b mb-4 pb-1 border-dashed border-gray-400 flex items-center justify-between">
-               <Image src="/Ellipse 43.svg" alt="Ellipse 43" width={20} height={20} />
-               <h1 className="font-bold text-xl">UI/UX</h1>
-             </div>
-             <p>
-             Founders building their first MVP and <br /> need expert UI to stand out
-             </p>
-           </div>
+              <Image
+                src="/Ellipse 43.svg"
+                alt="Ellipse 43"
+                width={20}
+                height={20}
+              />
+              <h1 className="font-bold text-xl">UI/UX</h1>
+            </div>
+            <p>
+              Founders building their first MVP and <br /> need expert UI to
+              stand out
+            </p>
+          </div>
         </div>
       </div>
     </section>

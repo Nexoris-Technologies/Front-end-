@@ -7,9 +7,9 @@ function Nexoris() {
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28 max-w-7xl w-full">
         {/* Text Section */}
         <div className="flex flex-col gap-6 w-full lg:w-[45rem]">
-          <h1 className="text-2xl sm:text-3xl lg:text-[3rem] font-bold text-center lg:text-left max-w-[100%] mx-auto lg:mx-0">
+          <h3 className="text-2xl sm:text-3xl lg:text-[3rem] font-bold text-center lg:text-left max-w-[100%] mx-auto lg:mx-0">
             Why Choose Nexoris for UI/UX Design?
-          </h1>
+          </h3>
 
           <div className="flex flex-col gap-8 max-w-[90%] mx-auto lg:mx-0">
             <div className="flex items-start gap-4">

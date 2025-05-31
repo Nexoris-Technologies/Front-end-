@@ -12,7 +12,7 @@ export default function Help() {
           </h3>
         </div>
         {/* Housing  the Phone and flexed texes*/}
-        <div className="flex flex-col lg:flex-row items-center px-6  lg:items-start justify-center gap-[22px]">
+        <div className="flex flex-col lg:flex-row items-center px-6  lg:items-start justify-center mx-auto container gap-[22px]">
           {/* Housing the first 3 texes */}
           <div className="flex flex-col gap-[32px]">
             {/* The first text */}

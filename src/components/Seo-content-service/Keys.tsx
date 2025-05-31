@@ -4,7 +4,7 @@ export default function SeoKey() {
   return (
     <section>
       {/* Housing everything */}
-      <div className="flex flex-col lg:flex-row gap-[7rem] md:gap-[6.2rem] justify-center items-center md:text-left py-[12rem]">
+      <div className="flex flex-col lg:flex-row gap-[7rem] lg:gap-[6rem] w-full mx-auto container justify-center  items-center md:text-left lg:pt-[12rem] py-[6rem]">
         {/* Key image */}
         <div className="w-[343px] h-[280px] md:w-[529px] md:h-[540px]">
           <Image

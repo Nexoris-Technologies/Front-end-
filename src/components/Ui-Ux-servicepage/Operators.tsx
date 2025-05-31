@@ -27,7 +27,7 @@
 
 // export default Operators;
 
-"use client"
+"use client";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from "react";
@@ -52,7 +52,7 @@ function Operators() {
     { src: "/SLogo1.svg", alt: "Service Logo 1" },
     { src: "/SLogo2.svg", alt: "Service Logo 2" },
     { src: "/SLogo3.svg", alt: "Service Logo 3" },
-    { src: "/SLogo4.svg", alt: "Service Logo 4" },
+    { src: "/Booking.webp", alt: "Service Logo 4" },
     { src: "/SLogo5.svg", alt: "Service Logo 5" },
   ];
 
@@ -60,9 +60,18 @@ function Operators() {
     <section className="sm:py-12 flex flex-col gap-10 items-center justify-center px-4 sm:px-8 bg-white">
       <div>
         <ul className="list-disc list-inside text-center max-w-[42rem] flex flex-col gap-2 text-sm sm:text-base md:text-lg font-bold">
-          <li>Built for operators across logistics, energy, finance, and education.</li>
-          <li>Trusted to streamline workflows, cut overhead, and power critical systems.</li>
-          <li>85% of clients launch their first MVP or internal product in 6–12 weeks.</li>
+          <li>
+            Built for operators across logistics, energy, finance, and
+            education.
+          </li>
+          <li>
+            Trusted to streamline workflows, cut overhead, and power critical
+            systems.
+          </li>
+          <li>
+            85% of clients launch their first MVP or internal product in 6–12
+            weeks.
+          </li>
         </ul>
       </div>
 

@@ -139,8 +139,10 @@ h3 {
   /* background-image: url("/Seo-Hero-Image.webp");
   background-size: contain; */
   background: linear-gradient(to right, #d7d2f9, rgba(84, 60, 218, 0)),
-    url("/seo-hero-image.webp");
+    url("/shero.webp");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @keyframes marquee {

@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 function Competition() {
   return (
     <section className="my-24 flex justify-center py-20 px-4 bg-white">
-      <div className="flex items-center justify-center w-full max-w-7xl">
+      <div className="flex items-center justify-center w-full ">
         <div className="flex flex-col items-center gap-8 text-center">
           {/* Badge */}
           <h4 className="bg-[#0059F11A] py-2 px-6 rounded-full text-[#0059F1] font-bold text-sm sm:text-base">
@@ -18,7 +18,7 @@ function Competition() {
           </h4>
 
           {/* Heading and Paragraph */}
-          <div className="flex flex-col items-center gap-4 w-full max-w-3xl">
+          <div className="flex flex-col items-center gap-4 w-full ">
             <h1 className="font-bold text-2xl sm:text-3xl lg:text-5xl text-[#543CDA]">
               Build Websites That <br /> Outrun the Competition.
             </h1>

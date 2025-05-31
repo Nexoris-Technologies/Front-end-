@@ -4,12 +4,12 @@ export default function SeoHelp() {
   return (
     <section className="bg-[#EAE8F7] w-full ">
       {/* Housing all */}
-      <div className="flex flex-col  gap-[6rem] items-center py-[5rem]">
+      <div className="flex flex-col justify-center items-center gap-[3rem] mx-auto container py-[5rem]">
         <h3 className="text-center text-[22px] md:text-[40px] text-[#543CDA] font-extrabold">
           Who We Help
         </h3>
         {/* Housing the check image and the textes */}
-        <div className=" flex flex-col gap-[8rem] lg:flex-row items-center justify-center px-4 ">
+        <div className=" flex flex-col items-center gap-[8rem] lg:flex-row  px-4 ">
           {/* Housing the main image image and p-text */}
           <div className="flex mt-[4rem] lg:mt-[.2rem]  gap-[1rem] lg:gap-5   order-2 lg:order-1">
             <div className="w-[56px] h-[375px] md:w-[85px] md:h-[636px]">
@@ -46,7 +46,7 @@ export default function SeoHelp() {
           {/* Who er help image */}
           <div className=" w-[343px] h-[280px] md:w-[529px] md:h-[540px]  order-1 lg:order-2">
             <Image
-              src="/seo-help-image.webp"
+              src="/shelp.webp"
               alt="Seo Help image"
               width={529}
               height={540}

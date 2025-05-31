@@ -50,7 +50,6 @@
 
 // export default Experiences;
 
-
 import Image from "next/image";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
@@ -58,13 +57,13 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Experiences() {
   const images = [
-    { src: "/Frame1.svg", alt: "Service Logo 1" },
-    { src: "/Frame2.svg", alt: "Service Logo 2" },
-    { src: "/Frame3.svg", alt: "Service Logo 3" },
-    { src: "/Frame4.svg", alt: "Service Logo 4" },
-    { src: "/Frame5.svg", alt: "Service Logo 5" },
-    { src: "/Frame6.svg", alt: "Service Logo 6" },
-    { src: "/Frame7.svg", alt: "Service Logo 7" },
+    { src: "/uimage1.webp", alt: "Service image 1" },
+    { src: "/uimage2.webp", alt: "Service image 2" },
+    { src: "/uimage3.webp", alt: "Service image 3" },
+    { src: "/uimage4.webp", alt: "Service image 4" },
+    { src: "/uimage5.webp", alt: "Service image 5" },
+    { src: "/uimage6.webp", alt: "Service image 6" },
+    { src: "/uimage7.webp", alt: "Service image 7" },
   ];
 
   return (
@@ -82,7 +81,9 @@ function Experiences() {
               Design Experiences That Keep <br /> People Coming Back
             </h1>
             <p className="font-normal text-sm sm:text-base text-gray-700 px-2">
-              At Nexoris, we craft intuitive interfaces and user journeys that turn first-time visitors into loyal users, driven <br /> by insight, built for clarity, and tailored to your business goals.
+              At Nexoris, we craft intuitive interfaces and user journeys that
+              turn first-time visitors into loyal users, driven <br /> by
+              insight, built for clarity, and tailored to your business goals.
             </p>
           </div>
 
@@ -104,6 +105,10 @@ function Experiences() {
                     alt={img.alt}
                     width={180}
                     height={100}
+                    loading="eager"
+                    priority={index < 2}
+                    placeholder="blur"
+                    blurDataURL="/placeholder.jpg"
                     className="w-32 sm:w-40 lg:w-48 h-auto"
                   />
                 ))}

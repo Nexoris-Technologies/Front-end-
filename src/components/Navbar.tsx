@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className="bg-purple-dark shadow-lg fixed top-0 z-20 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
+      className="bg-purple-dark shadow-lg fixed top-0 z-50 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
       role="navigation"
       aria-label="Main navigation"
     >

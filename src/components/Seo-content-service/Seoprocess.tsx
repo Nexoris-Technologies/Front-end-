@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SeoProcess() {
   return (
-    <section className="bg-[#EAE8F7] rounded-[50px]">
+    <section className="bg-[#EAE8F7] lg:rounded-[50px]">
       {/* Housing all section */}
       <div className="flex flex-col py-[3rem] mt-[4rem] md:py-[6rem] gap-[50px] ">
         <h2 className="text-[22px] md:text-[40px] font-extrabold text-center">

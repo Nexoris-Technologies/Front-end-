@@ -1,14 +1,14 @@
+import Image from "next/image";
 import Button from "../Button/Button";
 
 export default function SeoHero() {
   return (
-    <section className="bg-[#d7d2f9]">
-      {/* Housing all */}
-      <div className="flex flex-col  lg:flex-row mt-[4rem] ">
-        {/* housing the text area */}
-        <div className="flex flex-col items-center lg:items-start mx-auto gap-[2rem] py-[4rem] w-[45%] lg:pl-[22rem]">
+    <section className="relative w-full bg-[#d7d2f9]">
+      <div className="relative z-0 container mx-auto flex flex-col  lg:flex-row mt-[4rem] px-[8rem]">
+        {/* Left side - text */}
+        <div className="flex flex-col items-center lg:items-start gap-[2rem]   py-[4rem]  z-10">
           <div>
-            <p className=" py-2 lg:py-[4px] px-[24px] bg-[#0059F1]/10 text-[#0059F1] w-[254px] rounded-[20px]">
+            <p className="py-2 lg:py-[4px] px-[24px] bg-[#0059F1]/10 text-[#0059F1] w-[254px] rounded-[20px]">
               SEO and Content Marketing
             </p>
           </div>
@@ -20,22 +20,21 @@ export default function SeoHero() {
             drive visibility, clicks, and compounding growth. So your site
             doesn&apos;t just rank, it performs.
           </p>
-          {/* Hero button */}
+
           <div className="rounded-[8px] py-2 lg:py-[12px] px-[31px] bg-[#543CDA] w-[320px]">
             <Button className="text-[17px] font-bold hover:bg-[#EAE8F7] text-[#FFFFFF]">
               Let&apos;s optimize Your Growth
             </Button>
           </div>
 
-          {/* Trusted brands */}
           <div className="flex flex-col gap-3">
-            <p className="text-[18px]  font-semibold">Trusted by 50+ brands</p>
-            <p className="text-[18px] w-[350px] lg:w-[450px]  font-semibold">
+            <p className="text-[18px] font-semibold">Trusted by 50+ brands</p>
+            <p className="text-[18px] w-[350px] lg:w-[450px] font-semibold">
               Used by growth-driven teams in SaaS, healthtech, and digital
               commerce.
             </p>
           </div>
-          {/* housing the 3x 40+ */}
+
           <div className="flex gap-[4rem] w-[300px] lg:w-full">
             <div>
               <h1 className="text-[30px] text-[#543CDA]">3X</h1>
@@ -47,17 +46,56 @@ export default function SeoHero() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Hero Images */}
-        <div className="relative seo--hero w-[55%] lg:ml-[5rem]">
-          {/* <Image
-            src="/Seo Hero Image.webp"
-            alt="seo image"
-            width={695}
-            height={369}
-            className="object-cover brightness-75"
-          /> */}
-          {/* <div className="absolute inset-0 bg-[#EAE8F7]/70"></div> */}
+      {/* Full-width hero background */}
+      <div className="absolute top-0 right-0 bottom-[6%] left-1/2 seo--hero hidden lg:block z-0"></div>
+      {/* Section for the Kiwi, cash etc images */}
+      <div className="pt-[4rem] pb-[1rem] max-w-[25rem] md:max-w-[100rem] lg:max-w-[83rem] mx-auto lg:mr-[17rem] px-4">
+        <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
+          {/* Housing the various cards where flex will be done */}
+          <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[2rem] lg:gap-[110px] px-2">
+            <div className=" w-[51px] h-[12.75px] md:w-[152px] md:h-[38px]">
+              <Image
+                src="/Kiwi.webp"
+                alt="Kiwi-image"
+                width={152}
+                height={38}
+              />
+            </div>
+            <div className="w-[53px] h-[16px]  md:w-[161px] md:h-[48px]">
+              <Image
+                src="/me-direct.webp"
+                alt="Direct-image"
+                width={161}
+                height={48}
+              />
+            </div>
+            <div className="w-[42.37] h-[16.7px] md:w-[122.88] md:h-[48px]">
+              <Image
+                src="/Cash-image.webp"
+                alt="Cash-image"
+                width={122.88}
+                height={48}
+              />
+            </div>
+            <div className=" w-[42px] h-[8px] md:w-[84px] md:h-[16px]">
+              <Image
+                src="/Booking.webp"
+                alt="booking-image"
+                width={84}
+                height={16}
+              />
+            </div>
+            <div className=" w-[50.9px] h-[16.7px] md:w-[84] md:h-[16px]">
+              <Image
+                src="/rails.webp"
+                alt="/rails.webp"
+                width={84}
+                height={16}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

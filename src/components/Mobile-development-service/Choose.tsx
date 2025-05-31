@@ -4,7 +4,7 @@ import { CgCheckO } from "react-icons/cg";
 function WhyChoose() {
   return (
     <section className="flex bg-[#EAE8F7] ">
-      <div className="flex flex-col  mx-auto items-center lg:flex-row gap-12 lg:gap-[30px]  py-[6rem] ">
+      <div className="flex flex-col  mx-auto items-center lg:flex-row gap-12 lg:gap-[35px]  py-[6rem] ">
         {/* Text Section */}
         <div className="flex flex-col  gap-[32px]">
           <h1 className="w-[350px] lg:w-[600px] text-[24px] lg:text-[32px] font-bold  lg:text-left  ">
@@ -66,7 +66,7 @@ function WhyChoose() {
         </div>
 
         {/* Image and Testimonial */}
-        <div className="w-[400px] h-[420px]  md:w-[600px] md:h-[600px]">
+        <div className="w-[400px] h-[420px]  md:w-[600px] md:h-[600px] px-4 lg:px-0">
           <Image
             src="/mobile-app-photo.webp"
             alt="Service Image"
