@@ -1,10 +1,10 @@
+"use client";
 import Image from "next/image";
 
 function Help() {
   return (
     <section className="flex items-center justify-center py-20 px-4 bg-white">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12 max-w-7xl w-full">
-        
         {/* Image Section */}
         <div className="w-full flex justify-center lg:justify-start">
           <Image
@@ -18,9 +18,12 @@ function Help() {
 
         {/* Text Section */}
         <div className="flex flex-col gap-6 w-full">
-          <h1 className="text-2xl sm:text-4xl lg:text-4xl font-bold">
+          <h2
+            style={{ color: "#000000" }}
+            className="text-2xl sm:text-4xl lg:text-4xl font-bold"
+          >
             Who we Help?
-          </h1>
+          </h2>
 
           <div className="flex flex-col lg:gap-4 gap-8">
             {[

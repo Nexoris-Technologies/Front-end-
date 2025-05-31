@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CgCheckO } from "react-icons/cg";
 
 function WhyChoose() {
   return (
@@ -13,21 +14,30 @@ function WhyChoose() {
           <div className="flex flex-col  gap-[24px]  ">
             {/* first text */}
             <div className="flex gap-[16px]">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
               <p className="text-[16px] md:text-[18px] w-[243px] lg:w-full ">
                 Native-quality performance with cross-platform efficiency
               </p>
             </div>
 
             <div className="flex gap-[16px]">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
               <p className="w-[233px] md:w-full text-[16px] md:text-[18px]">
                 Built-in support for app store approvals and launch logistics
               </p>
             </div>
 
             <div className="flex gap-[16px]">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
               <p className="w-[233px] text-[16px] md:text-[18px] md:w-[500px]">
                 Expertise in integrating secure backends, even with legacy
                 systems
@@ -35,13 +45,19 @@ function WhyChoose() {
             </div>
 
             <div className="flex gap-[16px]">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
               <p className="text-[16px] w-[233px] md:w-full md:text-[18px]">
                 Human-centered UX that puts your users first
               </p>
             </div>
             <div className="flex gap-[16px]">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
               <p className="text-[16px] w-[233px] md:w-full md:text-[18px]">
                 Long-term support, from v1 to v10
               </p>

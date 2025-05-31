@@ -1,41 +1,56 @@
+"use client";
 import Image from "next/image";
+import { CgCheckO } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 function Choose() {
   return (
-    <section className="flex items-center justify-center py-20 bg-[#EAE8F7] px-4">
-      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28 max-w-7xl w-full">
+    <section className="flex items-center justify-center py-15 bg-[#EAE8F7] px-4">
+      <div className="flex flex-col lg:flex-row items-center  gap-12 lg:gap-14  ">
         {/* Text Section */}
-        <div className="flex flex-col gap-6 w-full lg:w-[45rem]">
-          <h1 className="text-2xl sm:text-3xl lg:text-[3rem] font-bold text-center lg:text-left max-w-[90%] mx-auto lg:mx-0">
+        <div className="flex flex-col gap-12 lg:gap-[2.5rem]  ">
+          <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-bold text-center lg:text-left lg:w-[500px]  w-[343px] ">
             Why Choose Nexoris for Web Development?
-          </h1>
+          </h3>
 
           <div className="flex flex-col gap-8 max-w-[90%] mx-auto lg:mx-0">
             <div className="flex items-start gap-4">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
-              <p className="text-base sm:text-lg">
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
+              <p className="text-base sm:text-[18px]">
                 100% custom code, zero drag-and-drop fluff.
               </p>
             </div>
 
             <div className="flex items-start gap-4">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
-              <p className="text-base sm:text-lg">
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
+              <p className="text-base sm:text-[18px] w-[343px] lg:w-[553px] ">
                 Sites optimized to pass Google’s Core Web Vitals with flying
                 colors.
               </p>
             </div>
 
             <div className="flex items-start gap-4">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
-              <p className="text-base sm:text-lg">
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
+              <p className="text-base sm:text-[18px]">
                 Strategy-first builds that align UX, SEO, and business growth.
               </p>
             </div>
 
             <div className="flex items-start gap-4">
-              <Image src="/subtract.svg" alt="Icon" width={24} height={24} />
-              <p className="text-base sm:text-lg">
+              <p className="text-[1.7rem]">
+                <CgCheckO />
+              </p>
+              {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
+              <p className="text-base sm:text-[18px]">
                 Long-term partners, not just launch-and-leave developers.
               </p>
             </div>
@@ -43,24 +58,23 @@ function Choose() {
         </div>
 
         {/* Image and Testimonial */}
-        <div className="relative flex items-center justify-center w-full max-w-[28rem]">
-          <Image
-            src="/ManChoose.png"
-            alt="Service Image"
-            width={300}
-            height={100}
-            className="w-full h-130 rounded-4xl"
-          />
-          <div className="absolute bottom-30 w-[90%] bg-white rounded-xl py-1 px-4 flex flex-col gap-3 shadow-md">
-            <p className="text-sm sm:text-base italic">
-              “The Nexoris team rebuilt our site from scratch and helped us
-              climb from page 6 to the top 3 on Google all while improving speed
-              and conversions.”
-            </p>
-            <h2 className="font-bold text-base sm:text-lg">
-              — John A., CTO at NovaBuild
-            </h2>
-          </div>
+        <div className="">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }} // Only animate once when 30% of image is visible
+            transition={{ duration: 0.9, ease: "easeOut" }}
+          >
+            <div className="w-[343px] lg:w-[560px]  ">
+              <Image
+                src="/web-dev-image.webp"
+                alt="Service Image"
+                width={560}
+                height={600}
+                className=" rounded-[24px]"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

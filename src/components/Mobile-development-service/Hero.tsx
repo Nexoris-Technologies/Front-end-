@@ -5,7 +5,7 @@ export default function HeroPage() {
   return (
     <main>
       <section className="bg-[#543CDA]/20 relative">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center lg:items-start lg:mt-[4rem] container mx-auto px-4 pt-32 lg:pt-20">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center justify-center  lg:mt-[4rem] mx-auto lg:max-w-[1224px] px-6 pt-32 lg:pt-20">
           {/* Left Content */}
           <div className="flex flex-col gap-8 max-w-xl w-full">
             {/* Tag */}
@@ -70,7 +70,7 @@ export default function HeroPage() {
         </div>
 
         {/* Section for the Kiwi, cash etc images */}
-        <div className="pt-[4rem] pb-[1rem] max-w-[25rem] md:max-w-[100rem] lg:max-w-[98rem] mx-auto lg:mr-[10rem] px-4">
+        <div className="pt-[4rem] pb-[1rem] max-w-[25rem] md:max-w-[100rem] lg:max-w-[80rem] mx-auto lg:mr-[17rem] px-4">
           <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
             {/* Housing the various cards where flex will be done */}
             <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[2rem] lg:gap-[110px] px-2">
@@ -108,7 +108,7 @@ export default function HeroPage() {
               </div>
               <div className=" w-[50.9px] h-[16.7px] md:w-[84] md:h-[16px]">
                 <Image
-                  src="/Group 96.webp"
+                  src="/rails.webp"
                   alt="/rails.webp"
                   width={84}
                   height={16}

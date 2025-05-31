@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Button from "../Button/Button";
+
+import { motion } from "framer-motion";
 
 function Competition() {
   return (
@@ -34,14 +38,21 @@ function Competition() {
           </Link>
 
           {/* Image */}
-          <div className="w-full max-w-5xl">
-            <Image
-              src="/ServiceImage2.svg"
-              alt="Service Image"
-              width={1200}
-              height={800}
-              className="w-full h-auto object-contain rounded-md"
-            />
+          <div className="w-full max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <Image
+                src="/ServiceImage2.svg"
+                alt="Service Image"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-contain rounded-md"
+                priority // Optional: preloads for better performance
+              />
+            </motion.div>
           </div>
         </div>
       </div>

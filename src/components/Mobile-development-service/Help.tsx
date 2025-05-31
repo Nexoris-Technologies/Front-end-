@@ -4,15 +4,15 @@ export default function Help() {
   return (
     <section>
       {/* Housing Whoe we help Text and the flex section */}
-      <div className="pt-[12rem] flex flex-col gap-[60px]">
+      <div className="pt-[5rem] lg:pt-[12rem] flex flex-col gap-[60px] px-2">
         {/* Housing who we help */}
         <div>
-          <h3 className="text-[24px] md:text-[40px] font-bold text-center">
+          <h3 className="text-[24px] md:text-[45px] font-bold text-center">
             Who We Help
           </h3>
         </div>
         {/* Housing  the Phone and flexed texes*/}
-        <div className="flex flex-col lg:flex-row items-center px-6  lg:items-start justify-center gap-[24px]">
+        <div className="flex flex-col lg:flex-row items-center px-6  lg:items-start justify-center gap-[22px]">
           {/* Housing the first 3 texes */}
           <div className="flex flex-col gap-[32px]">
             {/* The first text */}
@@ -88,7 +88,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[340px]">
+                <p className="text-[16px] md:w-[420px] tracking-wider">
                   Businesses ready to turn their web platforms into full mobile
                   solutions
                 </p>
@@ -105,7 +105,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[330px]">
+                <p className="text-[16px] md:w-[420px] tracking-wider">
                   Founders ready to upgrade their MVPs into full-scale mobile
                   platforms.
                 </p>
