@@ -5,9 +5,9 @@ export default function HeroPage() {
   return (
     <main>
       <section className="bg-[#543CDA]/20 relative">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center justify-center  lg:mt-[4rem] mx-auto container px-6 pt-32 lg:pt-20">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-center justify-center  lg:mt-20 mx-auto container px-6 pt-32 lg:pt-20">
           {/* Left Content */}
-          <div className="flex flex-col gap-8 max-w-xl w-full">
+          <div className="flex flex-col gap-8 max-w-xl ">
             {/* Tag */}
             <div className="rounded-[20px] border w-max py-1 px-6 border-[#0059F1]/10 bg-[#0059F1]/10">
               <h6 className="text-sm text-[#0059F1] font-semibold">
@@ -70,7 +70,7 @@ export default function HeroPage() {
         </div>
 
         {/* Section for the Kiwi, cash etc images */}
-        <div className="pt-[4rem] pb-[1rem] max-w-[25rem] md:max-w-[100rem] lg:max-w-[86rem] mx-auto lg:mr-[17rem] px-4">
+        <div className="pt-[4rem] pb-[1rem]  mx-auto container w-335">
           <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
             {/* Housing the various cards where flex will be done */}
             <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[2rem] lg:gap-[110px] px-2">

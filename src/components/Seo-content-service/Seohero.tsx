@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 export default function SeoHero() {
   return (
     <section className="relative w-full bg-[#d7d2f9]">
-      <div className="relative z-0 container mx-auto flex flex-col  lg:flex-row mt-[4rem] px-[8rem]">
+      <div className="relative z-0 container mx-auto flex flex-col  lg:flex-row mt-[4rem] px-12">
         {/* Left side - text */}
         <div className="flex flex-col items-center lg:items-start gap-[2rem]   py-[4rem]  z-10">
           <div>
@@ -51,7 +51,7 @@ export default function SeoHero() {
       {/* Full-width hero background */}
       <div className="absolute top-0 right-0 bottom-[6%] left-1/2 seo--hero hidden lg:block z-0"></div>
       {/* Section for the Kiwi, cash etc images */}
-      <div className="pt-[4rem] pb-[1rem] max-w-[25rem] md:max-w-[100rem] lg:max-w-[83rem] mx-auto lg:mr-[17rem] px-4">
+      <div className="pt-[4rem] pb-[1rem] container mx-auto px-12">
         <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
           {/* Housing the various cards where flex will be done */}
           <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[2rem] lg:gap-[110px] px-2">

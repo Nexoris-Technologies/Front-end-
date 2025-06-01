@@ -6,9 +6,9 @@ function Tired() {
   return (
     <section className="px-4">
       {/* Centered container with vertical spacing */}
-      <div className="flex flex-col items-center gap-6 py-20 max-w-5xl mx-auto text-center">
+      <div className="flex flex-col items-center justify-center gap-6 py-20 lg:max-w-6xl  container  mx-auto ">
         {/* Main heading with responsive font size and line break handling */}
-        <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl leading-snug">
+        <h3 className="font-bold text-lg  text-center md:text-4xl ">
           Tired of users getting lost, frustrated, or bouncing? <br /> Let’s
           design something clear, fast, and unforgettable.
         </h3>

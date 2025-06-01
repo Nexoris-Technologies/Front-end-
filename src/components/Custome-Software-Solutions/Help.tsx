@@ -15,7 +15,7 @@ export default function Help() {
         {/* Housing the main Nexoris Solution and the cards */}
         <div className="flex flex-col mx-auto">
           {/* Housing the NEXORIS SOLUTION */}
-          <div className="flex flex-col items-center gap-[12px] p-[16px] lg:p-[32px] rounded-[12px] lg:rounded-[24px] bg-[#543CDA] w-[339px]">
+          <div className="flex flex-col items-center gap-[12px] p-3 lg:p-5 rounded-[12px] lg:rounded-[24px] bg-[#543CDA] w-[339px]">
             <h3 className="text-[24px] lg:text-[32px] font-bold text-[#FFFFFF]">
               Nexoris Solutions
             </h3>

@@ -4,14 +4,14 @@ import { CgCheckO } from "react-icons/cg";
 function Nexoris() {
   return (
     <section className="flex items-center justify-center py-20 px-4">
-      <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28 max-w-7xl w-full">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-20 container mx-auto  ">
         {/* Text Section */}
-        <div className="flex flex-col gap-6 w-full lg:w-[45rem]">
-          <h3 className="text-2xl sm:text-3xl lg:text-[3rem] font-bold text-center lg:text-left max-w-[100%] mx-auto lg:mx-0">
+        <div className="flex flex-col gap-6 max-w-lg">
+          <h3 className=" lg:text-4xl font-bold text-center lg:text-left ">
             Why Choose Nexoris for UI/UX Design?
           </h3>
 
-          <div className="flex flex-col gap-8 max-w-[90%] mx-auto lg:mx-0">
+          <div className="flex flex-col gap-8 ">
             <div className="flex items-start gap-4">
               <p className="text-[1.7rem]">
                 <CgCheckO />
@@ -65,13 +65,13 @@ function Nexoris() {
         </div>
 
         {/* Image and Testimonial */}
-        <div className="">
+        <div className="w-[343px] h-[420px] md:w-[550px] md:h-[600px] relative overflow-hidden ">
           <Image
             src="/uichoose.webp"
             alt="Service Image"
-            width={600}
-            height={600}
-            className="w-[343px] h-[420]  lg:w-[600px] lg:h-[600px]"
+            fill
+            style={{ objectFit: "cover" }}
+            className="rounded-2xl"
           />
         </div>
       </div>

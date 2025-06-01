@@ -8,7 +8,7 @@ export default function OurProcess() {
           Our Process
         </h3>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-[1rem] lg:gap-[16px] max-w-[1224px] items-center mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-[1rem]   mx-auto lg:w-300">
           {/* First card */}
           <div className="flex flex-col items-center gap-[24px] w-[288px] ">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
@@ -209,7 +209,7 @@ export default function OurProcess() {
           </div>
 
           {/* Sixth card */}
-          <div className="flex flex-col order- md:order-0 items-center  lg:mb-0 gap-[24px] w-[288px] col-span-1">
+          <div className="flex flex-col order- md:order-0 items-center  gap-[24px] w-[288px] col-span-1">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image
                 src="/Tennis bat.svg"

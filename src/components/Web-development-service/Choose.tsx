@@ -6,20 +6,20 @@ import { motion } from "framer-motion";
 function Choose() {
   return (
     <section className="flex items-center justify-center py-15 bg-[#EAE8F7] px-4">
-      <div className="flex flex-col lg:flex-row items-center  gap-12 lg:gap-14  ">
+      <div className="flex flex-col lg:flex-row  items-center justify-center mx-auto container gap-12 lg:gap-38  ">
         {/* Text Section */}
-        <div className="flex flex-col gap-12 lg:gap-[2.5rem]  ">
-          <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-bold text-center lg:text-left lg:w-[500px]  w-[343px] ">
+        <div className="flex flex-col gap-12 lg:gap-7 max-w-xl ">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center lg:text-left  ">
             Why Choose Nexoris for Web Development?
           </h3>
 
-          <div className="flex flex-col gap-8 max-w-[90%] mx-auto lg:mx-0">
+          <div className="flex flex-col gap-8  ">
             <div className="flex items-start gap-4">
               <p className="text-[1.7rem]">
                 <CgCheckO />
               </p>
               {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
-              <p className="text-base sm:text-[18px]">
+              <p className=" text-md lg:text-xl">
                 100% custom code, zero drag-and-drop fluff.
               </p>
             </div>
@@ -29,7 +29,7 @@ function Choose() {
                 <CgCheckO />
               </p>
               {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
-              <p className="text-base sm:text-[18px] w-[343px] lg:w-[553px] ">
+              <p className="text-md lg:text-xl  ">
                 Sites optimized to pass Google’s Core Web Vitals with flying
                 colors.
               </p>
@@ -40,7 +40,7 @@ function Choose() {
                 <CgCheckO />
               </p>
               {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
-              <p className="text-base sm:text-[18px]">
+              <p className="text-md lg:text-xl">
                 Strategy-first builds that align UX, SEO, and business growth.
               </p>
             </div>
@@ -50,7 +50,7 @@ function Choose() {
                 <CgCheckO />
               </p>
               {/* <Image src="/subtract.svg" alt="Icon" width={24} height={24} /> */}
-              <p className="text-base sm:text-[18px]">
+              <p className="text-md lg:text-xl">
                 Long-term partners, not just launch-and-leave developers.
               </p>
             </div>

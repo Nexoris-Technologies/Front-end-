@@ -41,7 +41,7 @@ export default function CustomeHeroPage() {
           </div>
         </div>
         {/* Housing the hero image */}
-        <div className="rounded-[24px] flex mx-auto w-[344px] h-[111px] md:w-[1224px] md:h-[400px] ">
+        <div className="rounded-[24px] flex mx-auto w-[344px] h-[111px] md:w-[1224px] md:h-[400px] lg:px-4">
           <Image
             src="/Custom-hero image.webp"
             alt=""

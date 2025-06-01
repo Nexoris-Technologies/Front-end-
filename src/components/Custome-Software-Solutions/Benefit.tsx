@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function Keys() {
   return (
     <section className="px-4">
-      <div className="flex flex-col items-center gap-12 py-12 lg:py-24">
+      <div className="flex flex-col items-center justify-center container mx-auto gap-12 py-12 lg:py-24">
         {/* Heading */}
         <h3 className="font-bold text-xl sm:text-2xl lg:text-4xl text-center">
           Key Benefits at a Glance
         </h3>
 
         {/* Cards Container */}
-        <div className="flex flex-col lg:flex-row gap-6 items-center">
+        <div className="flex flex-col lg:flex-row gap-6 items-center md:px-10">
           {/* Card 1 */}
           <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
             <Image src="/Number 1.svg" alt="Number 1" width={40} height={40} />

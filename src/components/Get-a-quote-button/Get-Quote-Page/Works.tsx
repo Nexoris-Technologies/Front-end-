@@ -5,13 +5,13 @@ export default function Works() {
     <section>
       {/* Housing How it works and the cards */}
 
-      <div className="flex flex-col items-center justify-center gap-[10px] md:gap-[40px] my-[5rem] mt-[8rem]  max-w-[1224px] container mx-auto">
-        <h3 className="text-[24px] md:text-[40px] font-bold tracking-wide">
+      <div className="flex flex-col items-center justify-center gap-4 md:gap-15 py-8 mt-30  container mx-auto">
+        <h3 className="text-xl md:text-4xl font-bold tracking-wide">
           How It Works
         </h3>
 
         {/* housing the cards */}
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-[32px] md:gap-[4rem] ">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 ">
           {/* first card */}
           <div className="w-[288px] h-[246px] gap-[24px] flex flex-col justify-center items-center">
             <Image src="/Number 1.svg" alt="Number 1" width={60} height={60} />
@@ -57,8 +57,8 @@ export default function Works() {
               </h3>
 
               <p className="w-[270px] text-[14px] md:text-[16px] text-center">
-                Wherever you&apos;re based, we&apos;ll align availability to meet you on
-                your terms, virtually, and on your schedule.
+                Wherever you&apos;re based, we&apos;ll align availability to
+                meet you on your terms, virtually, and on your schedule.
               </p>
             </div>
           </div>

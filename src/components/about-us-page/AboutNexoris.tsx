@@ -8,7 +8,7 @@ import Build from "./About-page/Build";
 
 export default function AboutNexoris() {
   return (
-    <main>
+    <main className=" ">
       <div>
         <About />
       </div>

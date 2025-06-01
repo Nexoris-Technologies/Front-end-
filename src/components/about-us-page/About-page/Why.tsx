@@ -4,15 +4,13 @@ export default function Why() {
   return (
     <section>
       {/* Housing All what we do */}
-      <div className="flex flex-col lg:flex-row gap-[50px] md:gap-[8rem] items-center justify-center mt-[2rem] lg:mt-[10rem]  mx-auto w-full ">
+      <div className="flex flex-col lg:flex-row gap-20 md:gap-25 items-center justify-center mt-8 lg:mt-25  mx-auto container ">
         {/* Housing Why we do ALL textes */}
-        <div className="flex flex-col gap-[24px]   ">
+        <div className="flex flex-col gap-6 max-w-xl  ">
           {/* Housing Why we do */}
-          <div className="flex flex-col gap-[12px] w-[343px] md:w-full md:gap-[16px] border-[1px] p-[16px] rounded-[8px] border-[#898989]/40">
-            <h3 className="text-[20px] md:text-[24px] font-semibold ">
-              Why We Do It
-            </h3>
-            <div className="text-[14px] w-[330px] md:text-[18px] sm:w-[400px]  ">
+          <div className="flex flex-col gap-5 w-[353px] md:w-full md:gap-[16px] border-[1px] p-5 rounded-2xl border-[#898989]/40">
+            <h3 className="text-xl md:text-3xl font-semibold ">Why We Do It</h3>
+            <div className="  md:text-lg sm:w-[400px]  ">
               Why We Do It Because we believe every business deserves technology
               that works without headaches.
               <p className=" w-[300px] sm:w-[370px] md:w-[490px]">
@@ -32,21 +30,17 @@ export default function Why() {
             </div>
           </div>
           {/* Housing Our Vision */}
-          <div className="flex flex-col gap-[12px] w-[343px] md:w-full md:gap-[16px] border-[1px] p-[16px] rounded-[8px] border-[#898989]/40">
-            <h3 className="text-[20px] md:text-[24px] font-semibold">
-              Our Vision
-            </h3>
-            <p className="text-[14px] md:text-[18px] w-[330px] md:w-[490px]">
+          <div className="flex flex-col gap-2 w-[353px] md:w-full md:gap-3 border-[1px] p-4 rounded-2xl border-[#898989]/40">
+            <h3 className="text-xl md:text-3xl font-semibold">Our Vision</h3>
+            <p className=" md:text-lg  md:w-[490px]">
               To become the most trusted tech partner for businesses seeking
               smart, scalable, and human-centered digital solutions.
             </p>
           </div>
           {/* Housing Our Mission */}
-          <div className="flex flex-col w-[343px] md:w-full gap-[12px] md:gap-[16px] border-[1px] p-[16px] rounded-[8px] border-[#898989]/40">
-            <h3 className="text-[20px] md:text-[24px] font-semibold">
-              Our Mission
-            </h3>
-            <p className="text-[14px] w-[280px] md:text-[18px] md:w-[490px]">
+          <div className="flex flex-col w-[353px] md:w-full gap-2 md:gap-3 border-[1px] p-2 rounded-xl border-[#898989]/40">
+            <h3 className="text-lg md:text-3xl font-semibold">Our Mission</h3>
+            <p className="  md:text-lg md:w-[490px]">
               To help businesses thrive by delivering simple, secure, and
               sustainable digital tools built with care, backed by strategy, and
               designed to grow.
@@ -55,12 +49,12 @@ export default function Why() {
         </div>
 
         {/* Housing Why we do image */}
-        <div className="rounded-[24px] w-[300px] h-[454px] md:w-[560px] md:h-[741px]">
+        <div className="rounded-[24px] w-[360px] h-[454px] md:w-[560px] md:h-[741px] relative overflow-hidden">
           <Image
             src="/Why-we-image.webp"
             alt="Why we do Image"
-            width={560}
-            height={741}
+            fill
+            style={{ objectFit: "cover" }}
           />
         </div>
       </div>

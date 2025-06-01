@@ -4,20 +4,20 @@ import Image from "next/image";
 function Help() {
   return (
     <section className="flex items-center justify-center py-20 px-4 bg-white">
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-12 max-w-7xl w-full">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-30 mx-auto container">
         {/* Image Section */}
-        <div className="w-full flex justify-center lg:justify-start">
+        <div className="w-[343px] h-[266px] md:w-[580px] md:h-[450px] relative">
           <Image
             src="/ServiceImage1.svg"
             alt="Service Image"
-            width={280}
-            height={280}
-            className="w-full max-w-2xl lg:max-w-lg"
+            fill
+            style={{ objectFit: "cover" }}
+            className="rounded-2xl"
           />
         </div>
 
         {/* Text Section */}
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-6 max-w-xl">
           <h2
             style={{ color: "#000000" }}
             className="text-2xl sm:text-4xl lg:text-4xl font-bold"

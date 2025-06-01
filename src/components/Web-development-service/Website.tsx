@@ -6,9 +6,9 @@ function Website() {
   return (
     <section className="px-4">
       {/* Centered container with vertical spacing */}
-      <div className="flex flex-col items-center gap-6 py-20 max-w-5xl mx-auto text-center">
+      <div className="flex flex-col items-center justify-center gap-6 py-20 container mx-auto text-center">
         {/* Main heading with responsive font size and line break handling */}
-        <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl leading-snug">
+        <h1 className="font-bold text-xl sm:text-2xl md:text-4xl leading-snug">
           Your website shouldn’t be holding your business back.{" "}
           <br className="hidden md:inline" />
           Let’s build something faster, smarter, and better.

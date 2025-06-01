@@ -7,7 +7,7 @@ function Contact() {
       {/* Housing all.. Contact Us and the forms */}
       <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] lg:px-[7.8rem]">
         {/* housing the Contact us */}
-        <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-[2rem] lg:w-full ">
+        <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-4 lg:w-full ">
           <h3 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
             Contact Us
           </h3>

@@ -4,12 +4,12 @@ function WeSolve() {
   return (
     <section className="">
       {/* Main container */}
-      <div className="flex flex-col items-center py-20 gap-10 max-w-6xl mx-auto">
+      <div className="flex flex-col items-center justify-center py-20 gap-15 container mx-auto ">
         {/* Section heading */}
         <h3 className="font-bold text-2xl md:text-3xl text-center">
           Problems We Solve
         </h3>
-        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8">
+        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8 lg:w-290">
           <div className="shadow-xl">
             <div className="h-2 bg-[#543CDA] rounded-tr-2xl rounded-tl-2xl"></div>
             <Image
