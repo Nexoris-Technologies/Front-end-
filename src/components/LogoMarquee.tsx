@@ -10,7 +10,7 @@ const logos = [
   { src: "/Kiwi.webp", alt: "Kiwi" },
   { src: "/me-direct.webp", alt: "Me Direct" },
   { src: "/Cash-image.webp", alt: "Cash" },
-  { src: "/Booking.webp", alt: "Booking" },
+  { src: "/kayak.svg", alt: "Booking" },
   { src: "/rails.webp", alt: "Rails" },
 ];
 
