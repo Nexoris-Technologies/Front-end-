@@ -25,38 +25,44 @@ export default function Needs() {
           </div>
           {/* Housing the form */}
           <div className="flex flex-col gap-[24px]  ">
-            {/* Housing both the fullname and the lastname */}
+            {/* Housing both the fullname and the email */}
             <div className="flex flex-col md:flex-row gap-[24px]">
               {/* Housing the full name */}
               <div className="flex flex-col gap-[8px] flex-1">
                 <label htmlFor="Full name" className="text-[16px] ">
-                  First Name
+                  Full Name
                 </label>
                 <input
+                  id="Full name"
                   type="text"
                   className="focus:outline-none h-[40px]  w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                  required
                 />
               </div>
-              {/* Housing the lastname */}
+              {/* Housing the email */}
               <div className="flex flex-col gap-[8px] flex-1">
-                <label htmlFor="Last name" className="text-[16px] ">
-                  Last Name
+                <label htmlFor="Email" className="text-[16px] ">
+                  Email
                 </label>
                 <input
-                  type="text"
+                  id="Email"
+                  type="email"
                   className="focus:outline-none h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                  required
                 />
               </div>
             </div>
 
             {/* Housing company name */}
             <div className="flex flex-col gap-[8px]">
-              <label htmlFor="Full name" className="text-[16px] ">
+              <label htmlFor="Company name" className="text-[16px] ">
                 Company Name
               </label>
               <input
+                id="Company name"
                 type="text"
                 className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
+                required
               />
             </div>
 
@@ -67,6 +73,7 @@ export default function Needs() {
               </label>
               <div className="relative">
                 <input
+                  id="Solution"
                   type="text"
                   placeholder="select a solution"
                   className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
@@ -190,13 +197,13 @@ export default function Needs() {
             Not Just a Quote, But a Smarter Beninning
           </h3>
           <p className="text-[16px] md:text-[18px] text-center md:max-w-[620px]">
-            At Nexoris, we don&apos;t just price projects, we help shape them. From
-            the first message to final deployment, we work as your strategic
-            technology partner.
+            At Nexoris, we don&apos;t just price projects, we help shape them.
+            From the first message to final deployment, we work as your
+            strategic technology partner.
           </p>
           <p className="text-[14px] md:text-[18px] font-semibold text-center md:max-w-[620px] tracking-tight">
-            Let&apos;s turn ambition into architecture, clearly, confidently, and
-            fast.
+            Let&apos;s turn ambition into architecture, clearly, confidently,
+            and fast.
           </p>
         </div>
       </div>

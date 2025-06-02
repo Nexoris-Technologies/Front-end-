@@ -49,7 +49,7 @@ export default function BuiltFor() {
         <header className="text-center mb-16">
           <h2
             id="built-for-heading"
-            className="text-[#543CDA] text-2xl md:text-3xl font-bold mb-4"
+            className="text-[#20194b] text-2xl md:text-3xl font-bold mb-4"
           >
             Who We&apos;re Built For
           </h2>
