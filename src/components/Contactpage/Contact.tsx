@@ -115,17 +115,21 @@ function Contact() {
                 {/* First & Last Name */}
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1 flex flex-col gap-2">
-                    <label>First Name</label>
+                    <label htmlFor="First Name">First Name</label>
                     <input
+                      id="First Name"
                       type="text"
                       className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                      required
                     />
                   </div>
                   <div className="flex-1 flex flex-col gap-2">
-                    <label>Last Name</label>
+                    <label htmlFor="Last Name">Last Name</label>
                     <input
+                      id="Last Name"
                       type="text"
                       className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                      required
                     />
                   </div>
                 </div>
@@ -133,8 +137,9 @@ function Contact() {
                 {/* Email & Phone */}
                 <div className="flex flex-col md:flex-row gap-4">
                   <div className="flex-1 flex flex-col gap-2">
-                    <label>Email</label>
+                    <label htmlFor="Email">Email</label>
                     <input
+                      id="Email"
                       type="email"
                       className="border border-[#8F9092]/40 px-3 py-2 rounded"
                     />
@@ -151,19 +156,40 @@ function Contact() {
 
                 {/* Subject Select */}
                 <div className="flex flex-col gap-2">
-                  <label>Select Subject</label>
+                  <label htmlFor="Select Subject">Select Subject</label>
                   <div className="relative">
-                    <input
-                      type="text"
-                      placeholder="Select a subject"
-                      className="w-full border border-[#8F9092]/40 px-3 py-2 rounded"
-                    />
-                    <span className="absolute right-3 top-1/2 -translate-y-1/2">
+                    <select
+                      name="Select Subject"
+                      id="Select Subject"
+                      className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none"
+                    >
+                      <option value="none" selected disabled>
+                        Select a subject
+                      </option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="UI/UX Design & Consulting">
+                        UI/UX Design & Consulting
+                      </option>
+                      <option value="Custom Software Solutions">
+                        Custom Software Solutions
+                      </option>
+                      <option value="Mobile App Development">
+                        Mobile App Development
+                      </option>
+                      <option value="SEO & Content Marketing">
+                        SEO & Content Marketing
+                      </option>
+                      <option value="Product Design and Management ">
+                        Product Design and Management{" "}
+                      </option>
+                      <option value="Others">Others</option>
+                    </select>
+                    <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
                       <Image
                         src="/chevron-down.svg"
-                        alt="Down"
-                        width={20}
-                        height={20}
+                        alt="arrow down"
+                        width={24}
+                        height={24}
                       />
                     </span>
                   </div>
@@ -171,8 +197,10 @@ function Contact() {
 
                 {/* Message Textarea */}
                 <div className="flex flex-col gap-2">
-                  <label>Message</label>
+                  <label htmlFor="Message">Message</label>
                   <textarea
+                    name="Message"
+                    id="Message"
                     placeholder="Please describe what you need in detail"
                     className="w-full border border-[#8F9092]/40 px-3 py-2 rounded"
                   />

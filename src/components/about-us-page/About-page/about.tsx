@@ -1,5 +1,6 @@
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -32,6 +33,7 @@ export default function About() {
             </p>
 
             <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-5 text-sm md:text-lg w-52 md:w-72 flex justify-center items-center gap-2">
+              <Link href="/get-a-quote">
               GET STARTED
               <span>
                 <Image
@@ -39,8 +41,9 @@ export default function About() {
                   alt="arrow right"
                   width={16}
                   height={16}
-                />
+                  />
               </span>
+              </Link>
             </Button>
           </div>
 

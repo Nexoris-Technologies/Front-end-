@@ -101,8 +101,8 @@ export default function StartupSection() {
           Everything You Need to Launch, Grow, and Stay Ahead
         </h2>
         <p className="text-base text-purple-dark max-w-2xl mx-auto">
-          Whether you&apos;re launching, scaling, or pivoting, we partner with bold
-          startups to build tech that lasts beyond MVP.
+          Whether you&apos;re launching, scaling, or pivoting, we partner with
+          bold startups to build tech that lasts beyond MVP.
         </p>
       </div>
 
@@ -118,7 +118,8 @@ export default function StartupSection() {
           Not Sure What You Need?
         </h3>
         <p className="text-purple-dark mb-4">
-          Tell us where you are and where you want to go. We&apos;ll help you map the way forward.
+          Tell us where you are and where you want to go. We&apos;ll help you
+          map the way forward.
         </p>
         <Link
           href="/get-a-quote"

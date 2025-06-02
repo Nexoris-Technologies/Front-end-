@@ -1,5 +1,6 @@
 import Button from "@/components/Button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WhatWeDo() {
   return (
@@ -112,6 +113,7 @@ export default function WhatWeDo() {
         </div>
 
         <Button className="bg-[#543CDA]  text-[#FFFFFF] rounded-[8px] py-[14px] text-[14px] md:text-[18px] md:py-[21.5px] w-[200px]  md:w-[260px] flex justify-center mb-9 items-center gap-[10px]">
+          <Link href="/contact-us">
           Get In Touch
           <span>
             <Image
@@ -119,8 +121,9 @@ export default function WhatWeDo() {
               alt="arrow right"
               width={16}
               height={16}
-            />
+              />
           </span>
+          </Link>
         </Button>
       </div>
     </section>

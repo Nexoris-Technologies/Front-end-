@@ -35,7 +35,7 @@ export default function Needs() {
                 <input
                   id="Full name"
                   type="text"
-                  className="focus:outline-none h-[40px]  w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                  className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px]  w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
                   required
                 />
               </div>
@@ -47,21 +47,21 @@ export default function Needs() {
                 <input
                   id="Email"
                   type="email"
-                  className="focus:outline-none h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                  className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
                   required
                 />
               </div>
             </div>
 
             {/* Housing company name */}
-            <div className="flex flex-col gap-[8px]">
+            <div className="flex flex-col gap-[8px] ">
               <label htmlFor="Company name" className="text-[16px] ">
                 Company Name
               </label>
               <input
                 id="Company name"
                 type="text"
-                className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
+                className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
                 required
               />
             </div>
@@ -72,13 +72,30 @@ export default function Needs() {
                 What solution are you exploring today?
               </label>
               <div className="relative">
-                <input
+                <select
+                  name="Solution"
                   id="Solution"
-                  type="text"
-                  placeholder="select a solution"
-                  className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
-                />
-                <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                  className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none"
+                >
+                  <option value="none" selected disabled>
+                    Select a solution
+                  </option>
+                  <option value="Core Web Development Solutions">
+                    Core Web Development Solutions
+                  </option>
+                  <option value="Modern Frontend & Backend Solutions">
+                    Modern Frontend & Backend Solutions
+                  </option>
+                  <option value="Performance and Growth Solutions">
+                    Performance and Growth Solutions
+                  </option>
+                  <option value="Security & Compliance">
+                    Security & Compliance
+                  </option>
+                  <option value="Hosting and DevOps">Hosting and DevOps</option>
+                  <option value="Others">Others</option>
+                </select>
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
                   <Image
                     src="/chevron-down.svg"
                     alt="arrow down"
@@ -97,12 +114,29 @@ export default function Needs() {
                   Budget Range (Optional)
                 </label>
                 <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="select a solution"
-                    className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
-                  />
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2 class w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                  <select
+                    name="Budget Range"
+                    id="Budget Range"
+                    className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="none" selected disabled>
+                      Select a budget range
+                    </option>
+                    <option value="Less than $1000">
+                      Less than $1000 - Basic landing page or small updates
+                    </option>
+                    <option value="$1000 - $5000">
+                      $1000 - $5000 - Small business website or simple Web app
+                    </option>
+                    <option value="$5000 - $10000">
+                      $5000 - $10000 - Mid sized custom site or e-commerce
+                    </option>
+                    <option value="$25000+">
+                      $25000+ - Enterprise-level solutions or long term project
+                    </option>
+                    <option value="Others">Others</option>
+                  </select>
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
                     <Image
                       src="/chevron-down.svg"
                       alt="arrow down"
@@ -114,16 +148,27 @@ export default function Needs() {
               </div>
               {/* Housing the preferred Timeline */}
               <div className="flex flex-col gap-[8px] flex-1">
-                <label htmlFor="Full name" className="text-[16px] ">
+                <label htmlFor="Preferred Timeline" className="text-[16px] ">
                   Preferred Timeline
                 </label>
                 <div className="relative">
-                  <input
-                    type="text"
-                    placeholder="select Timeline"
-                    className="focus:outline-none h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
-                  />
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
+                  <select
+                    name="Preferred Timeline"
+                    id="Preferred Timeline"
+                    className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    <option value="none" selected disabled>
+                      Select Timeline
+                    </option>
+                    <option value="Asap">Asap (1 - 2 weeks)</option>
+                    <option value="Short Term">Short Term (2 - 4 weeks)</option>
+                    <option value="Standard">Standard (1 - 2 months)</option>
+                    <option value="Long Term">Long Term (2 - 4 months)</option>
+                    <option value="Flexible / Not sure">
+                      Flexible / Not sure
+                    </option>
+                  </select>
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
                     <Image
                       src="/chevron-down.svg"
                       alt="arrow down"
@@ -137,11 +182,35 @@ export default function Needs() {
 
             {/* Time zone */}
             <div className="flex flex-col gap-[8px]">
-              <label htmlFor="Full name" className="text-[16px] ">
+              <label htmlFor="Time Zone" className="text-[16px] ">
                 Time Zone
               </label>
               <div className="relative">
-                <input
+                <select
+                  name="Time Zone"
+                  id="Time Zone"
+                  className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="none" selected disabled>
+                    Select your Time zone
+                  </option>
+                  <option value="North America">North America</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Australia & Oceania">Australia & Oceania</option>
+                  <option value="South America">South America</option>
+                  <option value="Middle East">Middle East</option>
+                </select>
+                <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
+                  <Image
+                    src="/chevron-down.svg"
+                    alt="arrow down"
+                    width={24}
+                    height={24}
+                  />
+                </span>
+                {/* <input
                   type="text"
                   placeholder="select a time zone"
                   className="focus:outline-none h-[40px] w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
@@ -153,7 +222,7 @@ export default function Needs() {
                     width={24}
                     height={24}
                   />
-                </span>
+                </span> */}
               </div>
             </div>
 
@@ -162,7 +231,7 @@ export default function Needs() {
               <label>Product Description / Goals</label>
               <textarea
                 placeholder="Please describe what you need in detail"
-                className="w-full border border-[#8F9092]/40 px-3 h-[60px] md:h-[120px] py-2 rounded focus:outline-none"
+                className="w-full border border-[#8F9092]/40 px-3 h-[60px] md:h-[120px] py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
