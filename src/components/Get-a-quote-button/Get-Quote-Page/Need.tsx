@@ -194,13 +194,67 @@ export default function Needs() {
                   <option value="none" selected disabled>
                     Select your Time zone
                   </option>
-                  <option value="North America">North America</option>
-                  <option value="Europe">Europe</option>
-                  <option value="Africa">Africa</option>
-                  <option value="Asia">Asia</option>
-                  <option value="Australia & Oceania">Australia & Oceania</option>
-                  <option value="South America">South America</option>
-                  <option value="Middle East">Middle East</option>
+                  <option value="-12:00">
+                    (GMT-12:00) International Date Line West
+                  </option>
+                  <option value="-11:00">
+                    (GMT-11:00) Midway Island, Samoa
+                  </option>
+                  <option value="-10:00">(GMT-10:00) Hawaii</option>
+                  <option value="-09:00">(GMT-09:00) Alaska</option>
+                  <option value="-08:00">
+                    (GMT-08:00) Pacific Time (US & Canada)
+                  </option>
+                  <option value="-07:00">
+                    (GMT-07:00) Mountain Time (US & Canada)
+                  </option>
+                  <option value="-06:00">
+                    (GMT-06:00) Central Time (US & Canada), Mexico City
+                  </option>
+                  <option value="-05:00">
+                    (GMT-05:00) Eastern Time (US & Canada), Bogota, Lima
+                  </option>
+                  <option value="-04:00">
+                    (GMT-04:00) Atlantic Time (Canada), Caracas
+                  </option>
+                  <option value="-03:00">
+                    (GMT-03:00) Buenos Aires, Greenland
+                  </option>
+                  <option value="-02:00">(GMT-02:00) Mid-Atlantic</option>
+                  <option value="-01:00">
+                    (GMT-01:00) Azores, Cape Verde Is.
+                  </option>
+                  <option value="+00:00">
+                    (GMT+00:00) London, Lisbon, Casablanca
+                  </option>
+                  <option value="+01:00">
+                    (GMT+01:00) Berlin, Rome, Paris, Madrid
+                  </option>
+                  <option value="+02:00">
+                    (GMT+02:00) Athens, Jerusalem, Cairo
+                  </option>
+                  <option value="+03:00">
+                    (GMT+03:00) Nairobi, Moscow, Baghdad
+                  </option>
+                  <option value="+03:30">(GMT+03:30) Tehran</option>
+                  <option value="+04:00">(GMT+04:00) Dubai, Baku</option>
+                  <option value="+04:30">(GMT+04:30) Kabul</option>
+                  <option value="+05:00">(GMT+05:00) Islamabad, Karachi</option>
+                  <option value="+05:30">
+                    (GMT+05:30) India Standard Time (Mumbai, Delhi)
+                  </option>
+                  <option value="+06:00">(GMT+06:00) Almaty, Dhaka</option>
+                  <option value="+07:00">(GMT+07:00) Bangkok, Jakarta</option>
+                  <option value="+08:00">
+                    (GMT+08:00) Beijing, Perth, Singapore
+                  </option>
+                  <option value="+09:00">(GMT+09:00) Tokyo, Seoul</option>
+                  <option value="+09:30">(GMT+09:30) Adelaide, Darwin</option>
+                  <option value="+10:00">(GMT+10:00) Sydney, Guam</option>
+                  <option value="+11:00">
+                    (GMT+11:00) Magadan, Solomon Is.
+                  </option>
+                  <option value="+12:00">(GMT+12:00) Auckland, Fiji</option>
                 </select>
                 <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
                   <Image
