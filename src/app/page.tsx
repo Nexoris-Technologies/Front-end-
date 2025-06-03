@@ -29,6 +29,14 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "Nexoris Technologies",
       locale: "en_NG",
       type: "website",
+      images: [
+        {
+          url: "/nexoris-nav-logo.webp",
+          width: 1200,
+          height: 630,
+          alt: "Nexoris Technologies logo",
+        },
+      ],
     },
     robots: {
       index: true,
@@ -43,6 +51,10 @@ export async function generateMetadata(): Promise<Metadata> {
         "Nexoris Technologies – Empowering Businesses with Scalable Digital Solutions",
       description:
         "Explore our next-gen development, design, and digital transformation services tailored for growth.",
+      site:
+        "https://nexoristech.com",
+      creator: 
+        "@nexoristech",
     },
   };
 }
