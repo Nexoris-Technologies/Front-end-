@@ -28,8 +28,8 @@ import Marquee from "react-fast-marquee";
 function BackedBy() {
   return (
     <section className="sm:py-12 flex flex-col gap-10 items-center justify-center px-4 sm:px-8 bg-white">
-      <p className="text-center max-w-[38rem] text-sm sm:text-base md:text-lg font-bold">
-        Backed by 50+ brands. 3-second load times. 40% average SEO uplift.
+      <p className="text-center max-w-[38rem] text-[16px] w-[33ch] sm:text-base md:text-lg ">
+        Backed by 50+ brands. 3-second load times. 40% average SEO uplift.<br/>
         Used by leading brands across SaaS, fintech, and logistics.
       </p>
 

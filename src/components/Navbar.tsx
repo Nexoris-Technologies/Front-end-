@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
     >
       <div
         ref={navRef}
-        className="contain mx-auto flex justify-between items-center w-full h-12 lg:h-18 xl:h-22"
+        className="contain mx-auto flex justify-between items-center w-full h-12 lg:h-18 xl:h-22 "
       >
         {/* Logo */}
         <Link href="/" aria-label="Nexoris Home" className="relative">
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
         {/* Get a Quote CTA (mobile, centered) */}
         <Link
           href="/quote"
-          className="lg:hidden absolute left-1/2 -translate-x-1/2 bg-primary-purple text-purple-6 px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors z-10"
+          className="lg:hidden absolute left-1/2 -translate-x-1/2 bg-primary-purple text-purple-6 px-4 py-1.5 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors z-10 "
           aria-label="Get a Quote"
         >
           Get a Quote

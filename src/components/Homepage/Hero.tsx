@@ -14,8 +14,8 @@ export default function Hero() {
         {/* Decorative background pattern */}
         <div className="relative">
           {/* Main Container */}
-          <div className="relative container mx-auto px-6 lg:px-12 xl:px-20 pt-12">
-            <div className="flex flex-col lg:flex-row justify-between items-center gap-[60px] md:gap-[24px] py-20 mx-auto w-full">
+          <div className="relative container mx-auto px-6 lg:px-12 xl:px-20 md:pt-12">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-[64px] md:gap-[24px] py-20 mx-auto w-full">
               {/* Left Section */}
               <div className="flex-1 flex flex-col justify-center gap-[40px] md:gap-[90px] container mx-auto">
                 <div className="flex flex-col justify-center gap-[25px]">

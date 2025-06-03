@@ -9,9 +9,9 @@ import { motion } from "framer-motion";
 
 function Competition() {
   return (
-    <section className="my-24 flex justify-center py-20 px-4 bg-white">
-      <div className="flex items-center justify-center w-full ">
-        <div className="flex flex-col items-center gap-8 text-center">
+    <section className=" flex justify-center py-24 px-4 bg-white">
+      <div className=" flex items-center justify-center w-full ">
+        <div className="flex flex-col items-center gap-8 text-center ">
           {/* Badge */}
           <h4 className="bg-[#0059F11A] py-2 px-6 rounded-full text-[#0059F1] font-bold text-sm sm:text-base">
             Website Development
@@ -19,10 +19,10 @@ function Competition() {
 
           {/* Heading and Paragraph */}
           <div className="flex flex-col items-center gap-4 w-full ">
-            <h1 className="font-bold text-2xl sm:text-3xl lg:text-5xl text-[#543CDA]">
+            <h1 className="font-bold text-[32px] sm:text-3xl lg:text-5xl text-[#543CDA]">
               Build Websites That <br /> Outrun the Competition.
             </h1>
-            <p className="font-normal text-sm sm:text-base text-gray-700 px-2">
+            <p className="font-normal text-[16px] sm:text-base text-primary px-2">
               At Nexoris, we don’t just build websites—we create lightning-fast,
               Google- <br /> optimized digital experiences that scale with your
               business and help you attract, <br /> engage, and convert more
@@ -32,7 +32,7 @@ function Competition() {
 
           {/* Button */}
           <Link href="#">
-            <Button className="flex items-center gap-3 bg-[#543CDA] py- sm:px-18 rounded-md text-white font-bold text-[12px] sm:text-base">
+            <Button className="flex items-center gap-3 bg-[#543CDA] py- sm:px-18 rounded-md text-white font-bold text-[14px] sm:text-base">
               Let’s Build Yours <BsArrowRight className="text-sm" />
             </Button>
           </Link>

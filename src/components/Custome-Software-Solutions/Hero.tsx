@@ -5,7 +5,7 @@ export default function CustomeHeroPage() {
   return (
     <section>
       {/* Housing heropage all */}
-      <div className="flex flex-col mt-[8rem] md:mt-[12rem] py-[2rem] lg:py-[3rem] gap-[40px] lg:gap-[10px] ">
+      <div className="flex flex-col sm:mt-[8rem] md:mt-[8rem] py-[2rem] lg:py-[3rem] gap-[40px] lg:gap-[10px] ">
         {/* Housing the custom software, the header text, the paragraph text and button  */}
         <div className="flex flex-col justify-center items-center mx-auto gap-[32px]">
           <div className="w-[248px] rounded-[20px] py-[4px] px-[24px] flex  gap-[10px]  bg-[#0059F1]/10 ">
@@ -41,14 +41,14 @@ export default function CustomeHeroPage() {
           </div>
         </div>
         {/* Housing the hero image */}
-        <div className="rounded-[24px] flex mx-auto w-[344px] h-[111px] md:w-[1224px] md:h-[400px] lg:px-4">
+        {/* <div className="rounded-[24px] flex mx-auto w-[344px] h-[111px] md:w-[1224px] md:h-[400px] lg:px-4">
           <Image
             src="/Custom-hero image.webp"
             alt=""
             width={1224}
             height={400}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -11,8 +11,8 @@ export default function CustomProcess() {
         {/* housing the cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[32px] md:gap-[24px] mx-auto max-w-[1224px] px-4">
           {/* first card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
-            <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 overflow-clip border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full gap-[24px]">
+            <div className="w-full h-[40px] md:w-[360px] md:h-[60px] ">
               <Image src="/1 dash.svg" alt="1 dash" width={360} height={60} />
             </div>
 
@@ -26,7 +26,7 @@ export default function CustomProcess() {
             </div>
           </div>
           {/* second card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full overflow-clip gap-[24px]">
             <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
               <Image src="/2 dash.svg" alt="1 dash" width={360} height={60} />
             </div>
@@ -40,7 +40,7 @@ export default function CustomProcess() {
             </div>
           </div>
           {/* third card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full overflow-clip gap-[24px]">
             <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
               <Image src="/3 dash.svg" alt="1 dash" width={360} height={60} />
             </div>
@@ -54,7 +54,7 @@ export default function CustomProcess() {
             </div>
           </div>
           {/* fourth card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full overflow-clip gap-[24px]">
             <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
               <Image src="/4 dash.svg" alt="1 dash" width={360} height={60} />
             </div>
@@ -68,7 +68,7 @@ export default function CustomProcess() {
             </div>
           </div>
           {/* fifth card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full overflow-clip gap-[24px]">
             <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
               <Image src="/5 dash.svg" alt="1 dash" width={360} height={60} />
             </div>
@@ -82,7 +82,7 @@ export default function CustomProcess() {
             </div>
           </div>
           {/* first card */}
-          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-[343px] md:w-[392px] gap-[24px]">
+          <div className="flex flex-col border-[1px] bg-[#543CDA]/10 border-[#543CDA]/40 py-[32px] px-[16px] rounded-[16px] w-full overflow-clip gap-[24px]">
             <div className="w-[311px] h-[40px] md:w-[360px] md:h-[60px]">
               <Image src="/6 dash.svg" alt="1 dash" width={360} height={60} />
             </div>

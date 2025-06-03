@@ -37,7 +37,7 @@ function Benefits() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-4 border border-[#898686] w-100 lg:w-full rounded-md px-4 py-6 text-center"
+              className="flex flex-col items-center justify-center gap-4 border border-[#898686] w-full lg:w-full rounded-md px-4 py-6 text-center"
             >
               <div className="bg-[#0059F133] w-12 h-12 rounded-full flex items-center justify-center">
                 <Image

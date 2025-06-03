@@ -20,7 +20,7 @@ function Help() {
         <div className="flex flex-col gap-6 max-w-xl">
           <h2
             style={{ color: "#000000" }}
-            className="text-2xl sm:text-4xl lg:text-4xl font-bold"
+            className="text-[24px] sm:text-4xl lg:text-4xl font-bold"
           >
             Who we Help?
           </h2>

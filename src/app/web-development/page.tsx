@@ -12,18 +12,20 @@ import BackedBy from "@/components/Web-development-service/BackedBy";
 
 function WebDevelopment() {
   return (
-    <section>
-      <Competition />
-      <BackedBy />
-      <Help />
-      <ServiceCover />
-      <Benefits />
-      <Process />
-      <Problems />
-      <Choose />
-      <Faqs />
-      <Website />
-    </section>
+    <main>
+      <div>
+        <Competition />
+        <BackedBy />
+        <Help />
+        <ServiceCover />
+        <Benefits />
+        <Process />
+        <Problems />
+        <Choose />
+        <Faqs />
+        <Website />
+      </div>
+    </main>
   );
 }
 
