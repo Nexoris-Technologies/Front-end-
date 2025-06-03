@@ -9,10 +9,19 @@ import Choose from "@/components/Web-development-service/Choose";
 
 import Website from "@/components/Web-development-service/Website";
 import BackedBy from "@/components/Web-development-service/BackedBy";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import {StyledContainer} from "@/app/styles";
 
 function WebDevelopment() {
+  const breadcrumbs = [
+    { name: "Home", href: "/", isCurrentPage: false },
+    { name: "Web Development", href: "/web-development", isCurrentPage: true },
+  ];
   return (
     <section>
+      <StyledContainer>
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      </StyledContainer>
       <Competition />
       <BackedBy />
       <Help />
