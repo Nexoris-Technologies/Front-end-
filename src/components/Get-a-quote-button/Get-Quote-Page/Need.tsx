@@ -114,36 +114,11 @@ export default function Needs() {
                   Budget Range (Optional)
                 </label>
                 <div className="relative">
-                  <select
-                    name="Budget Range"
+                  <input
                     id="Budget Range"
+                    type="text"
                     className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    <option value="none" selected disabled>
-                      Select a budget range
-                    </option>
-                    <option value="Less than $1000">
-                      Less than $1000 - Basic landing page or small updates
-                    </option>
-                    <option value="$1000 - $5000">
-                      $1000 - $5000 - Small business website or simple Web app
-                    </option>
-                    <option value="$5000 - $10000">
-                      $5000 - $10000 - Mid sized custom site or e-commerce
-                    </option>
-                    <option value="$25000+">
-                      $25000+ - Enterprise-level solutions or long term project
-                    </option>
-                    <option value="Others">Others</option>
-                  </select>
-                  <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
-                    <Image
-                      src="/chevron-down.svg"
-                      alt="arrow down"
-                      width={24}
-                      height={24}
-                    />
-                  </span>
+                  />
                 </div>
               </div>
               {/* Housing the preferred Timeline */}
@@ -264,19 +239,6 @@ export default function Needs() {
                     height={24}
                   />
                 </span>
-                {/* <input
-                  type="text"
-                  placeholder="select a time zone"
-                  className="focus:outline-none h-[40px] w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
-                />
-                <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px]">
-                  <Image
-                    src="/chevron-down.svg"
-                    alt="arrow down"
-                    width={24}
-                    height={24}
-                  />
-                </span> */}
               </div>
             </div>
 
