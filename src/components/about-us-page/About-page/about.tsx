@@ -32,16 +32,18 @@ export default function About() {
               bold ideas into real-world solutions.
             </p>
 
-            <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-5  text-sm md:text-lg w-52 md:w-72 flex items-center justify-center gap-2">
-              <Link href="/get-a-quote">GET STARTED</Link>
-              <span>
-                <Image
-                  src="/Arrow right.svg"
-                  alt="arrow right"
-                  width={16}
-                  height={16}
-                />
-              </span>
+            <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-5 text-sm md:text-lg w-52 md:w-72 flex justify-center items-center gap-2">
+              <Link href="/get-a-quote">
+                GET STARTED
+                <span>
+                  <Image
+                    src="/Arrow right.svg"
+                    alt="arrow right"
+                    width={16}
+                    height={16}
+                  />
+                </span>
+              </Link>
             </Button>
           </div>
 

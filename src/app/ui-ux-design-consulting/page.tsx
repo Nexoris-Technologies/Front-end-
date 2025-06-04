@@ -9,10 +9,23 @@ import Tired from "@/components/Ui-Ux-servicepage/Tired";
 
 import WeHelp from "@/components/Ui-Ux-servicepage/WeHelp";
 import Audit from "@/components/Ui-Ux-servicepage/Audit";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { StyledContainer } from "@/components/styles";
 
 function UiUxDesign() {
+  const breadcrumbs = [
+    { name: "Home", href: "/", isCurrentPage: false },
+    {
+      name: "UI UX Design Consulting",
+      href: "/ui-ux-design-consulting",
+      isCurrentPage: true,
+    },
+  ];
   return (
     <section>
+      <StyledContainer>
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      </StyledContainer>
       <Experiences />
       <Operators />
       <Glance />
