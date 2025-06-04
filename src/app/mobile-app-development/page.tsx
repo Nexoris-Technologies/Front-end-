@@ -12,7 +12,7 @@ export default function ServiceMobileApplication() {
     },
   ];
   return (
-    <main>
+    <main className="">
       <StyledContainer>
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>

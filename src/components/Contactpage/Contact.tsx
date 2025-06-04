@@ -5,6 +5,7 @@ import { useForm, FieldErrors } from "react-hook-form";
 import { SuccessNotifier, ErrorNotifier } from "@/common/Notify";
 import { DevTool } from "@hookform/devtools";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 type FormValues = {
   firstname: string;
@@ -174,7 +175,7 @@ function Contact() {
                 {/* Inputs */}
                 <div className="flex flex-col gap-4">
                   {/* First & Last Name */}
-                  <div className="flex flex-col md:flex-row gap-4">
+                  <div className="flex flex-col md:flex-row gap-4 ">
                     <div className="flex-1 flex flex-col gap-2">
                       <input
                         type="hidden"
@@ -202,7 +203,7 @@ function Contact() {
                       <input
                         id="First Name"
                         type="text"
-                        className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                        className="border border-[#8F9092]/40 px-3 py-2 rounded focus:outline-none cursor-pointer"
                         {...register("firstname", {
                           required: {
                             value: true,
@@ -230,7 +231,7 @@ function Contact() {
                       <input
                         id="Last Name"
                         type="text"
-                        className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                        className="border border-[#8F9092]/40 px-3 py-2 rounded focus:outline-none cursor-pointer"
                         required
                         {...register("lastname", {
                           disabled: watch("firstname") === "",
@@ -264,7 +265,7 @@ function Contact() {
                       <input
                         id="Email"
                         type="email"
-                        className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                        className="border border-[#8F9092]/40 px-3 py-2 rounded focus:outline-none cursor-pointer"
                         {...register("email", {
                           disabled: watch("lastname") === "",
                           required: {
@@ -288,7 +289,7 @@ function Contact() {
                       <input
                         type="text"
                         placeholder="+234"
-                        className="border border-[#8F9092]/40 px-3 py-2 rounded"
+                        className="border border-[#8F9092]/40 px-3 py-2 rounded focus:outline-none cursor-pointer"
                         {...register(`phonenumber`, {
                           disabled: watch("email") === "",
                           valueAsNumber: true,
@@ -309,10 +310,10 @@ function Contact() {
                         ? `${errors._subject?.message}`
                         : `Select Subject`}
                     </label>
-                    <div className="relative">
+                    <div className="relative ">
                       <select
                         id="Select Subject"
-                        className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none"
+                        className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none cursor-pointer"
                         {...register("_subject", {
                           disabled: watch("phonenumber") === "",
                           required: {
@@ -321,28 +322,55 @@ function Contact() {
                           },
                         })}
                       >
-                        <option value="none" selected disabled>
+                        <option
+                          className="cursor-pointer"
+                          value="none"
+                          selected
+                          disabled
+                        >
                           Select a subject
                         </option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="UI/UX Design & Consulting">
+                        <option
+                          className="cursor-pointer"
+                          value="Web Development"
+                        >
+                          Web Development
+                        </option>
+                        <option
+                          className="cursor-pointer"
+                          value="UI/UX Design & Consulting"
+                        >
                           UI/UX Design & Consulting
                         </option>
-                        <option value="Custom Software Solutions">
+                        <option
+                          className="cursor-pointer"
+                          value="Custom Software Solutions"
+                        >
                           Custom Software Solutions
                         </option>
-                        <option value="Mobile App Development">
+                        <option
+                          className="cursor-pointer"
+                          value="Mobile App Development"
+                        >
                           Mobile App Development
                         </option>
-                        <option value="SEO & Content Marketing">
+                        <option
+                          className="cursor-pointer"
+                          value="SEO & Content Marketing"
+                        >
                           SEO & Content Marketing
                         </option>
-                        <option value="Product Design and Management ">
+                        <option
+                          className="cursor-pointer"
+                          value="Product Design and Management "
+                        >
                           Product Design and Management{" "}
                         </option>
-                        <option value="Others">Others</option>
+                        <option className="cursor-pointer" value="Others">
+                          Others
+                        </option>
                       </select>
-                      <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none">
+                      <span className="absolute right-3 top-1/2 -translate-y-1/2 w-[16px] h-[16px] md:w-[24px] md:h-[24px] pointer-events-none  cursor-pointer">
                         <Image
                           src="/chevron-down.svg"
                           alt="arrow down"
@@ -354,16 +382,18 @@ function Contact() {
                   </div>
 
                   {/* Message Textarea */}
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 cursor-pointer">
                     <label htmlFor="Message">
-                      {typeof errors.message?.message !== "undefined"
+                      {" "}
+                      Message
+                      {/* {typeof errors.message?.message !== "undefined"
                         ? `${errors.message?.message}`
-                        : `Message`}
+                        : `Message`} */}
                     </label>
                     <textarea
                       id="Message"
                       placeholder="Please describe what you need in detail"
-                      className="w-full border border-[#8F9092]/40 px-3 py-2 rounded"
+                      className="w-full border border-[#8F9092]/40 px-3 py-2 rounded focus:outline-none cursor-pointer"
                       {...register("message", {
                         disabled: watch("_subject") === "",
                         required: {
@@ -378,7 +408,7 @@ function Contact() {
                   <div className="flex items-start gap-3">
                     <input
                       type="checkbox"
-                      className="mt-1"
+                      className="mt-1 cursor-pointer"
                       {...register("terms", {
                         disabled: watch("message") === "",
                         required: {
@@ -387,17 +417,23 @@ function Contact() {
                         },
                       })}
                     />
-                    <label className="text-sm font-medium">
+                    <label className="text-sm font-normal">
                       {typeof errors.terms?.message !== "undefined"
                         ? `${errors.terms?.message}`
-                        : `I agree to be contacted by Nexoris regarding my request`}
+                        : `I agree to Nexoris Technolgy storing and processing my personal data for the purpose of responding to my enquiry, Read our`}
+                      <Link
+                        href="/privacy-policy"
+                        className={`text-primary-blue underline underline-offset-4 decoration-primary-blue ml-1`}
+                      >
+                        Privacy Policy
+                      </Link>
                     </label>
                   </div>
 
                   {/* Button */}
-                  <div className="mt-[1rem] w-[300px] mx-auto lg:mx-0  md:mt-[2rem]">
+                  <div className="mt-[1rem] w-[300px] mx-auto lg:mx-0  md:mt-[2rem] cursor-pointer">
                     <Button
-                      className="bg-[#543CDA] text-white font-bold text-[16px] px-6 py-3 md:py-3 md:px-8 rounded lg:w-[250px] md:w-[200px]"
+                      className="bg-[#543CDA] text-white font-bold text-[16px] px-6 py-3 md:py-3 md:px-8 rounded lg:w-[250px] md:w-[200px] cursor-pointer"
                       type="submit"
                       disabled={!isDirty || !isValid || isSubmitting}
                     >

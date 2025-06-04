@@ -5,10 +5,10 @@ import { StyledContainer } from "@/components/styles";
 export default function GetQ() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },
-    { name: "Get A Quote", href: "/get-a-quote", isCurrentPage: true },
+    { name: "Get a Quote", href: "/get-a-quote", isCurrentPage: true },
   ];
   return (
-    <div className="mt-22">
+    <div className="mt-22 mx-4 md:mx-6 lg:mx-12 xl:mx-18">
       <Breadcrumbs breadcrumbs={breadcrumbs} />
       <Request />
     </div>

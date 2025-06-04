@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import ClientComponent from "./ClientComponent"
+import ClientComponent from "./ClientComponent";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import ScrollToTop from "@/common/ScrollToTop";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
   icons: {
@@ -13,8 +15,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
-  };
-
+};
 
 export default function RootLayout({
   children,
@@ -25,13 +26,14 @@ export default function RootLayout({
   return (
     <ClientComponent>
       <html lang="en">
-      <body> 
-        <Navbar />
-        <ScrollToTop />
-        {children}
-        <Footer />
-      </body>
-    </html>
+        <body>
+          <Navbar />
+          <ScrollToTop />
+          <ToastContainer />
+          {children}
+          <Footer />
+        </body>
+      </html>
     </ClientComponent>
   );
 }

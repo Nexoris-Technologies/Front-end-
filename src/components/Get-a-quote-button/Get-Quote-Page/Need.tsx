@@ -1,10 +1,10 @@
 "use client";
-
 import Image from "next/image";
 import { DevTool } from "@hookform/devtools";
 import { useState, useEffect } from "react";
 import { useForm, FieldErrors } from "react-hook-form";
 import { SuccessNotifier, ErrorNotifier } from "@/common/Notify";
+import Link from "next/link";
 
 type FormValues = {
   fullname: string;
@@ -95,6 +95,24 @@ export default function Needs() {
             </div>
             {/* Housing the form */}
             <div className="flex flex-col gap-[24px]  ">
+              <input
+                type="hidden"
+                {...register("_captcha", {
+                  required: {
+                    value: true,
+                    message: "Captcha disabled",
+                  },
+                })}
+              />
+              <input
+                type="hidden"
+                {...register("_next", {
+                  required: {
+                    value: true,
+                    message: "ThankYou Page",
+                  },
+                })}
+              />
               {/* Housing both the fullname and the email */}
               <div className="flex flex-col md:flex-row gap-[24px]">
                 {/* Housing the full name */}
@@ -107,7 +125,7 @@ export default function Needs() {
                   <input
                     id="Full name"
                     type="text"
-                    className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px]  w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                    className="focus:outline-none  h-[40px]  w-full  border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
                     required
                     {...register("fullname", {
                       required: {
@@ -136,9 +154,10 @@ export default function Needs() {
                   <input
                     id="Email"
                     type="email"
-                    className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
+                    className="focus:outline-none  h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
                     required
                     {...register("email", {
+                      disabled: watch("fullname") === "",
                       required: {
                         value: true,
                         message: "Email is required",
@@ -163,9 +182,10 @@ export default function Needs() {
                 <input
                   id="Company name"
                   type="text"
-                  className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
+                  className="focus:outline-none  h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
                   required
                   {...register("companyname", {
+                    disabled: watch("email") === "",
                     required: {
                       value: true,
                       message: "Company Name is required",
@@ -193,13 +213,14 @@ export default function Needs() {
                 <div className="relative">
                   <select
                     {...register("solution", {
+                      disabled: watch("companyname") === "",
                       required: {
                         value: true,
                         message: "Solution is required",
                       },
                     })}
                     id="Solution"
-                    className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none"
+                    className="focus:outline-none  h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none"
                   >
                     <option value="none" selected disabled>
                       Select a solution
@@ -244,7 +265,7 @@ export default function Needs() {
                       id="Budget Range"
                       {...register("budgetrange")}
                       type="text"
-                      className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none "
                     />
                   </div>
                 </div>
@@ -252,20 +273,21 @@ export default function Needs() {
                 <div className="flex flex-col gap-[8px] flex-1">
                   <label htmlFor="Preferred Timeline" className="text-[16px] ">
                     {typeof errors.timeline?.message !== "undefined" ||
-                    watch("_subject") === "Select Timeline"
+                    watch("timeline") === "Select Timeline"
                       ? `${errors.timeline?.message}`
                       : `Preferred Timeline`}
                   </label>
                   <div className="relative">
                     <select
                       {...register("timeline", {
+                        disabled: watch("solution") === "",
                         required: {
                           value: true,
                           message: "Time Line is required",
                         },
                       })}
                       id="Preferred Timeline"
-                      className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none "
                     >
                       <option value="none" selected disabled>
                         Select Timeline
@@ -305,13 +327,14 @@ export default function Needs() {
                 <div className="relative">
                   <select
                     {...register("timezone", {
+                      disabled: watch("timeline") === "",
                       required: {
                         value: true,
                         message: "TimeZone is required",
                       },
                     })}
                     id="Time Zone"
-                    className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] appearance-none truncate overflow-hidden whitespace-nowrap focus:outline-none "
                   >
                     <option value="none" selected disabled>
                       Select your Time zone
@@ -393,21 +416,23 @@ export default function Needs() {
 
               {/* Product description and checkbox */}
               <div className="flex flex-col gap-2">
-                <label>
-                  {typeof errors.description?.message !== "undefined" ||
+                <label htmlFor="Message">
+                  Message
+                  {/* {typeof errors.description?.message !== "undefined" ||
                   watch("description") === ""
                     ? `${errors.description?.message}`
-                    : `Product Description / Goals`}
+                    : `Product Description / Goals`} */}
                 </label>
                 <textarea
                   {...register("description", {
+                    disabled: watch("timezone") === "",
                     required: {
                       value: true,
                       message: "Description is required",
                     },
                   })}
                   placeholder="Please describe what you need in detail"
-                  className="w-full border border-[#8F9092]/40 px-3 h-[60px] md:h-[120px] py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-[#8F9092]/40 px-3 h-[60px] md:h-[120px] py-2 rounded focus:outline-none "
                 />
               </div>
 
@@ -423,10 +448,16 @@ export default function Needs() {
                     },
                   })}
                 />
-                <label className="text-[18px] font-semibold tracking-wide">
+                <label className="text-sm font-normal tracking-wide">
                   {typeof errors.terms?.message !== "undefined"
                     ? `${errors.terms?.message}`
-                    : `I agree to be contacted by Nexoris regarding my request`}
+                    : `I agree to Nexoris Technolgy storing and processing my personal data for the purpose of responding to my enquiry, Read our`}
+                  <Link
+                    href="/privacy-policy"
+                    className={`text-primary-blue underline underline-offset-4 decoration-primary-blue ml-1 `}
+                  >
+                    Privacy Policy
+                  </Link>
                 </label>
               </div>
 
@@ -457,17 +488,18 @@ export default function Needs() {
           <h3 className="text-[20px] md:text-[32px] font-semibold text-center">
             Not Just a Quote, But a Smarter Beninning
           </h3>
-          <p className="text-[16px] md:text-[18px] text-center md:max-w-[620px]">
+          <p className="text-[16px] md:text-[18px] font-extralight text-center md:max-w-[620px]">
             At Nexoris, we don&apos;t just price projects, we help shape them.
             From the first message to final deployment, we work as your
             strategic technology partner.
           </p>
-          <p className="text-[14px] md:text-[18px] font-semibold text-center md:max-w-[620px] tracking-tight">
+          <p className="text-[14px] md:text-[18px] font-extralight text-center md:max-w-[620px] tracking-tight">
             Let&apos;s turn ambition into architecture, clearly, confidently,
             and fast.
           </p>
         </div>
       </div>
+      <DevTool control={control} />
     </section>
   );
 }

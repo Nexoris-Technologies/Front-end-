@@ -33,17 +33,15 @@ export default function About() {
             </p>
 
             <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-5 text-sm md:text-lg w-52 md:w-72 flex justify-center items-center gap-2">
-              <Link href="/get-a-quote">
-                GET STARTED
-                <span>
-                  <Image
-                    src="/Arrow right.svg"
-                    alt="arrow right"
-                    width={16}
-                    height={16}
-                  />
-                </span>
-              </Link>
+              <Link href="/get-a-quote">GET STARTED</Link>
+              <span>
+                <Image
+                  src="/Arrow right.svg"
+                  alt="arrow right"
+                  width={16}
+                  height={16}
+                />
+              </span>
             </Button>
           </div>
 

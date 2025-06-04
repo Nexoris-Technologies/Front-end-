@@ -8,8 +8,8 @@ export default function AboutUs() {
     { name: "About Us", href: "/about-us", isCurrentPage: true },
   ];
   return (
-    <main>
-      <StyledContainer>
+    <main className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
+      <StyledContainer className=" font-serif text-md text-gray-400 ">
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>
       <div>

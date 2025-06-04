@@ -18,7 +18,7 @@ function WebDevelopment() {
     { name: "Web Development", href: "/web-development", isCurrentPage: true },
   ];
   return (
-    <section>
+    <section className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
       <StyledContainer>
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>

@@ -12,7 +12,10 @@ interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ breadcrumbs }: BreadcrumbsProps) {
   return (
-    <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+    <nav
+      className="text-md  font-serif text-md text-gray-600 "
+      aria-label="Breadcrumb"
+    >
       <ol className="list-none p-0 inline-flex flex-wrap items-center">
         {breadcrumbs.map((breadcrumb, index) => (
           <li key={index} className="inline-flex items-center">

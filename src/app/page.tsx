@@ -51,10 +51,8 @@ export async function generateMetadata(): Promise<Metadata> {
         "Nexoris Technologies – Empowering Businesses with Scalable Digital Solutions",
       description:
         "Explore our next-gen development, design, and digital transformation services tailored for growth.",
-      site:
-        "https://nexoristech.com",
-      creator: 
-        "@nexoristech",
+      site: "https://nexoristech.com",
+      creator: "@nexoristech",
     },
   };
 }
@@ -178,14 +176,14 @@ export default async function Home() {
         <section aria-labelledby="hero-heading" className="mb-8 w-full">
           <Hero />
         </section>
-        <div className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20">
+        <div>
           <section
             aria-labelledby="startup-heading"
             className=" mt-10 lg:mt-20"
           >
             <Startup />
           </section>
-          <section aria-labelledby="love-heading" className="mt-5">
+          <section aria-labelledby="love-heading" className="mt-5 ">
             <Love />
           </section>
           <section aria-labelledby="everything-heading">
@@ -194,7 +192,10 @@ export default async function Home() {
           <section aria-labelledby="builtfor-heading">
             <BuiltFor />
           </section>
-          <section aria-labelledby="tools-heading">
+          <section
+            className="container mx-auto px-4 md:px-6 lg:px-12 xl:px-20"
+            aria-labelledby="tools-heading"
+          >
             <Tools />
           </section>
           <section aria-labelledby="ourprocess-heading">
