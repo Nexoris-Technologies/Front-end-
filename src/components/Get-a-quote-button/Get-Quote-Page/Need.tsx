@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { useForm, FieldErrors } from "react-hook-form";
 import { SuccessNotifier, ErrorNotifier } from "@/common/Notify";
 import Link from "next/link";
+import axios from "axios";
 
 type FormValues = {
   fullname: string;
@@ -38,10 +39,7 @@ export default function Needs() {
         description: "",
         terms: false,
         _captcha: "false", // this is to disable the default captcha that comes with formsubmit.co
-        _next:
-          process.env.NODE_ENV === "development"
-            ? "http://localhost:3000/thank-you"
-            : "https://nexoristech.com/thank-you",
+        _next: process.env.NODE_ENV === "development"? "http://localhost:3000/thank-you": "https://nexoristech.com/thank-you",
       };
     },
   });
@@ -50,17 +48,25 @@ export default function Needs() {
     formState;
 
   useEffect(() => {
-    setTargetEmail(
-      process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
-        "nexoristechnologiesltd@gmail.com"
-    );
+    setTargetEmail(process.env.NEXT_PUBLIC_CONTACT_EMAIL ||"nexoristechnologiesltd@gmail.com");
     if (isSubmitSuccessful) {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
 
   const onSub = async (data: FormValues) => {
-    SuccessNotifier("Email sent");
+    axios.post(`https://formsubmit.co/ajax/${targetEmail}`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      SuccessNotifier(`We&apos;ve received your message and our team will get back to you shortly. We&apos;re excited to explore how we can collaborate and bring your vision to life. Thank you for considering Nexoris Technologies!`);
+    })
+    .catch(error => {
+      console.log(error)
+    });
   };
   const onError = (errors: FieldErrors<FormValues>) => {
     ErrorNotifier(`${errors}`);
@@ -417,11 +423,12 @@ export default function Needs() {
               {/* Product description and checkbox */}
               <div className="flex flex-col gap-2">
                 <label htmlFor="Message">
-                  Message
-                  {/* {typeof errors.description?.message !== "undefined" ||
-                  watch("description") === ""
-                    ? `${errors.description?.message}`
-                    : `Product Description / Goals`} */}
+                  {(typeof errors.description?.message !== "undefined" ||
+                  watch("description") === "") ? (
+                    `${errors.description?.message}`
+                  ) : (
+                    `Product Description / Goals`
+                  )}
                 </label>
                 <textarea
                   {...register("description", {

@@ -6,6 +6,7 @@ import { SuccessNotifier, ErrorNotifier } from "@/common/Notify";
 import { DevTool } from "@hookform/devtools";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import axios from "axios";
 
 type FormValues = {
   firstname: string;
@@ -54,7 +55,18 @@ function Contact() {
   }, [isSubmitSuccessful, reset]);
 
   const onSub = async (data: FormValues) => {
-    SuccessNotifier("Email sent");
+    axios.post(`https://formsubmit.co/ajax/${targetEmail}`, data, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      SuccessNotifier(`We&apos;ve received your message and our team will get back to you shortly. We&apos;re excited to explore how we can collaborate and bring your vision to life. Thank you for considering Nexoris Technologies!`);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   };
   const onError = (errors: FieldErrors<FormValues>) => {
     ErrorNotifier(`${errors}`);
