@@ -16,17 +16,15 @@ export default function Build() {
           built to grow with you. Let’s plan, build, and grow with confidence.
         </p>
         <Button className="bg-[#543CDA]  text-[#FFFFFF] rounded-[8px] py-[14px] text-[14px] md:text-[18px] md:py-[18px]  w-[280px]  md:w-[200px] flex justify-center items-center gap-[10px]">
-          <Link href="/contact-us">
-          Get In Touch
+          <Link href="/contact-us">Get In Touch</Link>
           <span>
             <Image
               src="/Arrow right.svg"
               alt="arrow right"
               width={16}
               height={16}
-              />
+            />
           </span>
-          </Link>
         </Button>
       </div>
     </section>

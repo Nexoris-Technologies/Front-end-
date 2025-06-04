@@ -13,29 +13,12 @@ function Glance() {
       </div>
       <h3 className="font-bold text-3xl">Key Benefits at a Glance</h3>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-        <div className="shadow-xl p-8 flex flex-col gap-8">
-          <div className="flex items-center justify-between">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-4">
+        <div className="shadow-xl p-8 flex flex-col gap-8 w-77">
+          <div className="flex items-center  justify-between">
             <h3 className="font-bold text-4xl">1</h3>
             <div className="flex items-center gap-3">
-              <Image
-                src="/Ellipse 40.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 41.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 42.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
+              <Image src="/3dots.svg" alt="Ellipse 40" width={60} height={12} />
             </div>
           </div>
           <p className="">
@@ -44,28 +27,11 @@ function Glance() {
           </p>
         </div>
 
-        <div className="shadow-xl p-8 flex flex-col gap-8">
+        <div className="shadow-xl p-8 flex flex-col gap-8 w-77">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-4xl">2</h3>
             <div className="flex items-center gap-3">
-              <Image
-                src="/Ellipse 40.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 41.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 42.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
+              <Image src="/3dots.svg" alt="Ellipse 40" width={60} height={12} />
             </div>
           </div>
           <p className="">
@@ -74,58 +40,24 @@ function Glance() {
           </p>
         </div>
 
-        <div className="shadow-xl p-8 flex flex-col gap-8">
+        <div className="shadow-xl p-8 flex flex-col gap-8 w-77">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-4xl">3</h3>
             <div className="flex items-center gap-3">
-              <Image
-                src="/Ellipse 40.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 41.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 42.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
+              <Image src="/3dots.svg" alt="Ellipse 40" width={60} height={12} />
             </div>
           </div>
-          <p className="">
+          <p className="w-65">
             Design Systems That Scale: We build reusable, modular components for
             long-term consistency.
           </p>
         </div>
 
-        <div className="shadow-xl p-8 flex flex-col gap-8">
+        <div className="shadow-xl p-8 flex flex-col gap-8 w-77">
           <div className="flex items-center justify-between">
             <h3 className="font-bold text-4xl">4</h3>
             <div className="flex items-center gap-3">
-              <Image
-                src="/Ellipse 40.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 41.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
-              <Image
-                src="/Ellipse 42.svg"
-                alt="Ellipse 40"
-                width={20}
-                height={20}
-              />
+              <Image src="/3dots.svg" alt="Ellipse 40" width={60} height={12} />
             </div>
           </div>
           <p className="">
