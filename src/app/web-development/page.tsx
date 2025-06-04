@@ -9,23 +9,30 @@ import Choose from "@/components/Web-development-service/Choose";
 
 import Website from "@/components/Web-development-service/Website";
 import BackedBy from "@/components/Web-development-service/BackedBy";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import { StyledContainer } from "@/components/styles";
 
 function WebDevelopment() {
+  const breadcrumbs = [
+    { name: "Home", href: "/", isCurrentPage: false },
+    { name: "Web Development", href: "/web-development", isCurrentPage: true },
+  ];
   return (
-    <main>
-      <div>
-        <Competition />
-        <BackedBy />
-        <Help />
-        <ServiceCover />
-        <Benefits />
-        <Process />
-        <Problems />
-        <Choose />
-        <Faqs />
-        <Website />
-      </div>
-    </main>
+    <section className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
+      <StyledContainer>
+        <Breadcrumbs breadcrumbs={breadcrumbs} />
+      </StyledContainer>
+      <Competition />
+      <BackedBy />
+      <Help />
+      <ServiceCover />
+      <Benefits />
+      <Process />
+      <Problems />
+      <Choose />
+      <Faqs />
+      <Website />
+    </section>
   );
 }
 

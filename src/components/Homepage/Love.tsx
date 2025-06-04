@@ -50,8 +50,8 @@ export default function Love() {
         </figure>
 
         {/* Content */}
-        <div className="w-full max-w-2xl flex flex-col justify-center items-center md:items-start gap-10 mt-10 md:mt-0">
-          <div className="text-center md:text-left">
+        <div className="w-full max-w-2xl flex flex-col justify-center items-center md:items-start gap-10 mt-10 md:mt-0 container mx-auto ">
+          <div className="text-center md:text-left ">
             <h2
               id="love-heading"
               className="font-extrabold text-[1.25rem] md:text-[2rem] leading-[2rem] md:leading-[2.5rem] tracking-tight text-background"
@@ -66,11 +66,11 @@ export default function Love() {
                 key={index}
                 className="flex flex-col items-center md:items-start text-center md:text-left"
               >
-                <h3 className="font-semibold text-base md:text-xl text-primary-purple">
+                <h3 className="font-bold text-base md:text-xl text-[#543CDA]">
                   {title}
                 </h3>
                 <p
-                  className={`text-sm md:text-base mt-1 text-purple-dark px-4 ${width}`}
+                  className={`text-sm md:text-base mt-1 text-purple-dark  ${width}`}
                 >
                   {description}
                 </p>

@@ -109,9 +109,9 @@ const Navbar: React.FC = () => {
           >
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
-              className={`flex items-center text-purple-6 cursor-pointer ${
+              className={`flex items-center text-purple-6 cursor-pointer font-serif ${
                 services.some((s) => s.path === pathname)
-                  ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
+                  ? "text-primary-blue underline underline-offset-4 decoration-primary-blue font-serif"
                   : ""
               }`}
             >
@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
 
             {isServicesOpen && (
               <div
-                className="absolute left-1/2 transform -translate-x-1/2 bg-background text-body shadow-lg z-50 rounded-lg flex justify-center py-4 lg:mt-8"
+                className="absolute left-1/2 transform -translate-x-1/2 bg-background font-serif text-body shadow-lg z-50 rounded-lg flex justify-center py-4 lg:mt-8"
                 style={{
                   width: navRef.current?.offsetWidth
                     ? `${navRef.current.offsetWidth * 0.6}px`

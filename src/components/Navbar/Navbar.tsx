@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header>
+    <header id="intro">
       <nav
         className="bg-purple-dark shadow-lg fixed top-0 z-10 w-full rounded-b-xl lg:rounded-b-[1.5rem]"
         role="navigation"

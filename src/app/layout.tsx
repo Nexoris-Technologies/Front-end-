@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-
-import "./globals.css";
-
-import "./globals.css";
-
+import ClientComponent from "./ClientComponent";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar/Navbar";
+import ScrollToTop from "@/common/ScrollToTop";
+import "react-toastify/dist/ReactToastify.css";
+
+import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 export const metadata: Metadata = {
-  title: "Nexoris Technologies Ltd",
   icons: {
     icon: "/favicon-32x32.png",
     shortcut: "/favicon.ico",
@@ -22,13 +22,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Set the metadata for the page
   return (
-    <html lang="en">
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ClientComponent>
+      <html lang="en">
+        <body>
+          <Navbar />
+          <ScrollToTop />
+          <ToastContainer />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ClientComponent>
   );
 }
