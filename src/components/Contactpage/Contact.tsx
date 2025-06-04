@@ -5,6 +5,7 @@ import {useForm, FieldErrors} from 'react-hook-form';
 import {SuccessNotifier, ErrorNotifier} from "@/common/Notify";
 import {DevTool} from '@hookform/devtools';
 import {useState, useEffect} from "react";
+import Link from "next/link";
 
 type FormValues = {
   firstname:string;
@@ -347,6 +348,9 @@ function Contact() {
                   />
                   <label className="text-sm font-medium">
                     {typeof errors.terms?.message !== "undefined"?`${errors.terms?.message}`:`I agree to be contacted by Nexoris regarding my request`}
+                    <Link href="/privacy-policy" className={`text-primary-blue underline underline-offset-4 decoration-primary-blue`}>
+                        Privacy Policy
+                    </Link>
                   </label>
                 </div>
 

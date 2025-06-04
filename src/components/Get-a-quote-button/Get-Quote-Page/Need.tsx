@@ -1,8 +1,10 @@
+"use client";
 import Image from "next/image";
 import {DevTool} from '@hookform/devtools';
 import {useState, useEffect} from "react";
 import {useForm, FieldErrors} from 'react-hook-form';
 import {SuccessNotifier, ErrorNotifier} from "@/common/Notify";
+import Link from "next/link";
 
 type FormValues = {
   fullname:string;
@@ -81,6 +83,22 @@ export default function Needs() {
           </div>
           {/* Housing the form */}
           <div className="flex flex-col gap-[24px]  ">
+            <input type="hidden" {...register("_captcha",{
+                  required:{
+                      value: true,
+                      message: "Captcha disabled",
+                  }
+                })
+            }
+            />
+            <input type="hidden" {...register("_next",{
+                  required:{
+                      value: true,
+                      message: "ThankYou Page",
+                  }
+                })
+            }
+            />
             {/* Housing both the fullname and the email */}
             <div className="flex flex-col md:flex-row gap-[24px]">
               {/* Housing the full name */}
@@ -121,6 +139,7 @@ export default function Needs() {
                   className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px]  w-full   border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem]"
                   required
                   {...register("email",{
+                    disabled: watch("fullname") ==="",
                       required:{
                           value: true,
                           message: "Email is required"
@@ -145,6 +164,7 @@ export default function Needs() {
                 className="focus:outline-none focus:ring-2 focus:ring-blue-500 h-[40px] w-full border-[#879092]/40 border-[1px] rounded-[5px] px-[1rem] "
                 required
                 {...register("companyname",{
+                  disabled: watch("email") === "",
                     required:{
                         value: true,
                         message: "Company Name is required"
@@ -170,6 +190,7 @@ export default function Needs() {
               <div className="relative">
                 <select
                   {...register("solution",{
+                    disabled: watch("companyname") === "",
                     required:{
                         value: true,
                         message: "Solution is required"
@@ -226,11 +247,12 @@ export default function Needs() {
               {/* Housing the preferred Timeline */}
               <div className="flex flex-col gap-[8px] flex-1">
                 <label htmlFor="Preferred Timeline" className="text-[16px] ">
-                  {(typeof errors.timeline?.message !== "undefined" || watch("_subject")==="Select Timeline")?`${errors.timeline?.message}`:`Preferred Timeline`}
+                  {(typeof errors.timeline?.message !== "undefined" || watch("timeline")==="Select Timeline")?`${errors.timeline?.message}`:`Preferred Timeline`}
                 </label>
                 <div className="relative">
                   <select
                     {...register("timeline",{
+                      disabled: watch("solution") === "",
                           required:{
                               value: true,
                               message: "Time Line is required"
@@ -270,6 +292,7 @@ export default function Needs() {
               <div className="relative">
                 <select
                   {...register("timezone",{
+                    disabled: watch("timeline") === "",
                       required:{
                           value: true,
                           message: "TimeZone is required"
@@ -361,6 +384,7 @@ export default function Needs() {
               </label>
               <textarea
               {...register("description",{
+                disabled: watch("timezone")==="",
                   required:{
                       value: true,
                       message: "Description is required"
@@ -382,7 +406,10 @@ export default function Needs() {
               })}
               />
               <label className="text-[18px] font-semibold tracking-wide">
-                {typeof errors.terms?.message !== "undefined"?`${errors.terms?.message}`:`I agree to be contacted by Nexoris regarding my request`}
+                {typeof errors.terms?.message !== "undefined"?`${errors.terms?.message}`:`I agree to be contacted by Nexoris regarding my request.`}
+                <Link href="/privacy-policy" className={`text-primary-blue underline underline-offset-4 decoration-primary-blue`}>
+                    Privacy Policy
+                </Link>
               </label>
             </div>
 
@@ -420,6 +447,7 @@ export default function Needs() {
           </p>
         </div>
       </div>
+      <DevTool control={control}/>
     </section>
   );
 }
