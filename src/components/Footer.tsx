@@ -37,7 +37,7 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
             {/* Social Icons */}
             <div className="flex gap-3 mt-6">
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61575547172687&mibextid=ZbWKwL"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
