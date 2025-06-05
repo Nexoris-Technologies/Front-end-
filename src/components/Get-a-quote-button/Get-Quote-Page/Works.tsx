@@ -11,7 +11,7 @@ export default function Works() {
         </h3>
 
         {/* housing the cards */}
-        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 ">
+        <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-3 md:gap-4 ">
           {/* first card */}
           <div className="w-[288px] h-[246px] gap-[24px] flex flex-col justify-center items-center">
             <Image src="/Number 1.svg" alt="Number 1" width={60} height={60} />
