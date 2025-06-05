@@ -12,6 +12,8 @@ import Audit from "@/components/Ui-Ux-servicepage/Audit";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { StyledContainer } from "@/components/styles";
 
+export const revalidate = 60;
+
 function UiUxDesign() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },

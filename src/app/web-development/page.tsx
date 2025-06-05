@@ -12,6 +12,8 @@ import BackedBy from "@/components/Web-development-service/BackedBy";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { StyledContainer } from "@/components/styles";
 
+export const revalidate = 60;
+
 function WebDevelopment() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },

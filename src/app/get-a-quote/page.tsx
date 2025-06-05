@@ -1,6 +1,7 @@
 import Request from "@/components/Get-a-quote-button/Quotebtn";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { StyledContainer } from "@/components/styles";
+
+export const revalidate = 60;
 
 export default function GetQ() {
   const breadcrumbs = [

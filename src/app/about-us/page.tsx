@@ -2,6 +2,8 @@ import AboutNexoris from "../../components/about-us-page/AboutNexoris";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { StyledContainer } from "@/components/styles";
 
+export const revalidate = 60;
+
 export default function AboutUs() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },

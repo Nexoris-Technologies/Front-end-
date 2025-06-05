@@ -2,6 +2,8 @@ import SeoContent from "@/components/Seo-content-service/Seo";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { StyledContainer } from "@/components/styles";
 
+export const revalidate = 60;
+
 export default function SeoMarketing() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },

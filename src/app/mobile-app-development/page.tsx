@@ -2,6 +2,8 @@ import Serve from "@/components/Mobile-development-service/Servicepage";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { StyledContainer } from "@/components/styles";
 
+export const revalidate = 60;
+
 export default function ServiceMobileApplication() {
   const breadcrumbs = [
     { name: "Home", href: "/", isCurrentPage: false },
