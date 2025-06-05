@@ -5,7 +5,7 @@ export default function Help() {
   return (
     <section>
       {/* Housing who we help text, and all and cards */}
-      <div className="flex flex-col gap-[40px] py-[6rem]">
+      <div className="flex flex-col gap-[40px] py-10 lg:py-[6rem]">
         <div>
           <h3 className="text-[32px] lg:text-[48px] font-bold text-center">
             Who We Help

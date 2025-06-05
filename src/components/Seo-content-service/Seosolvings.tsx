@@ -4,7 +4,7 @@ export default function SeoProblemsSolves() {
   return (
     <section>
       {/* Housing all section */}
-      <div className="flex flex-col gap-[2rem] mt-[2rem] lg:gap-[4rem] py-[4rem] lg:py-[7rem]">
+      <div className="flex flex-col gap-[2rem] mt-[2rem] lg:gap-[4rem] py-[2rem] lg:py-[5rem]">
         <h2 className="text-[22px] md:text-[40px] font-extrabold text-[#543CDA] text-center">
           Problems We Solve
         </h2>

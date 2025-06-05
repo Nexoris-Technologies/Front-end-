@@ -4,9 +4,9 @@ export default function Who() {
   return (
     <section>
       {/* Housing who we are and Our story section */}
-      <div className="flex flex-col gap-20 lg:gap-50 mt-16 lg:mt-50">
+      <div className="flex flex-col gap-20 lg:gap-50 mt-16 lg:mt-50 ">
         {/* Housing WHO WE ARE */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-14">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-13 ">
           <div className="w-[343px] h-[245px] order-2 md:order-1 md:w-[580px] md:h-[383px] overflow-hidden relative">
             <Image
               src="/Who-first.webp"
@@ -18,7 +18,7 @@ export default function Who() {
           </div>
 
           {/* Who we are textes */}
-          <div className="flex flex-col max-w-xl order-1 md:order-1  px-6 md:px-0 lg:order-2 gap-4  lg:gap-8 ">
+          <div className="flex flex-col max-w-[35rem] order-1 md:order-1  px-6 md:px-0 lg:order-2 gap-4  lg:gap-8 ">
             <h1 className="text-xl md:text-5xl font-semibold  text-[#000000]">
               Who We Are
             </h1>
@@ -53,7 +53,7 @@ export default function Who() {
         {/* Housing our story */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-9 md:gap-16">
           {/* Our Story textes */}
-          <div className="flex flex-col gap-3 lg:gap-8 ">
+          <div className="flex flex-col gap-3 lg:gap-8 max-w-[34rem] ">
             <h1 className="text-xl md:text-5xl font-semibold  text-[#000000]">
               Our Story
             </h1>

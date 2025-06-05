@@ -4,7 +4,7 @@ export default function CustomCoverService() {
   return (
     <section className="bg-[#EAE8F7]">
       {/* Housing all */}
-      <div className="flex flex-col gap-[24px] md:gap-[32px] py-[5rem]">
+      <div className="flex flex-col gap-[24px] md:gap-[32px] py-10 lg:py-[5rem]">
         <h3 className="text-[24px] lg:text-[40px] font-bold text-center">
           What This Service Covers
         </h3>

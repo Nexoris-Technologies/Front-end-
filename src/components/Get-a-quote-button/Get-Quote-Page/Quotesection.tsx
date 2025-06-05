@@ -6,7 +6,7 @@ export default function MakeQuote() {
       {/* Get a quote, h3 and p-text */}
       <div className="flex flex-col gap-[16px] md:gap-[40px] items-center justify-center lg:mt-[8.3rem] px-6 md:px-12 ">
         {/* Image */}
-        <div className="lg:hidden pt-[8rem]">
+        <div className="lg:hidden pt-[2rem]">
           <Image
             src="/get-a-quote.webp"
             alt="Get Quote image"

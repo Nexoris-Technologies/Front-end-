@@ -8,7 +8,7 @@ function ServiceCover() {
           What This Service Covers
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl">
           {[
             "Full-stack Web Development",
             "Headless CMS Integration (Strapi, Sanity, Contentful)",

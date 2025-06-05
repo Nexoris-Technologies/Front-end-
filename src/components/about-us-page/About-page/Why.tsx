@@ -4,7 +4,7 @@ export default function Why() {
   return (
     <section>
       {/* Housing All what we do */}
-      <div className="flex flex-col lg:flex-row gap-20 md:gap-25 items-center justify-center mt-8 lg:mt-25  mx-auto container ">
+      <div className="flex flex-col lg:flex-row gap-20 md:gap-20 items-center justify-center mt-8 lg:mt-25  mx-auto container max-w-7xl">
         {/* Housing Why we do ALL textes */}
         <div className="flex flex-col gap-6 max-w-xl  ">
           {/* Housing Why we do */}

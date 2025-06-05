@@ -4,7 +4,7 @@ import { CgCheckO } from "react-icons/cg";
 export default function WhyChooseCustom() {
   return (
     <section className=" bg-[#EAE8F7] ">
-      <div className="flex flex-col justify-center items-center  lg:flex-row gap-12 lg:gap-[30px]   py-[6rem] ">
+      <div className="flex flex-col justify-center items-center  lg:flex-row gap-12 lg:gap-[30px]  py-10 lg:py-[6rem] ">
         {/* Text Section */}
         <div className="flex flex-col gap-[32px]  lg:max-w-[1224px] px-4 md:px-0">
           <h3 className="text-[24px] md:w-[600px] md:text-[28px] lg:text-[32px] font-bold text-center md:text-left leading-snug">

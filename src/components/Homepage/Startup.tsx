@@ -7,7 +7,7 @@ export default function Startup() {
       aria-labelledby="why-startups-heading"
       className="w-full py-12 bg-background px-4"
     >
-      <div className="text-center max-w-4xl mx-auto mb-14">
+      <div className="text-center max-w-7xl mx-auto mb-14 lg:mt-25">
         <h2
           id="why-startups-heading"
           className="text-[1.8rem] font-extrabold tracking-tight"
@@ -16,13 +16,13 @@ export default function Startup() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-wrap justify-center gap-4 container mx-auto  lg:max-w-[76rem]  sm:px-4 ">
         {cards.map((card, index) => (
           <div
             key={index}
             role="group"
             aria-labelledby={`card-title-${index}`}
-            className="w-full md:max-w-[20rem] h-[25rem] border-[1.5px] border-primary-purple rounded-xl py-8 px-4 flex flex-col items-center justify-center gap-5 bg-white"
+            className="w-full md:max-w-[23rem] h-[25rem] border-[1.5px] border-primary-purple rounded-xl py-8 px-4 flex flex-col items-center justify-center gap-5 bg-white"
           >
             <div
               className="w-[100px] h-[100px] rounded-full bg-[#543CDA]/10 flex items-center justify-center"

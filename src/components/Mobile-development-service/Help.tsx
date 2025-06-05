@@ -4,7 +4,7 @@ export default function Help() {
   return (
     <section>
       {/* Housing Whoe we help Text and the flex section */}
-      <div className="pt-[5rem] lg:pt-[12rem] flex flex-col gap-[60px] px-2">
+      <div className="pt-[5rem] lg:pt-[12rem] flex flex-col gap-5 lg:gap-[60px] px-2">
         {/* Housing who we help */}
         <div>
           <h3 className="text-[24px] md:text-[45px] font-bold text-center">

@@ -95,7 +95,7 @@ export default function StartupSection() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 sm:py-24">
+    <section className="max-w-[75rem] mx-auto px-4 py-16 sm:py-24">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-extrabold mb-4">
           Everything You Need to Launch, Grow, and Stay Ahead

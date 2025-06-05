@@ -5,7 +5,11 @@ import { Collapse, theme } from "antd";
 
 const text = `We develop apps for iOS and Android using modern frameworks like React Native and Flutter, giving you one codebase across both ecosystems.`;
 
-const getItems = (panelStyle: { marginBottom: number; borderRadius: number; border: string; }) => [
+const getItems = (panelStyle: {
+  marginBottom: number;
+  borderRadius: number;
+  border: string;
+}) => [
   {
     key: "1",
     label: (
@@ -78,7 +82,7 @@ const FaqsMobile = () => {
 
   return (
     <section className="  px-4 sm:px-6 md:px-8 lg:py-32 py-6 bg-white">
-      <div className="flex flex-col gap-[40px]">
+      <div className="flex flex-col lg:gap-[40px]">
         <div className="text-center ">
           <h1 className="font-extrabold text-[#543CDA] mb-[3rem] text-[40px] text-center sm:text-2xl lg:text-3xl">
             FAQs

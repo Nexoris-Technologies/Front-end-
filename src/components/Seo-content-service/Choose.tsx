@@ -3,7 +3,7 @@ import Image from "next/image";
 function WhyChoose() {
   return (
     <section className="flex  ">
-      <div className="flex flex-col  mx-auto items-center lg:flex-row gap-12 lg:gap-[30px]  py-[14rem] ">
+      <div className="flex flex-col  mx-auto items-center lg:flex-row gap-12 lg:gap-[30px]  py-35 lg:py-[10rem] ">
         {/* Text Section */}
         <div className="flex flex-col  gap-[32px] relative">
           <h2 className="absolute bottom-[110%] w-[350px] lg:w-[600px] text-[22px]  lg:text-[32px] font-extrabold  lg:text-left  ">

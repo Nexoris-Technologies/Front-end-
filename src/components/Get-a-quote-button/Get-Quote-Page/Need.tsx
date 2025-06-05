@@ -66,7 +66,7 @@ export default function Needs() {
     ErrorNotifier(`${errors}`);
   };
   return (
-    <section className="bg-[#EAE8F7] py-16 ">
+    <section className="bg-[#EAE8F7] lg:py-16 ">
       {/* hOUSING ALL  */}
       <div className=" container mx-auto px-4">
         {/* Housing Tell us what you need and the paragraph text */}
@@ -89,7 +89,7 @@ export default function Needs() {
           action={`https://formsubmit.co/${targetEmail}`}
           method="POST"
         >
-          <div className="flex flex-col gap-[32px]    mt-[4rem] rounded-[16px] p-[24px] bg-[#FFFFFF] max-w-[728px] mx-auto w-full">
+          <div className="flex flex-col gap-[32px]  lg:mt-[4rem] rounded-[16px] p-[24px] bg-[#FFFFFF] max-w-[728px] mx-auto w-full">
             <div>
               <h3 className="font-semibold text-[32px] ">Quote Request Form</h3>
             </div>
@@ -484,7 +484,7 @@ export default function Needs() {
         </form>
 
         {/*Housing  Not just a quote */}
-        <div className="mt-[5rem] flex flex-col justify-center items-center gap-[1rem]">
+        <div className="mt-[5rem] flex flex-col py-5 justify-center items-center gap-[1rem]">
           <h3 className="text-[20px] md:text-[32px] font-semibold text-center">
             Not Just a Quote, But a Smarter Beninning
           </h3>

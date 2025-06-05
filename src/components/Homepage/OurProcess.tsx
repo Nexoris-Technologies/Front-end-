@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function OurProcess() {
   return (
@@ -8,7 +8,7 @@ export default function OurProcess() {
       className="w-full bg-purple-6 py-12"
       aria-labelledby="our-process-heading"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-60 space-y-12">
         <span className="text-center">
           <h2
             id="our-process-heading"
@@ -24,8 +24,8 @@ export default function OurProcess() {
           title="A Real Conversation"
           description="We start with a call, not a pitch deck. Just tell us what's keeping you up at night, and we'll help you make sense of it."
           image={{
-            src: '/process1.jpg',
-            alt: 'Two team members discussing project goals',
+            src: "/process1.jpg",
+            alt: "Two team members discussing project goals",
           }}
           reverse={false}
         />
@@ -36,8 +36,8 @@ export default function OurProcess() {
           title="A Clear Blueprint"
           description="No bloated proposals or fuzzy estimates. You'll get a straight-up plan: stack, timeline, pricing—crystal clear from day one."
           image={{
-            src: '/process2.jpg',
-            alt: 'Wireframing and project planning session',
+            src: "/process2.jpg",
+            alt: "Wireframing and project planning session",
           }}
           reverse={true}
         />
@@ -48,8 +48,8 @@ export default function OurProcess() {
           title="Build, Sprint, Review"
           description="You meet your team. We work in focused sprints with regular check-ins, honest updates, and work that speaks for itself."
           image={{
-            src: '/process3.jpg',
-            alt: 'Developer sprinting through tasks on a computer',
+            src: "/process3.jpg",
+            alt: "Developer sprinting through tasks on a computer",
           }}
           reverse={false}
         />
@@ -60,8 +60,8 @@ export default function OurProcess() {
           title="Launch and Keep Growing"
           description="We don't ghost after go-live. We test, refine, and scale with you—turning early momentum into long-term success."
           image={{
-            src: '/process4.jpg',
-            alt: 'Team celebrating product launch success',
+            src: "/process4.jpg",
+            alt: "Team celebrating product launch success",
           }}
           reverse={true}
         />
@@ -90,8 +90,8 @@ function ProcessStep({
 }: ProcessStepProps) {
   return (
     <div
-      className={`flex flex-col ${
-        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+      className={`flex flex-col  ${
+        reverse ? "md:flex-row-reverse" : "md:flex-row"
       } items-center justify-between gap-10 md:gap-12`}
     >
       <figure className="w-full md:w-1/2 flex justify-center">

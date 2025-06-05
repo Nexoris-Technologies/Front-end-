@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function OurProcess() {
   return (
     <section className="bg-gradient-to-b from-[#543CDA]/60 to-[#543cda]/10 ">
-      <div className="flex flex-col gap-20 py-[3rem] lg:py-[6rem] ">
+      <div className="flex flex-col gap-10 md:gap-20 py-[3rem] lg:py-[6rem] ">
         <h3
           // style={{ color: "#FFFFFF" }}
           className="text-[24px] md:text-[40px] font-bold text-center"
