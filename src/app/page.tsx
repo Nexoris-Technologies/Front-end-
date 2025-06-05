@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "/nexoris-nav-logo.webp",
+          url: "https://nexoristech.com/nexoris-nav-logo.webp",
           width: 1200,
           height: 630,
           alt: "Nexoris Technologies logo",
