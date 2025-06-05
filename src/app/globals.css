@@ -81,6 +81,14 @@
   --color-black-5: var(--black-5);
   --color-black-6: var(--black-6);
 }
+@theme {
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64em;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
