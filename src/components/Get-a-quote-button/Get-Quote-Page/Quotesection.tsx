@@ -17,7 +17,7 @@ export default function MakeQuote() {
         </div>
 
         {/* Get a quote */}
-        <div className="rounded-[10px] md:bg-[#543CDA] py-5  mx-auto container lg:w-[80rem]  hidden md:block  ">
+        <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-4 lg:w-full">
           <h1 className="font-bold text-[32px] md:text-[56px] md:text-[#FFFFFF] text-center">
             Get a Quote
           </h1>
