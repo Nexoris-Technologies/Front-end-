@@ -4,7 +4,7 @@ export default function CustomProcess() {
   return (
     <section>
       {/* Overall */}
-      <div className="flex flex-col gap-[60px] py-[5rem]">
+      <div className="flex flex-col gap-8 lg:gap-[60px] py-8 lg:py-[5rem]">
         <h3 className="text-[24px] md:text-[40px] font-bold text-center ">
           Our Process
         </h3>

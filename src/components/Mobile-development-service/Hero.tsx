@@ -70,7 +70,7 @@ export default function HeroPage() {
         </div>
 
         {/* Section for the Kiwi, cash etc images */}
-        <div className="pt-[4rem] pb-[1rem]  mx-auto container w-335">
+        <div className="pt-[4rem] pb-[1rem]  mx-auto container lg:w-335">
           <div className=" flex items-center justify-center -mb-[5rem] h-[48px]  md:w-full  rounded-[15px] md:h-[118px] bg-[#F9F9FA]">
             {/* Housing the various cards where flex will be done */}
             <div className="w-[229px] h-[16.7px] md:w-[1150px] md:h-[48px] flex justify-center items-center gap-[18px] md:gap-[2rem] lg:gap-[110px] px-2">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function CustomProcess() {
   return (
     <section className="bg-[#543CDA]/68 px-4">
-      <div className="container mx-auto py-14 flex flex-col items-center gap-12">
+      <div className="container mx-auto py-14 flex flex-col items-center gap-12 ">
         <h2
           style={{ color: "#FFFFFF" }}
           className=" text-2xl md:text-4xl font-bold text-center"
@@ -11,7 +11,7 @@ export default function CustomProcess() {
           Our Process
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-14">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-5 lg:gap-14 ">
           {[
             {
               step: "1",
@@ -58,7 +58,7 @@ export default function CustomProcess() {
           ].map(({ step, title, description, image }, i) => (
             <div
               key={i}
-              className="flex flex-col bg-[#543CDA]/10 border border-white/60 p-4 md:w-100 rounded-2xl gap-6"
+              className="flex flex-col bg-[#543CDA]/10 border border-white/60 p-4   md:w-100 rounded-2xl gap-6"
             >
               <div className=" h-[40px] md:h-[60px]">
                 <Image

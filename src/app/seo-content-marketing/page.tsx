@@ -12,8 +12,8 @@ export default function SeoMarketing() {
     },
   ];
   return (
-    <main className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
-      <StyledContainer>
+    <main>
+      <StyledContainer className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>
       <div>

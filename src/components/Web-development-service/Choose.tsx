@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Choose() {
   return (
     <section className="flex items-center justify-center py-15 bg-[#EAE8F7] px-4">
-      <div className="flex flex-col lg:flex-row  items-center justify-center mx-auto container gap-12 lg:gap-38  ">
+      <div className="flex flex-col lg:flex-row  items-center justify-center mx-auto container gap-12 lg:gap-20  ">
         {/* Text Section */}
         <div className="flex flex-col gap-12 lg:gap-7 max-w-xl ">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center lg:text-left  ">

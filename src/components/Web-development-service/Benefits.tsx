@@ -8,7 +8,7 @@ function Benefits() {
           Key Benefits at a Glance
         </h1>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-13">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           {[
             {
               icon: "/Performance.svg",
@@ -37,7 +37,7 @@ function Benefits() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-4 border border-[#898686] w-full lg:w-full rounded-md px-4 py-6 text-center"
+              className="flex flex-col items-center justify-center gap-4 border border-[#898686] sm:w-93 lg:w-full rounded-md px-4 py-6 text-center"
             >
               <div className="bg-[#0059F133] w-12 h-12 rounded-full flex items-center justify-center">
                 <Image

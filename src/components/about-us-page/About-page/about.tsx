@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section>
       {/* Container with responsive padding and max-width */}
-      <div className="mt-32 container mx-auto px-4 lg:px-14">
+      <div className="mt-32 container mx-auto px-4 ">
         {/* About Us heading with padding and rounded bg */}
         <div className="rounded-lg bg-[#543CDA] flex items-center   justify-center py-6 md:py-10">
           <h3 className="font-bold text-3xl md:text-5xl text-center text-white">

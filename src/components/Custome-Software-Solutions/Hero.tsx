@@ -26,8 +26,8 @@ export default function CustomeHeroPage() {
               and move your business forward — on your terms.
             </p>
           </div>
-          <div className=" flex justify-center items-center gap-2 bg-[#543CDA] text-[#FFFFFF] lg:py-[14px] md:py-[21.5px] px-[32px] rounded-[8px] w-[275px] lg:w-[340px]">
-            <Button className="text-[14px] lg:text-[18px]">
+          <div className=" flex justify-center items-center gap-5 bg-[#543CDA] text-[#FFFFFF] lg:py-[14px] md:py-[21.5px] px-8 lg:px-[32px] rounded-[8px] w-[290px] lg:w-[340px]">
+            <Button className="text-[14px] lg:text-[18px] ">
               Let&apos;s Build Your Solution
             </Button>
             <span>

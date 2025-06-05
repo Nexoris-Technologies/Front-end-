@@ -76,8 +76,12 @@ function Operators() {
       </div>
 
       {isSmallScreen ? (
-        <Marquee speed={60} gradient={false} className="w-full">
-          <div className="flex gap-10 items-center">
+        <Marquee
+          speed={60}
+          gradient={false}
+          className="w-full overflow-hidden whitespace-nowrap gap-x-10"
+        >
+          <div className="flex gap-10 items-center ">
             {logos.map((logo, index) => (
               <Image
                 key={index}

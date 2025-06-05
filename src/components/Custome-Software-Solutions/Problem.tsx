@@ -3,8 +3,8 @@ import Marquee from "react-fast-marquee";
 
 export default function ProblemWeSolve() {
   return (
-    <section className="py-[1rem] lg:py-[7rem]">
-      <h3 className="text-[24px] md:text-[40px] font-bold text-center mb-[4rem]">
+    <section className="py-[3rem] lg:py-[7rem]">
+      <h3 className="text-[24px] md:text-[40px] font-bold text-center lg:mb-[4rem]">
         Problem We Solve
       </h3>
 

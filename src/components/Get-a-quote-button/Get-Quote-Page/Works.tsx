@@ -5,7 +5,7 @@ export default function Works() {
     <section>
       {/* Housing How it works and the cards */}
 
-      <div className="flex flex-col items-center justify-center gap-4 md:gap-15 py-8 mt-30  container mx-auto">
+      <div className="flex flex-col items-center justify-center gap-4 md:gap-15 py-10 lg:py-8   container mx-auto">
         <h3 className="text-xl md:text-4xl font-bold tracking-wide">
           How It Works
         </h3>

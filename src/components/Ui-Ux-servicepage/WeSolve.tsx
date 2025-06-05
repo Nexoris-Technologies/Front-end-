@@ -4,7 +4,7 @@ function WeSolve() {
   return (
     <section className="">
       {/* Main container */}
-      <div className="flex flex-col items-center justify-center py-20 gap-15 container mx-auto ">
+      <div className="flex flex-col items-center justify-center py-10 lg:py-20 gap-15 container mx-auto ">
         {/* Section heading */}
         <h3 className="font-bold text-2xl md:text-3xl text-center">
           Problems We Solve

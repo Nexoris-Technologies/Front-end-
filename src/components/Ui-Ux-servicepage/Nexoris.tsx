@@ -3,7 +3,7 @@ import { CgCheckO } from "react-icons/cg";
 
 function Nexoris() {
   return (
-    <section className="flex items-center justify-center py-20 px-4">
+    <section className="flex items-center justify-center py-10 md:py-20 px-4">
       <div className="flex flex-col lg:flex-row justify-center items-center gap-20 container mx-auto  ">
         {/* Text Section */}
         <div className="flex flex-col gap-6 max-w-lg">

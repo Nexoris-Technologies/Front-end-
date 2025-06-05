@@ -4,7 +4,7 @@ import Image from "next/image";
 function Help() {
   return (
     <section className="flex items-center justify-center py-20 px-4 bg-white">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-30 mx-auto container">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-30 mx-auto container">
         {/* Image Section */}
         <div className="w-[343px] h-[266px] md:w-[580px] md:h-[450px] relative">
           <Image

@@ -5,7 +5,7 @@ export default function CustomLogo() {
   return (
     <section>
       {/* housing the paragraph text and the logos */}
-      <div className="flex flex-col items-center gap-[40px]  py-[4rem]">
+      <div className="flex flex-col items-center gap-[40px] py-3 lg:py-[4rem]">
         {/* Housing the paragraph texts */}
 
         <ul className="list-disc pl-5 space-y-3 w-[303px] mx-auto md:w-[540px] ">
@@ -30,7 +30,7 @@ export default function CustomLogo() {
         <Marquee>
           <div>
             {/* Housing the various cards where flex will be done */}
-            <div className=" flex justify-center items-center gap-[45px] lg:gap-[90px] w-[700px] h-auto l lg:w-full   px-2">
+            <div className=" flex justify-center items-center gap-x-10  w-[700px] h-auto l lg:w-full  px-2">
               <div className="  md:w-[204px] md:h-[60px]">
                 <Image
                   src="/Kiwi.webp"

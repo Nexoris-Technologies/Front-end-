@@ -36,7 +36,7 @@ export default function Love() {
       aria-labelledby="love-heading"
       className="w-full bg-purple-6 flex justify-center items-center rounded mt-12 md:mt-16 px-4 sm:px-6 lg:px-8 py-10"
     >
-      <div className="w-full max-w-7xl flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
+      <div className="w-full lg:max-w-6xl flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-14">
         {/* Visual */}
         <figure className="w-full">
           <Image

@@ -4,7 +4,7 @@ export default function What() {
   return (
     <section className="">
       {/* Housing the What images and textes */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-15 lg:gap-25 mt-30 lg:mt-50 ">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-15 lg:gap-20 mt-30 lg:mt-50 ">
         {/* The image */}
         <div className="rounded-[24px] order-2 lg:order-1 w-[350px] h-[240px] md:w-[540px] md:h-[630px] relative overflow-hidden ">
           <Image

@@ -68,9 +68,9 @@ function Experiences() {
   ];
 
   return (
-    <section className="my-24 flex justify-center py-20 px-4 bg-white">
+    <section className="my-24 flex justify-center lg:py-20 px-4 bg-white">
       <div className="flex items-center justify-center w-full max-w-7xl">
-        <div className="flex flex-col items-center gap-8 text-center w-full">
+        <div className="flex flex-col items-center gap-6 lg:gap-8 text-center w-full">
           {/* Badge */}
           <h4 className="bg-[#0059F11A] py-2 px-6 rounded-full text-[#0059F1] font-bold text-sm sm:text-base">
             UI/UX Design
