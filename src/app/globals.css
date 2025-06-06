@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --font-body: var(--font-poppins);
   --background: #ffffff;
   --primary-purple: #543cda;
   --secondary-purple: #7663e1;
@@ -27,8 +28,6 @@
   --black-4: #999999;
   --black-5: #cccccc;
   --black-6: #e5e5e5;
-  --heading-text: "Inter";
-  --body-font: "Poppins";
   --heading-1: 56px;
   --heading-2: 40px;
   --heading-3: 32px;
@@ -43,8 +42,6 @@
 
 @theme inline {
   --color-background: var(--background);
-  --font-inter: var(--font-heading-text);
-  --font-poppins: var(--body-font);
   --text-heading-1: var(--heading-1);
   --text-heading-2: var(--heading-2);
   --text-heading-3: var(--heading-3);
@@ -89,10 +86,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: var(--background);
+   background: var(--background);
 }
 
 h1,
@@ -102,34 +96,15 @@ h4 {
   font-family: "Inter";
 }
 
-p,
-link,
-li,
-button {
-  font-family: "Poppins";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Inter", sans-serif;
-}
-
 h2,
 h4 {
   color: #543cda;
 }
 
-p {
-  /* color: var(--purple-dark); */
+p, li, span {
+  font-family: "Poppins";
 }
 
-p,
-h3 {
-  font-family: "Poppins", sans-serif;
-}
 
 .bg-svg-dots {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23cccccc' /%3E%3C/svg%3E");

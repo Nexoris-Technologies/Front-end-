@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
                     pathname === "/"
                       ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
                       : ""
-                  }`}
+                  }`} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                 >
                   Home
                 </Link>
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
                     pathname === "/about-us"
                       ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
                       : ""
-                  }`}
+                  }`} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                 >
                   About Us
                 </Link>
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                     services.some((s) => s.path === pathname)
                       ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
                       : ""
-                  }`}
+                  }`} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                 >
                   Services
                   {isServicesOpen ? (
@@ -129,11 +129,12 @@ const Navbar: React.FC = () => {
                         <Link
                           key={service.path}
                           href={service.path}
-                          className="group flex items-center gap-2 hover:bg-primary-purple text-body hover:text-purple-6 rounded-lg px-3 py-2 transition-colors duration-200 w-full text-purple-dark"
+                          className="group flex items-center gap-2 hover:bg-primary-purple text-gray-700 hover:text-purple-6 rounded-lg px-3 py-2 transition-colors duration-200 w-full" 
+                          style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                           onClick={() => setIsServicesOpen(false)}
                         >
                           <CheckCircle
-                            className="text-heading group-hover:text-secondary-text h-5 transition-colors duration-200"
+                            className="text-heading group-hover:text-secondary-text h-5 transition-colors duration-200 text-primary-purple"
                             size={16}
                           />
                           {service.label}
@@ -151,7 +152,7 @@ const Navbar: React.FC = () => {
                     pathname === "/contact-us"
                       ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
                       : ""
-                  }`}
+                  }`} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                 >
                   Contact Us
                 </Link>
@@ -163,7 +164,7 @@ const Navbar: React.FC = () => {
                     pathname === "/insights"
                       ? "text-primary-blue underline underline-offset-4 decoration-primary-blue"
                       : ""
-                  }`}
+                  }`} style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
                 >
                   Insights
                 </Link>
@@ -173,7 +174,7 @@ const Navbar: React.FC = () => {
             {/* Desktop CTA */}
             <Link
               href="/get-a-quote"
-              className="hidden lg:inline-block bg-primary-purple text-purple-6 px-5 py-2 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors"
+              className="hidden lg:inline-block bg-primary-purple text-purple-6 px-5 py-2 rounded-lg text-sm font-medium hover:bg-primary-blue transition-colors" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-md)' }}
             >
               Get a Quote
             </Link>

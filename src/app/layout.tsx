@@ -1,20 +1,35 @@
-import type { Metadata } from "next";
-import ClientComponent from "./ClientComponent";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar/Navbar";
-import ScrollToTop from "@/common/ScrollToTop";
-import "react-toastify/dist/ReactToastify.css";
+import { Poppins, Inter } from 'next/font/google';
+import type { Metadata } from 'next';
+import ClientComponent from './ClientComponent';
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar/Navbar';
+import ScrollToTop from '@/common/ScrollToTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './globals.css';
 
-import "./globals.css";
-import { ToastContainer } from "react-toastify";
+// Load fonts using next/font/google
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon-32x32.png",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: '/favicon-32x32.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
-  manifest: "/site.webmanifest",
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -22,11 +37,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Set the metadata for the page
   return (
     <ClientComponent>
-      <html lang="en">
-        <body>
+      <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+        <body className="font-sans">
           <Navbar />
           <ScrollToTop />
           <ToastContainer />

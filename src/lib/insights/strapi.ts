@@ -34,7 +34,8 @@ export async function getPaginatedInsights(
   pageSize: number = 12
 ): Promise<BlogResponse> {
   const data = await safeStrapiGet<BlogResponse>(
-    `/insights?populate=featuredImage&sort=publishedDate:desc&pagination[page]=${page}&pagination[pageSize]=${pageSize}`
+    `/insights?populate=featuredImage&sort=createdAt:desc&pagination[page]=${page}&pagination[pageSize]=${pageSize}`
+
   );
 
   if (!data || !Array.isArray(data.data)) {

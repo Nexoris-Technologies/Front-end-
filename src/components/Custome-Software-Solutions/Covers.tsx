@@ -1,138 +1,81 @@
+"use client";
+
+import { CircleCheckBig } from "lucide-react";
 import Image from "next/image";
 
 export default function CustomCoverService() {
   return (
-    <section className="bg-[#EAE8F7]">
-      {/* Housing all */}
-      <div className="flex flex-col gap-[24px] md:gap-[32px] py-[5rem]">
-        <h3 className="text-[24px] lg:text-[40px] font-bold text-center">
+    <div className="bg-[#EAE8F7] py-16 w-full px-4 md:px-6 lg:px-12 xl:px-20">
+      <div className="container mx-auto flex flex-col gap-12">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center">
           What This Service Covers
-        </h3>
+        </h2>
 
-        {/* Housing the cards */}
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px] mx-auto  lg:w-[1224px]">
-          {/* first card */}
-          <div className="flex  gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Custom Internal Tools and Admin Panels
-            </p>
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Column 1 – Systems */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#543CDA]">
+              ⚙️ Systems We Build
+            </h3>
+            <ul className="flex flex-col gap-x-4 gap-y-1 text-gray-800 text-base leading-relaxed">
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Custom Internal Tools & Admin Panels
+              </li>
+              <li className="flex items-start gap-2">
+               <CircleCheckBig className="text-primary-purple"/>
+                Client Portals & Partner Dashboards
+              </li>
+              <li className="flex items-start gap-2">
+               <CircleCheckBig className="text-primary-purple"/>
+                Multi-Tenant SaaS Platforms
+              </li>
+            </ul>
           </div>
-          {/* second card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Client Portals and Partner Dashboards
-            </p>
+
+          {/* Column 2 – Data & Automation */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#543CDA]">
+              📊 Data & Automation
+            </h3>
+            <ul className="flex flex-col gap-x-4 gap-y-1 text-gray-800 text-base leading-relaxed">
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Business Process Automation Systems
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Smart System Workflows & Data Connectivity
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Data Modeling, Storage & Reporting
+              </li>
+            </ul>
           </div>
-          {/* third card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Multi-Tenant SaaS Platforms
-            </p>
-          </div>
-          {/* fourth card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Business Process Automation Systems
-            </p>
-          </div>
-          {/* fifth card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Workflow Orchestration and Approval Chains
-            </p>
-          </div>
-          {/* sixth card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Smart System Workflows and Data Connectivity
-            </p>
-          </div>
-          {/* seven card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Role-Based Access and Security Protocols
-            </p>
-          </div>
-          {/* eight card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Data Modeling, Storage, and Reporting
-            </p>
-          </div>
-          {/* nineth card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Custom CMS/Back Office Tools
-            </p>
-          </div>
-          {/* tenth card */}
-          <div className="flex gap-[16px] rounded-[8px] p-[12px] bg-[#FFFFFF] w-[343px] lg:w-[392px]">
-            <Image
-              src="/dounle check black.svg"
-              alt="check black"
-              width={24}
-              height={24}
-            />
-            <p className="text-[16px] md:text-[18px]">
-              Code Audits, Technical Architecture, and DevOps Setup
-            </p>
+
+          {/* Column 3 – Control & Security */}
+          <div className="flex flex-col gap-4">
+            <h3 className="text-xl font-semibold text-[#543CDA]">
+              🔐 Control & Architecture
+            </h3>
+            <ul className="flex flex-col gap-x-4 gap-y-1 text-gray-800 text-base leading-relaxed">
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple"/>
+                Role-Based Access & Security Protocols
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Custom CMS & Back Office Tools
+              </li>
+              <li className="flex items-start gap-2">
+                <CircleCheckBig className="text-primary-purple" />
+                Code Audits, Architecture & DevOps Setup
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

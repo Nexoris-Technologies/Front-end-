@@ -1,77 +1,65 @@
-import Image from "next/image";
-import { CgCheckO } from "react-icons/cg";
+'use client';
+
+import Image from 'next/image';
+import { CgCheckO } from 'react-icons/cg';
 
 export default function WhyChooseCustom() {
+  const benefits = [
+    'We don’t just code, we solve problems that hurt your business',
+    'Deep focus on systems thinking and operational value',
+    'UX designed for the way your team actually works',
+    'Senior engineers who can build, integrate, and scale complex platforms',
+    'Long-term partnership, from V1 to full enterprise transformation',
+  ];
+
   return (
-    <section className=" bg-[#EAE8F7] ">
-      <div className="flex flex-col justify-center items-center  lg:flex-row gap-12 lg:gap-[30px]   py-[6rem] ">
+    <div
+      aria-labelledby="why-custom-title"
+      className="bg-[#F6F5FC] py-20 px-4 md:px-6 xl:px-20"
+    >
+      <div className="max-w-7xl mx-auto flex flex-col xl:flex-row gap-12 items-center xl:items-start">
         {/* Text Section */}
-        <div className="flex flex-col gap-[32px]  lg:max-w-[1224px] px-4 md:px-0">
-          <h3 className="text-[24px] md:w-[600px] md:text-[28px] lg:text-[32px] font-bold text-center md:text-left leading-snug">
+        <div className="w-full xl:w-1/2 flex flex-col gap-6 text-center xl:text-left">
+          <h2
+            id="why-custom-title"
+            className="text-2xl md:text-3xl xl:text-4xl font-bold text-gray-900 leading-tight"
+          >
             Why Choose Nexoris for Custom Software Development?
-          </h3>
+          </h2>
 
-          {/* Paragraph section */}
-          <div className="flex flex-col gap-[24px]">
-            <div className="flex gap-[16px] items-start">
-              <p className="text-[1.7rem]">
-                <CgCheckO />
-              </p>
-              <p className="text-[16px] md:text-[18px]">
-                We don’t just code, we solve problems that hurt your business
-              </p>
-            </div>
+          <p className="text-gray-600 text-base md:text-lg max-w-2xl mx-auto xl:mx-0">
+            We build scalable, intuitive, and future-ready systems tailored to your business goals — not someone else’s template.
+          </p>
 
-            <div className="flex gap-[16px] items-start">
-              <p className="text-[1.7rem]">
-                <CgCheckO />
-              </p>
-              <p className="text-[16px] md:text-[18px]">
-                Deep focus on systems thinking and operational value
-              </p>
-            </div>
+          <ul className="flex flex-col gap-4 mt-2" role="list">
+            {benefits.map((point, index) => (
+              <li key={index} className="flex items-start gap-3 justify-start">
+                <span className="text-[#543CDA] text-2xl mt-1">
+                  <CgCheckO aria-hidden="true" />
+                </span>
+                <p className="text-gray-800 text-base text-left md:text-lg leading-snug">
+                  {point}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-            <div className="flex gap-[16px] items-start">
-              <p className="text-[1.7rem]">
-                <CgCheckO />
-              </p>
-              <p className="text-[16px] md:text-[18px]">
-                UX designed for the way your team actually works
-              </p>
-            </div>
-
-            <div className="flex gap-[16px] items-start">
-              <p className="text-[1.7rem]">
-                <CgCheckO />
-              </p>
-              <p className="text-[16px] md:text-[18px]">
-                Senior engineers who can build, integrate, and scale complex
-                platforms
-              </p>
-            </div>
-
-            <div className="flex gap-[16px] items-start">
-              <p className="text-[1.7rem]">
-                <CgCheckO />
-              </p>
-              <p className="text-[16px] md:text-[18px]">
-                Long-term partnership, from V1 to full enterprise transformation
-              </p>
-            </div>
+        {/* Image Section */}
+        <div className="w-full xl:w-1/2 max-w-lg mx-auto xl:mx-0">
+          <div className="rounded-3xl overflow-hidden shadow-md border border-[#ddd]">
+            <Image
+              src="/images/ceo.webp"
+              alt="Developer team building custom software at Nexoris"
+              width={600}
+              height={600}
+              className="object-cover w-full h-auto"
+              priority
+              sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 50vw, 600px"
+            />
           </div>
         </div>
-
-        {/* Image and Testimonial */}
-        <div className="w-[343px] h-[420px]  md:w-[600px] md:h-[600px]">
-          <Image
-            src="/mobile-app-photo.webp"
-            alt="Service Image"
-            width={600}
-            height={600}
-            className="rounded-[24px]"
-          />
-        </div>
       </div>
-    </section>
+    </div>
   );
 }

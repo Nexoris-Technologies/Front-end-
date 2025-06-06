@@ -1,3 +1,7 @@
+
+export const dynamic = "force-dynamic";
+
+
 import { getPaginatedInsights } from "@/lib/insights/strapi";
 import BlogCard from "@/components/BlogCards";
 import Breadcrumbs from "@/components/Breadcrumbs";

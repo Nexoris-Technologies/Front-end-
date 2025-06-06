@@ -17,7 +17,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ className = "" }) => {
   return (
     <footer
-      className={`bg-purple-dark text-purple-6 px-4 md:px-12 lg:px-20 pt-12 ${className}`}
+      className={`bg-purple-dark text-purple-6 w-full mx-auto px-4 md:px-12 lg:px-20 pt-12 ${className}`}
     >
       <div className="container mx-auto">
         {/* Top section */}
@@ -93,19 +93,19 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
-                  <Link href="/">Home</Link>
+                  <Link href="/" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Home</Link>
                 </li>
                 <li>
-                  <Link href="/about-us">About Us</Link>
+                  <Link href="/about-us" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>About Us</Link>
                 </li>
                 <li>
-                  <Link href="/contact-us">Contact Us</Link>
+                  <Link href="/contact-us" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Contact Us</Link>
                 </li>
                 <li>
-                  <Link href="/careers">Careers</Link>
+                  <Link href="/careers" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Careers</Link>
                 </li>
                 <li>
-                  <Link href="/insights">Insights</Link>
+                  <Link href="/insights" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Insights</Link>
                 </li>
               </ul>
             </div>
@@ -117,33 +117,33 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
-                  <Link href="/web-development">Web Development</Link>
+                  <Link href="/web-development" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Web Development</Link>
                 </li>
                 <li>
-                  <Link href="/ui-ux-design-consulting">
+                  <Link href="/ui-ux-design-consulting" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>
                     UI/UX Design and Consulting
                   </Link>
                 </li>
                 <li>
-                  <Link href="/mobile-app-development">Mobile Application</Link>
+                  <Link href="/mobile-app-development" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Mobile App Development</Link>
                 </li>
                 <li>
-                  <Link href="/seo-content-marketing">
+                  <Link href="/seo-content-marketing" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>
                     SEO and Content Marketing
                   </Link>
                 </li>
                 <li>
-                  <Link href="/product-design-management">
+                  <Link href="/product-design-management" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>
                     Product Design and Management
                   </Link>
                 </li>
                 <li>
-                  <Link href="/custom-software-solutions">
+                  <Link href="/custom-software-solutions" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>
                     Custom Software Solution
                   </Link>
                 </li>
                 <li>
-                  <Link href="/digital-transformation-consulting">
+                  <Link href="/digital-transformation-consulting" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>
                     Digital Transformation
                   </Link>
                 </li>
@@ -157,13 +157,13 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
               </p>
               <ul className="space-y-2 text-gray-5 text-body-md">
                 <li>
-                  <Link href="/privacy-policy">Privacy Policy</Link>
+                  <Link href="/privacy-policy" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/cookie-policy">Cookie Policy</Link>
+                  <Link href="/cookie-policy" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Cookie Policy</Link>
                 </li>
                 <li>
-                  <Link href="/terms-of-service">Terms of Service</Link>
+                  <Link href="/terms-of-service" style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--body-sm)' }}>Terms of Service</Link>
                 </li>
               </ul>
             </div>
@@ -171,8 +171,8 @@ const Footer: React.FC<FooterProps> = ({ className = "" }) => {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-12 pt-4 border-t border-primary-purple text-center text-sm text-gray-5">
-          <div className="flex items-center justify-center gap-2">
+        <div className="mt-6 border-t border-primary-purple text-center text-sm text-gray-5">
+          <div className="flex items-center justify-center gap-2 py-6">
             <FaRegCopyright size={16} aria-hidden="true" />
             <span>
               {new Date().getFullYear()} Nexoris Technologies. All rights reserved.
