@@ -4,7 +4,7 @@ export default function SeoProcess() {
   return (
     <section className="bg-[#EAE8F7] lg:rounded-[50px]">
       {/* Housing all section */}
-      <div className="flex flex-col py-[3rem] mt-[4rem] md:py-12 gap-[40px] ">
+      <div className="flex flex-col py-[3rem] mt-[4rem] md:py-25 gap-[40px] ">
         <h2 className="text-[22px] md:text-[40px] font-extrabold text-center">
           Our Process
         </h2>
