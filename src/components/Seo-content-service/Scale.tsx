@@ -10,7 +10,7 @@ export default function ScalePlan() {
             Plan That Scale With You
           </h2>
           <p className="text-sm md:text-lg text-gray-700">
-            Whether you're just getting started or ready to dominate your
+            Whether you&apos;re just getting started or ready to dominate your
             market, our SEO and content plans are built to match your ambition.
             Every tier is backed by expert strategy, technical precision, and
             measurable results.
