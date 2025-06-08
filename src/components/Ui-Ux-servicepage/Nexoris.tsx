@@ -4,8 +4,8 @@ import { CgCheckO } from "react-icons/cg";
 
 function Choose() {
   return (
-    <section className="w-full bg-[#EAE8F7] py-16 ">
-      <div className="flex flex-col items-center justify-between xl:flex-row w-full px-6 sm:px-14 gap-8 lg:gap-20 xl:gap-40 lg:px-24">
+    <section className="w-full  ">
+      <div className="flex flex-col items-center justify-between xl:flex-row w-full px-6 sm:px-14 gap-8 py-8 lg:py-20 lg:gap-20 xl:gap-40 lg:px-24">
         {/* Text Section */}
         <div className="flex flex-col gap-10 lg:gap-12 w-full xl:w-1/2">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold">

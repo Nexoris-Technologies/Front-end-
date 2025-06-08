@@ -10,7 +10,7 @@ export default function SeoProblemsSolves() {
         </h2>
 
         {/* Problems we solve image */}
-        <div className="flex flex-col  xl:flex-row gap-12 lg:gap-15 ">
+        <div className="flex flex-col  xl:flex-row gap-12 lg:gap-30 ">
           <div className="relative overflow-hidden rounded-[24px] min-h-[300px] w-full  h-[420px] sm:h-[500px] md:h-[600px] lg:h-[580px] mx-auto lg:mx-0 xl:w-1/2">
             <Image
               src="/seo-problem-image.webp"
@@ -22,7 +22,7 @@ export default function SeoProblemsSolves() {
           {/* Solved problems textes */}
           <div className="flex gap-[1.5rem] lg:gap-5 xl:gap-16 flex-col  xl:w-1/2">
             {/* first text pair */}
-            <div className=" flex items-center gap-[23px]">
+            <div className=" flex items-center gap-4">
               <div className="w-[56] h-[55px] md:w-[64px] md:h-[64px]">
                 <Image
                   src="/question marks icons.svg"
@@ -37,7 +37,7 @@ export default function SeoProblemsSolves() {
               </p>
             </div>
             {/* second text pair */}
-            <div className=" flex items-center gap-[23px]">
+            <div className=" flex items-center gap-4">
               <div className="w-[56] h-[55px] md:w-[64px] md:h-[64px]">
                 <Image
                   src="/question marks icons.svg"
@@ -47,11 +47,11 @@ export default function SeoProblemsSolves() {
                 />
               </div>
               <p className="text-[13px] md:text-[20px] font-bold xl:max-w-lg ">
-                We’ve published dozens of blogs but aren’t seeing any leads.
+                We&apos;ve published dozens of blogs but aren’t seeing any leads.
               </p>
             </div>
             {/* third text pair */}
-            <div className=" flex items-center gap-[23px]">
+            <div className=" flex items-center gap-4">
               <div className="w-[56] h-[55px] md:w-[64px] md:h-[64px]">
                 <Image
                   src="/question marks icons.svg"
@@ -65,7 +65,7 @@ export default function SeoProblemsSolves() {
               </p>
             </div>
             {/* fourth text pair */}
-            <div className=" flex items-center gap-[23px]">
+            <div className=" flex items-center gap-4">
               <div className="w-[56] h-[55px] md:w-[64px] md:h-[64px]">
                 <Image
                   src="/question marks icons.svg"
@@ -80,7 +80,7 @@ export default function SeoProblemsSolves() {
               </p>
             </div>
             {/* fifth text pair */}
-            <div className=" flex items-center gap-[23px]">
+            <div className=" flex items-center gap-4">
               <div className="w-[56] h-[55px] md:w-[64px] md:h-[64px]">
                 <Image
                   src="/question marks icons.svg"
