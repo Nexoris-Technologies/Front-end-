@@ -4,7 +4,7 @@ export default function Help() {
   return (
     <section>
       {/* Housing Whoe we help Text and the flex section */}
-      <div className="pt-[5rem] lg:pt-[12rem] flex flex-col gap-5 lg:gap-[60px] px-2">
+      <div className="py-15 sm:py-25 lg:py-20 flex flex-col gap-5 lg:gap-[30px] px-6  lg:px-24">
         {/* Housing who we help */}
         <div>
           <h3 className="text-[24px] md:text-[45px] font-bold text-center">
@@ -12,7 +12,7 @@ export default function Help() {
           </h3>
         </div>
         {/* Housing  the Phone and flexed texes*/}
-        <div className="flex flex-col lg:flex-row items-center px-6  lg:items-start justify-center mx-auto container gap-[22px]">
+        <div className="flex flex-col lg:flex-row w-full gap-8 items-center lg:items-left  lg:gap-[100px]">
           {/* Housing the first 3 texes */}
           <div className="flex flex-col gap-[32px]">
             {/* The first text */}
@@ -26,7 +26,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[330px]">
+                <p className="text-[16px] ">
                   Startups with bold app ideas but limited time to hit the
                   market
                 </p>
@@ -43,7 +43,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[340px]">
+                <p className="text-[16px] ">
                   Product teams looking to rebuild outdated mobile experiences
                 </p>
               </div>
@@ -59,7 +59,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[320px]">
+                <p className="text-[16px] ">
                   Health, fintech, or logistics companies needing secure, stable
                   apps
                 </p>
@@ -71,8 +71,8 @@ export default function Help() {
             <Image
               src="/Phone image.webp"
               alt="Phone Image"
-              width={320}
-              height={572}
+              width={420}
+              height={592}
             />
           </div>
           {/* Housing the second row textes */}
@@ -88,7 +88,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[420px] tracking-wider">
+                <p className="text-[16px] ">
                   Businesses ready to turn their web platforms into full mobile
                   solutions
                 </p>
@@ -105,7 +105,7 @@ export default function Help() {
                 />
               </div>
               <div>
-                <p className="text-[16px] md:w-[420px] tracking-wider">
+                <p className="text-[16px] ">
                   Founders ready to upgrade their MVPs into full-scale mobile
                   platforms.
                 </p>

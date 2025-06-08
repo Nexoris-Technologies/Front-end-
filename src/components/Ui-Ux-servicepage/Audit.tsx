@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Audit() {
   return (
-    <section className="bg-[#EAE8F7] px-4">
-      <div className="flex flex-col items-center justify-center gap-10 py-14 lg:py-28  px-2 container mx-auto">
+    <section className="bg-[#EAE8F7] ">
+      <div className="flex flex-col  gap-10 py-7 lg:py-18 px-4 sm:px-14 lg:px-24 ">
         <h1 className="font-bold text-2xl text-center md:text-4xl lg:text-5xl">
           What This Service Covers
         </h1>
@@ -22,7 +22,7 @@ function Audit() {
           ].map((text, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 bg-white rounded-md px-4 py-4 w-full max-w-md min-h-[6rem] mx-auto shadow-sm"
+              className="flex items-center gap-4 bg-white rounded-md px-4 py-4 w-full  min-h-[6rem] shadow-sm"
             >
               <Image
                 src="/solar_check.svg"

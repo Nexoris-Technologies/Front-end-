@@ -68,8 +68,8 @@ function Experiences() {
   ];
 
   return (
-    <section className="my-24 flex justify-center lg:py-20 px-4 bg-white">
-      <div className="flex items-center justify-center w-full max-w-7xl">
+    <section className=" flex  lg:px-20 lg:py-12 px-4 bg-white">
+      <div className="flex  w-full ">
         <div className="flex flex-col items-center gap-6 lg:gap-8 text-center w-full">
           {/* Badge */}
           <h4 className="bg-[#0059F11A] py-2 px-6 rounded-full text-[#0059F1] font-bold text-sm sm:text-base">
@@ -96,7 +96,7 @@ function Experiences() {
           </Link>
 
           {/* Marquee with Images */}
-          <div className="w-full mt-8">
+          <div className="w-full mt-12">
             <Marquee speed={60} gradient={false} className="w-full">
               <div className="flex items-end gap-12">
                 {images.map((img, index) => (

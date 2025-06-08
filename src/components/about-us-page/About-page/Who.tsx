@@ -2,12 +2,13 @@ import Image from "next/image";
 
 export default function Who() {
   return (
-    <section>
-      {/* Housing who we are and Our story section */}
-      <div className="flex flex-col gap-20 lg:gap-50 mt-16 lg:mt-50 ">
-        {/* Housing WHO WE ARE */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-6 md:gap-13 ">
-          <div className="w-[343px] h-[245px] order-2 md:order-1 md:w-[580px] md:h-[383px] overflow-hidden relative">
+    <section className=" w-full">
+      {/* Housing the Who we are section */}
+      <div className="flex flex-col gap-20 mt-16 px-4 lg:px-8 w-full">
+        {/* Who We Are section */}
+        <div className="flex flex-col lg:flex-row gap-9 lg:gap-16 w-full">
+          {/* Image */}
+          <div className="w-full max-w-full h-[245px] sm:h-[395px] lg:h-[383px] lg:w-1/2 overflow-hidden relative order-2 lg:order-1">
             <Image
               src="/Who-first.webp"
               alt="who-we-are-first"
@@ -17,31 +18,29 @@ export default function Who() {
             />
           </div>
 
-          {/* Who we are textes */}
-          <div className="flex flex-col max-w-[35rem] order-1 md:order-1  px-6 md:px-0 lg:order-2 gap-4  lg:gap-8 ">
-            <h1 className="text-xl md:text-5xl font-semibold  text-[#000000]">
-              Who We Are
-            </h1>
-            <div className="text-md md:text-lg 2 flex flex-col gap-2 text-[#000000] ">
-              <p className="">
+          {/* Text */}
+          <div className="flex flex-col gap-4 md:gap-8 order-1 lg:order-2 w-full lg:w-1/2 text-[#000000]">
+            <h1 className="text-xl md:text-5xl font-semibold">Who We Are</h1>
+            <div className="text-md md:text-lg flex flex-col gap-2">
+              <p>
                 Nexoris Technologies Ltd is a modern tech company made up of
                 developers, designers, engineers, analysts, and product
                 strategists united by one purpose: helping businesses succeed
                 through powerful digital products.
               </p>
-              <p className="">
+              <p>
                 We collaborate with startups, scale-ups, and enterprise teams to
                 design and develop web platforms, mobile apps, and custom
                 systems that solve real problems efficiently, securely, and
                 beautifully.
               </p>
-              <p className="">
+              <p>
                 Whether you&apos;re starting from scratch or transforming an
                 existing solution, our cross-functional team ensures every
                 product we deliver is functional, future-ready, and
                 people-centered.
               </p>
-              <p className="">
+              <p>
                 We take the time to understand your business, not just your
                 brief because technology is only valuable when it supports real
                 goals.
@@ -50,14 +49,12 @@ export default function Who() {
           </div>
         </div>
 
-        {/* Housing our story */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-9 md:gap-16">
-          {/* Our Story textes */}
-          <div className="flex flex-col gap-3 lg:gap-8 max-w-[34rem] ">
-            <h1 className="text-xl md:text-5xl font-semibold  text-[#000000]">
-              Our Story
-            </h1>
-            <div className="text-md md:text-lg  text-[#000000] max-w-[340px] flex flex-col gap-2 md:max-w-[580px] ">
+        {/* Our Story section */}
+        <div className="flex flex-col lg:flex-row gap-9 lg:gap-16 w-full">
+          {/* Text */}
+          <div className="flex flex-col gap-4 lg:gap-8 w-full lg:w-1/2 text-[#000000]">
+            <h1 className="text-xl md:text-5xl font-semibold">Our Story</h1>
+            <div className="text-md md:text-lg flex flex-col gap-2">
               <p>
                 We started Nexoris because we&apos;ve lived the frustration of
                 laggy systems, missed deadlines, and tech teams that just
@@ -77,8 +74,8 @@ export default function Who() {
             </div>
           </div>
 
-          {/* Our story images */}
-          <div className=" w-[343px] h-[245px] md:w-[580px] md:h-[350px] relative overflow-hidden">
+          {/* Image */}
+          <div className="w-full max-w-full h-[245px] sm:h-[395px] lg:h-[383px] lg:w-1/2 overflow-hidden relative">
             <Image
               src="/Who-second.webp"
               alt="who-we-are-second"

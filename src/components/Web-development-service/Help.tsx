@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function Help() {
   return (
-    <section className="flex items-center justify-center py-20 px-4 bg-white">
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-12 lg:gap-30 mx-auto container">
+    <section className="flex w-full lg:py-20 px-4 sm:px-14 lg:px-25 ">
+      <div className="flex flex-col-reverse xl:flex-row  gap-12 lg:gap-16 xl:gap-30  w-full">
         {/* Image Section */}
-        <div className="w-[343px] h-[266px] md:w-[580px] md:h-[450px] relative">
+        <div className="relative overflow-hidden rounded-[24px] min-h-[300px] w-full  h-[420px] sm:h-[500px] md:h-[600px] lg:h-[700px] mx-auto lg:mx-0 xl:w-1/2">
           <Image
             src="/ServiceImage1.svg"
             alt="Service Image"
@@ -17,7 +17,7 @@ function Help() {
         </div>
 
         {/* Text Section */}
-        <div className="flex flex-col gap-6 max-w-xl">
+        <div className="flex flex-col lg:gap-8 xl:gap-15 w-full xl:w-1/2 max-w-2xl">
           <h2
             style={{ color: "#000000" }}
             className="text-[24px] sm:text-4xl lg:text-4xl font-bold"
@@ -25,7 +25,7 @@ function Help() {
             Who we Help?
           </h2>
 
-          <div className="flex flex-col lg:gap-4 gap-8">
+          <div className="flex flex-col xl:gap-14 lg:gap-8  ">
             {[
               "Startups needing a site live in weeks, not months.",
               "Growing brands tired of bloated themes and dev bottlenecks.",

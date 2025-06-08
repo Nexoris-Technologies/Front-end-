@@ -5,9 +5,9 @@ function Launch() {
   return (
     <section className="px-4">
       {/* Centered container with vertical spacing */}
-      <div className="flex flex-col items-center gap-6 py-8 md:py-20 max-w-5xl mx-auto text-center">
+      <div className="flex flex-col items-center gap-6 py-8 md:py-10 max-w-5xl mx-auto text-center">
         {/* Main heading with responsive font size and line break handling */}
-        <h3 className="font-bold md:text-[32px] text-[24px] ">
+        <h3 className="font-medium md:text-[32px] text-[24px] ">
           Ready to launch a mobile app your users actually love?
         </h3>
 

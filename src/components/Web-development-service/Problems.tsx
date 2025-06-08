@@ -8,20 +8,20 @@ function Problems() {
   ];
 
   return (
-    <section className="px-4">
+    <section className="">
       {/* Main container */}
-      <div className="flex flex-col items-center py-20 gap-10  mx-auto container">
+      <div className="flex flex-col py-12 lg:px-24 px-6 md:px-14 sm:px-14 gap-4 lg:gap-8">
         {/* Section heading */}
         <h3 className="font-bold text-2xl md:text-3xl text-center">
           Problems We Solve
         </h3>
 
         {/* Responsive grid for problems */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-14 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 ">
           {problems.map((text, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center justify-center border border-gray-300 rounded-md p-2 lg:p-6 lg:w-155 gap-4 bg-white shadow-sm"
+              className="flex flex-col items-center text-center justify-center border border-gray-300 rounded-md p-2 lg:p-6  gap-4 bg-white shadow-sm"
             >
               {/* Number circle */}
               <div className="bg-[#0059F133] w-12 h-12 rounded-full flex items-center justify-center">

@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 
 function Competition() {
   return (
-    <section className=" flex justify-center py-24 px-4 bg-white">
-      <div className=" flex items-center justify-center w-full ">
+    <section className=" flex  py-24 px-6 sm:px-10 lg:px-25 bg-white">
+      <div className="w-full ">
         <div className="flex flex-col items-center gap-8 text-center ">
           {/* Badge */}
           <h4 className="bg-[#0059F11A] py-2 px-6 rounded-full text-[#0059F1] font-bold text-sm sm:text-base">
@@ -18,7 +18,7 @@ function Competition() {
           </h4>
 
           {/* Heading and Paragraph */}
-          <div className="flex flex-col items-center gap-4 w-full ">
+          <div className="flex flex-col  gap-4 w-full ">
             <h1 className="font-bold text-[32px] sm:text-3xl lg:text-5xl text-[#543CDA]">
               Build Websites That <br /> Outrun the Competition.
             </h1>
@@ -38,7 +38,7 @@ function Competition() {
           </Link>
 
           {/* Image */}
-          <div className="w-full max-w-5xl mx-auto">
+          <div className=" relative overflow-hidden">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -47,9 +47,9 @@ function Competition() {
               <Image
                 src="/ServiceImage2.svg"
                 alt="Service Image"
-                width={1200}
-                height={800}
-                className="w-full h-auto object-contain rounded-md"
+                width={1100}
+                height={702}
+                className="w-full  object-cover rounded-md"
                 priority // Optional: preloads for better performance
               />
             </motion.div>

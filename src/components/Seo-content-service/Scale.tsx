@@ -2,306 +2,132 @@ import { TbPointFilled } from "react-icons/tb";
 
 export default function ScalePlan() {
   return (
-    <section className="bg-[#EAE8F7] lg:rounded-[50px]">
-      {/* Main section */}
-      <div className="flex flex-col py-[2rem] lg:py-[5rem] gap-[2rem] lg:gap-[5rem]">
-        {/* Housing the Plan header and the paragraph text */}
-        <div className="flex flex-col items-center justify-center gap-[1rem]">
-          <h2 className=" text-[22px] md:text-[40px] font-extrabold">
+    <section className="bg-[#EAE8F7] rounded-none lg:rounded-[50px]">
+      <div className="flex flex-col px-4 sm:px-6 lg:px-24 py-10 lg:py-20 gap-10 lg:gap15">
+        {/* Header */}
+        <div className="flex flex-col items-center text-center gap-4 max-w-4xl mx-auto">
+          <h2 className="text-[22px] md:text-[36px] font-extrabold">
             Plan That Scale With You
           </h2>
-          <p className="text-[11px] md:text-[18px] text-center w-[335px] lg:w-[1130px]">
-            Whether you&apos;re just getting started or ready to dominate your
+          <p className="text-sm md:text-lg text-gray-700">
+            Whether you're just getting started or ready to dominate your
             market, our SEO and content plans are built to match your ambition.
             Every tier is backed by expert strategy, technical precision, and
             measurable results.
           </p>
         </div>
 
-        {/* Housing all the large cards */}
-        <div className="flex flex-col gap-[14px]">
-          {/* the first large card*/}
-          <div className="flex flex-col  mx-auto gap-[78px] py-[42px] px-[23px] border-[1px] border-[#543CDA]/70 rounded-[10px] w-[343px] lg:w-[1130px]">
-            <div className="flex flex-col gap-[.6rem]">
-              <h2 className="text-[20px] lg:text-[32px] font-semibold">
-                Starter: Foundation & Fixes
-              </h2>
-              <p className="text-[10px] w-[256px] lg:w-full lg:text-[16px]">
-                Perfect for early-stage teams that need solid SEO fundamentals
-                and reliable content output.
-              </p>
-            </div>
-
-            {/* Housing informations that will be flexed */}
-            <div className=" flex flex-col lg:flex-row gap-[2rem] lg:gap-[13rem]">
-              {/* The first part of the information */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] md:text-[18px] text-[#543CDA]">
-                  Starting at $1,500/month
-                </h6>
-                <p className=" text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Technical SEO Audit
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Core Web Vitals Optimization
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Keyword Research (up to 10 target terms)
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  On-Page SEO Optimization (up to 5 key pages)
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  1x Monthly Blog Post (1,000 words)
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  SEO Performance Dashboard & Monthly Report
+        {/* Plan Cards */}
+        <div className="flex flex-col flex-wrap justify-center lg:flex-row gap-10">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className="flex flex-col gap-6 p-6 border border-[#543CDA]/70 rounded-[10px] flex-1 bg-white"
+            >
+              <div className="flex flex-col gap-2">
+                <h2 className="text-lg md:text-2xl font-semibold">
+                  {plan.title}
+                </h2>
+                <p className="text-xs md:text-base text-gray-600">
+                  {plan.description}
                 </p>
               </div>
 
-              {/* The second part of the info */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] text-[#543CDA]">Best For</h6>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Startups launching a new site
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Founders seeking visibility without complexity
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Brands needing to fix slow or underperforming pages
-                </p>
-              </div>
-            </div>
-
-            {/* Get started button */}
-            <div className="py-[20px] px-[31px] rounded-[8px] mx-auto bg-[#543CDA] w-[289px] flex items-center justify-center">
-              <button className="text-[17px] text-[#FFFFFF]">
-                Get Started
-              </button>
-            </div>
-          </div>
-
-          {/* The second large card */}
-          <div className="flex flex-col  mx-auto gap-[78px] py-[42px] px-[23px] border-[1px] border-[#543CDA]/70 rounded-[10px] w-[343px] lg:w-[1130px]">
-            <div className="flex flex-col gap-[.6rem]">
-              <h2 className="text-[20px] lg:text-[32px] font-semibold">
-                 Growth: Rank & Scale
-              </h2>
-              <p className="text-[10px] w-[256px] lg:w-full lg:text-[16px]">
-                Ideal for growing businesses ready to expand reach, outrank
-                competitors, and turn traffic into leads.
-              </p>
-            </div>
-
-            {/* Housing informations that will be flexed */}
-            <div className=" flex flex-col lg:flex-row gap-[2rem]  lg:gap-[7rem]">
-              {/* The first part of the information */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] md:text-[18px] text-[#543CDA]">
-                  Starting at $3,500/month
-                </h6>
-                <p className=" text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Everything in Starter
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  4x Monthly Content Pieces (blogs, landing pages, or guides)
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Internal Linking & Topic Cluster Strategy
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Full Site SEO Overhaul
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Schema Markup Implementation
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Conversion-Focused Content Review
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Competitor Keyword & Gap Analysis
-                </p>
+              <div className="flex flex-col lg:flex-row gap-6">
+                <div className="flex flex-col gap-2 text-sm md:text-base">
+                  <h6 className="text-[#543CDA] font-semibold">{plan.price}</h6>
+                  {plan.features.map((feature, i) => (
+                    <p key={i} className="flex items-start gap-2">
+                      <TbPointFilled className="mt-[2px]" />
+                      {feature}
+                    </p>
+                  ))}
+                </div>
+                <div className="flex flex-col gap-2 text-sm md:text-base">
+                  <h6 className="text-[#543CDA] font-semibold">Best For</h6>
+                  {plan.bestFor.map((item, i) => (
+                    <p key={i} className="flex items-start gap-2">
+                      <TbPointFilled className="mt-[2px]" />
+                      {item}
+                    </p>
+                  ))}
+                </div>
               </div>
 
-              {/* The second part of the info */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] text-[#543CDA]">Best For</h6>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Marketing teams scaling content
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  SaaS and Direct-to-Consumer brands focused on inbound
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Companies stuck on page 2 of Google
-                </p>
+              <div className="flex justify-center">
+                <button className="py-3 px-6 rounded-md bg-[#543CDA] cursor-pointer text-white text-sm md:text-base font-medium w-full max-w-xs">
+                  {plan.cta}
+                </button>
               </div>
             </div>
-
-            {/* Get started button */}
-            <div className="py-[20px] px-[31px] rounded-[8px] mx-auto bg-[#543CDA] w-[289px] flex items-center justify-center">
-              <button className="text-[17px] text-[#FFFFFF]">
-                Scale Your Content
-              </button>
-            </div>
-          </div>
-
-          {/* Housing the third card */}
-
-          <div className="flex flex-col  mx-auto gap-[78px] py-[42px] px-[23px] border-[1px] border-[#543CDA]/70 rounded-[10px] w-[343px] lg:w-[1130px]">
-            <div className="flex flex-col gap-[.6rem]">
-              <h2 className="text-[20px] lg:text-[32px] font-semibold">
-                Enterprise: Content Engine
-              </h2>
-              <p className="text-[10px] w-[256px] lg:w-full lg:text-[16px]">
-                For high-velocity teams who want full-stack SEO execution and
-                content that drives pipeline at scale.
-              </p>
-            </div>
-
-            {/* Housing informations that will be flexed */}
-            <div className=" flex flex-col lg:flex-row gap-[2rem] lg:gap-[7rem]">
-              {/* The first part of the information */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] md:text-[18px] text-[#543CDA]">
-                  Custom Pricing Based on Scope
-                </h6>
-                <p className=" text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Everything in Growth
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Custom Editorial Calendar & Quarterly Roadmap
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  8+ Monthly Content Assets (SEO blogs, case studies, landing
-                  pages)
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Programmatic SEO & Multi-location Pages
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Digital PR & Link Building Support
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Quarterly Strategy Sessions & KPI Reviews
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Integration with Product, Sales, and Marketing
-                </p>
-              </div>
-
-              {/* The second part of the info */}
-              <div className="flex flex-col gap-[9px]">
-                <h6 className="text-[18px] text-[#543CDA]">Best For</h6>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Large-scale SEO campaigns
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Teams with complex content ops or multi-language sites
-                </p>
-                <p className="text-[11px] md:text-[16px] flex items-center gap-[9px] ">
-                  <span>
-                    <TbPointFilled />
-                  </span>
-                  Enterprises targeting competitive or global keywords
-                </p>
-              </div>
-            </div>
-
-            {/* Get started button */}
-            <div className="py-[20px] px-[31px] rounded-[8px] mx-auto bg-[#543CDA] w-[289px] flex items-center justify-center">
-              <button className="text-[17px] text-[#FFFFFF]">
-                Get Started
-              </button>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
 }
+
+const plans = [
+  {
+    title: "Starter: Foundation & Fixes",
+    description:
+      "Perfect for early-stage teams that need solid SEO fundamentals and reliable content output.",
+    price: "Starting at $1,500/month",
+    features: [
+      "Technical SEO Audit",
+      "Core Web Vitals Optimization",
+      "Keyword Research (up to 10 target terms)",
+      "On-Page SEO Optimization (up to 5 key pages)",
+      "1x Monthly Blog Post (1,000 words)",
+      "SEO Performance Dashboard & Monthly Report",
+    ],
+    bestFor: [
+      "Startups launching a new site",
+      "Founders seeking visibility without complexity",
+      "Brands needing to fix slow or underperforming pages",
+    ],
+    cta: "Get Started",
+  },
+  {
+    title: "Growth: Rank & Scale",
+    description:
+      "Ideal for growing businesses ready to expand reach, outrank competitors, and turn traffic into leads.",
+    price: "Starting at $3,500/month",
+    features: [
+      "Everything in Starter",
+      "4x Monthly Content Pieces (blogs, landing pages, or guides)",
+      "Internal Linking & Topic Cluster Strategy",
+      "Full Site SEO Overhaul",
+      "Schema Markup Implementation",
+      "Conversion-Focused Content Review",
+      "Competitor Keyword & Gap Analysis",
+    ],
+    bestFor: [
+      "Marketing teams scaling content",
+      "SaaS and Direct-to-Consumer brands focused on inbound",
+      "Companies stuck on page 2 of Google",
+    ],
+    cta: "Scale Your Content",
+  },
+  {
+    title: "Enterprise: Content Engine",
+    description:
+      "For high-velocity teams who want full-stack SEO execution and content that drives pipeline at scale.",
+    price: "Custom Pricing Based on Scope",
+    features: [
+      "Everything in Growth",
+      "Custom Editorial Calendar & Quarterly Roadmap",
+      "8+ Monthly Content Assets (SEO blogs, case studies, landing pages)",
+      "Programmatic SEO & Multi-location Pages",
+      "Digital PR & Link Building Support",
+      "Quarterly Strategy Sessions & KPI Reviews",
+      "Integration with Product, Sales, and Marketing",
+    ],
+    bestFor: [
+      "Large-scale SEO campaigns",
+      "Teams with complex content ops or multi-language sites",
+      "Enterprises targeting competitive or global keywords",
+    ],
+    cta: "Get Started",
+  },
+];

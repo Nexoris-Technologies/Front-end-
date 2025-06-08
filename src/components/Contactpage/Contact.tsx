@@ -60,11 +60,11 @@ function Contact() {
     ErrorNotifier(`${errors}`);
   };
   return (
-    <section className="lg:mt-[9rem] ">
+    <section className="">
       {/* Housing all.. Contact Us and the forms */}
-      <div className="container mx-auto  flex flex-col justify-center items-center gap-4rem mt-[6rem] lg:px-[7.8rem]">
+      <div className=" flex flex-col py-6 lg:px-6">
         {/* housing the Contact us */}
-        <div className="rounded-[10px] bg-[#543CDA] w-[250px] py-[.8rem] lg:py-4 lg:w-full ">
+        <div className="rounded-[10px] bg-[#543CDA] py-2 md:py-5 w-full ">
           <h3 className="text-white  md:text-[18px] lg:text-[56px] font-bold text-center ">
             Contact Us
           </h3>
@@ -73,14 +73,14 @@ function Contact() {
         {/* Housing the Get in touch, the p-tag, the cards and the button */}
         <div className="flex flex-col gap-[60px]">
           {/* Housing Get in touch and the paragraph text */}
-          <div className="flex flex-col justify-center items-center gap-[24px] mt-[2rem] lg:mt-[3rem]">
+          <div className="flex flex-col mx-auto mt-3 md:mt-8">
             <div className="">
               <h3 className="text-[24px] md:text-[40px] text-center font-bold leading-[32px] md:leading-[48px]">
                 Get in Touch with Nexoris Technologies
               </h3>
             </div>
-            <div className="max-w-[18rem] md:max-w-[65rem]">
-              <p className="text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-center">
+            <div className="">
+              <p className="text-[16px] md:text-[18px] max-w-6xl text-center mt-3">
                 At Nexoris, we work with ambitious companies around the world to
                 design, build, and scale digital solutions that make an impact.
                 Whether you&apos;re launching a new product, modernizing legacy

@@ -5,7 +5,7 @@ export default function SeoCovers() {
   return (
     <section>
       {/* Housing all */}
-      <div className="lg:flex flex-col lg:py-[3rem] mt-[4rem] lg:gap-[4rem] ">
+      <div className="lg:flex flex-col lg:py-12  lg:gap-[4rem] ">
         <h3 className="text-[22px] md:text-[40px] text-[#543CDA]/90 font-extrabold text-center">
           What This Service Covers
         </h3>

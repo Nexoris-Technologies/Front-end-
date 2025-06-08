@@ -22,7 +22,7 @@ function UiUxDesign() {
     },
   ];
   return (
-    <section className="mx-4 md:mx-6 lg:mx-12 xl:mx-18">
+    <section className="">
       <StyledContainer>
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>

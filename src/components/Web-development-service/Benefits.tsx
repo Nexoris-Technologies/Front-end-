@@ -2,13 +2,13 @@ import Image from "next/image";
 
 function Benefits() {
   return (
-    <section className="px-4">
-      <div className="flex flex-col items-center gap-10 py-14 lg:py-28 container mx-auto">
+    <section className="">
+      <div className="flex flex-col  gap-10 py-8 lg:py-12 px-4 sm:px-14 lg:px-24">
         <h1 className="text-center font-bold text-2xl md:text-3xl">
           Key Benefits at a Glance
         </h1>
 
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
           {[
             {
               icon: "/Performance.svg",
@@ -37,7 +37,7 @@ function Benefits() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-4 border border-[#898686] sm:w-93 lg:w-full rounded-md px-4 py-6 text-center"
+              className="flex flex-col items-center justify-center gap-4 border border-[#898686]  w-full rounded-md py-3 px-3  lg:px-4 lg:py-6 text-center"
             >
               <div className="bg-[#0059F133] w-12 h-12 rounded-full flex items-center justify-center">
                 <Image
@@ -48,7 +48,7 @@ function Benefits() {
                 />
               </div>
               <h2 className="font-medium text-lg md:text-xl">{item.title}</h2>
-              <p className="text-base text-gray-700 w-[270px] leading-snug ">
+              <p className="text-base text-gray-700  leading-snug ">
                 {item.description}
               </p>
             </div>
