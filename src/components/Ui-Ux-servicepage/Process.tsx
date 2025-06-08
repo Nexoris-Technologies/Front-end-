@@ -11,9 +11,9 @@ export default function OurProcess() {
           Our Process
         </h3>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-[1rem]   mx-auto lg:w-300 px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-3 px-4 sm:px-14 lg:px-26">
           {/* First card */}
-          <div className="flex flex-col items-center gap-[24px] w-[288px] border-1 border-gray-100 p-3 rounded-xl bg-white ">
+          <div className="flex flex-col items-center gap-[24px]  border-1 border-gray-100 p-3 rounded-xl bg-white ">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp1.svg" alt="Tennis" width={56} height={56} />
             </div>
@@ -50,14 +50,14 @@ export default function OurProcess() {
           </div>
 
           {/* Second card */}
-          <div className="flex flex-col items-center gap-[24px] w-[288px] border-1 border-gray-100 p-3 rounded-xl bg-white">
+          <div className="flex flex-col items-center gap-[24px]  border-1 border-gray-100 p-3 rounded-xl bg-white">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp2.svg" alt="Tennis" width={56} height={56} />
             </div>
             <h6 className="text-[20px] md:text-[24px] font-bold text-center">
               Define the Journey
             </h6>
-            <p className="text-[14px] md:text-[16px] text-center w-[243px]">
+            <p className="text-[14px] md:text-[16px] text-center ">
               We map user paths and design information architecture that
               supports decision-making.
             </p>
@@ -85,20 +85,20 @@ export default function OurProcess() {
           </div>
 
           {/* Third card */}
-          <div className="flex flex-col items-center gap-[24px] w-[288px] border-1 border-gray-100 p-3 rounded-xl bg-white">
+          <div className="flex flex-col items-center gap-[24px]  border-1 border-gray-100 p-3 rounded-xl bg-white">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp3.svg" alt="Tennis" width={56} height={56} />
             </div>
             <h6 className="text-[20px] md:text-[24px] font-bold text-center">
               Sketch, Test, Refine
             </h6>
-            <p className="text-[14px] md:text-[16px] text-center w-[243px]">
+            <p className="text-[14px] md:text-[16px] text-center ">
               Rapid wireframes evolve into high-fidelity screens with user
               feedback baked in.
             </p>
           </div>
           {/* for mobile view alone */}
-          <div className=" lg:hidden justify-center ml-29 lg:pt-4 lg:ml-[3rem] lg:py-4">
+          <div className=" lg:hidden justify-center ml-45 sm:ml-82 lg:pt-4 lg:ml-[3rem] lg:py-4">
             <Image
               src="/Group 492.svg"
               alt="Long arrow down"
@@ -114,7 +114,7 @@ export default function OurProcess() {
           <div className="hidden lg:block"></div>
 
           {/* Arrow down under third card */}
-          <div className=" hidden  lg:flex justify-center lg:pt-4 lg:ml-[3rem] lg:py-4  ">
+          <div className=" hidden  lg:flex justify-center lg:pt-4  lg:py-  ">
             <Image
               src="/Group 492.svg"
               alt="Long arrow down"
@@ -124,19 +124,19 @@ export default function OurProcess() {
           </div>
 
           {/* Fourth card */}
-          <div className="flex flex-col  items-center gap-[24px] w-[288px] border-1 border-gray-100 p-3 rounded-xl bg-white">
+          <div className="flex flex-col  items-center gap-[24px]  border-1 border-gray-100 p-3 rounded-xl bg-white">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp4.svg" alt="Tennis" width={56} height={56} />
             </div>
             <h6 className="text-[20px] md:text-[24px] font-bold text-center">
               Build the system
             </h6>
-            <p className="text-[14px] md:text-[16px] text-center w-[243px]">
+            <p className="text-[14px] md:text-[16px] text-center ">
               Components, states, and styles are organized into scalable
               libraries.
             </p>
           </div>
-          <div className="flex ml-29 lg:hidden">
+          <div className="flex ml-45 sm:ml-82 lg:hidden">
             <Image
               src="/Group 492.svg"
               alt="arrow down"
@@ -159,19 +159,19 @@ export default function OurProcess() {
           </div>
 
           {/* Fifth card */}
-          <div className="flex flex-col items-center gap-[24px] w-[288px] col-span-1 border-1 border-gray-100 p-3 rounded-xl bg-white">
+          <div className="flex flex-col items-center gap-[24px]  col-span-1 border-1 border-gray-100 p-3 rounded-xl bg-white">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp5.svg" alt="Tennis" width={56} height={56} />
             </div>
             <h6 className="text-[20px] md:text-[24px] font-bold text-center">
               Collaborate with Devs
             </h6>
-            <p className="text-[14px] md:text-[16px] text-center w-[263px]">
+            <p className="text-[14px] md:text-[16px] text-center ">
                Everything’s annotated and export-ready, no design lost in
               translation.
             </p>
           </div>
-          <div className="flex ml-29 lg:hidden">
+          <div className="flex ml-45 sm:ml-82 lg:hidden">
             <Image
               src="/Group 492.svg"
               alt="arrow down"
@@ -194,14 +194,14 @@ export default function OurProcess() {
           </div>
 
           {/* Sixth card */}
-          <div className="flex flex-col  items-center  gap-[24px] w-[288px] col-span-1 border-1 border-gray-100 p-3 rounded-xl bg-white">
+          <div className="flex flex-col  items-center  gap-[24px]  col-span-1 border-1 border-gray-100 p-3 rounded-xl bg-white">
             <div className="w-[48px] h-[48px] md:w-[56px] md:h-[56px]">
               <Image src="/roundp6.svg" alt="Tennis" width={56} height={56} />
             </div>
             <h6 className="text-[20px] md:text-[24px] font-bold text-center">
               Launch and Learn
             </h6>
-            <p className="text-[14px] md:text-[16px] text-center w-[243px]">
+            <p className="text-[14px] md:text-[16px] text-center ">
               Post-launch, we gather usage insights and iterate to improve
               retention and conversion.
             </p>

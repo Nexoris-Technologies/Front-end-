@@ -66,12 +66,12 @@ export default function Needs() {
     ErrorNotifier(`${errors}`);
   };
   return (
-    <section className="bg-[#EAE8F7] lg:py-16 ">
+    <section className="bg-[#EAE8F7] lg:py-12 ">
       {/* hOUSING ALL  */}
-      <div className=" container mx-auto px-4">
+      <div className="w-full px-4 lg:px-0">
         {/* Housing Tell us what you need and the paragraph text */}
-        <div className="flex flex-col justify-center items-center h-[343px] gap-[24px] md:gap-[32px]">
-          <h3 className="text-[24px] md:text-[40px] font-bold mt-[4rem]">
+        <div className="flex flex-col justify-center items-center  py-7 gap-[24px] md:gap-[32px]">
+          <h3 className="text-[24px] md:text-[40px] font-bold">
             Tell Us What You Need
           </h3>
           <p className="text-[18px] text-center max-w-[700px]">
@@ -89,7 +89,7 @@ export default function Needs() {
           action={`https://formsubmit.co/${targetEmail}`}
           method="POST"
         >
-          <div className="flex flex-col gap-[32px]  lg:mt-[4rem] rounded-[16px] p-[24px] bg-[#FFFFFF] max-w-[728px] mx-auto w-full">
+          <div className="flex flex-col gap-[32px]  lg:mt-[2rem] rounded-[16px]   p-[24px] bg-[#FFFFFF] lg:max-w-[728px] mx-auto w-full">
             <div>
               <h3 className="font-semibold text-[32px] ">Quote Request Form</h3>
             </div>
@@ -484,8 +484,8 @@ export default function Needs() {
         </form>
 
         {/*Housing  Not just a quote */}
-        <div className="mt-[5rem] flex flex-col py-5 justify-center items-center gap-[1rem]">
-          <h3 className="text-[20px] md:text-[32px] font-semibold text-center">
+        <div className="mt-[2rem] flex flex-col py-4  justify-center items-center gap-[1rem]">
+          <h3 className="text-[20px] md:text-[32px] font-medium text-center">
             Not Just a Quote, But a Smarter Beninning
           </h3>
           <p className="text-[16px] md:text-[18px] font-extralight text-center md:max-w-[620px]">

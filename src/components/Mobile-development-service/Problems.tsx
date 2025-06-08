@@ -4,7 +4,7 @@ export default function Problem() {
   return (
     <section>
       {/* Housing the Problems and the cards */}
-      <div className="flex flex-col gap-[32px] md:gap-[40px] py-10 lg:py-[6rem]">
+      <div className="flex flex-col gap-[32px] md:gap-[40px] py-10 lg:py-12">
         <div>
           <h1 className="font-bold text-[24px] md:text-[40px] text-center">
             Problem We Solve

@@ -165,7 +165,7 @@ export default function WeHelp() {
   return (
     <section>
       {/* Housing the Problems and the cards */}
-      <div className="flex flex-col  md:gap-[40px] py-10 lg:py-[6rem]">
+      <div className="flex flex-col  md:gap-[20px] py-5 lg:py-12">
         <div className="shadow-xl rounded-full flex items-center justify-center max-w-[20rem] gap-2 p-4 container mx-auto">
           <Image
             src="/Ellipse 43.svg"

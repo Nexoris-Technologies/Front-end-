@@ -4,21 +4,21 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <section>
-      {/* Container with responsive padding and max-width */}
-      <div className="mt-32 container mx-auto px-4 ">
-        {/* About Us heading with padding and rounded bg */}
-        <div className="rounded-lg bg-[#543CDA] flex items-center   justify-center py-6 md:py-10">
-          <h3 className="font-bold text-3xl md:text-5xl text-center text-white">
+    <section className=" w-full">
+      {/* No width constraints — full span */}
+      <div className="mt-16 px-4 md:px-8 lg:px-12 w-full">
+        {/* Header */}
+        <div className="rounded-lg bg-[#543CDA] py-6 md:py-10 px-4 md:px-8">
+          <h3 className="font-bold text-3xl md:text-5xl text-white text-center">
             About Us
           </h3>
         </div>
 
-        {/* Main content: flex-col on small, flex-row on lg+ */}
-        <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-8 lg:gap-16 px-4 lg:px-0">
-          {/* Text content */}
-          <div className="flex flex-col gap-4 max-w-xl">
-            <h3 className="text-xl md:text-3xl font-bold tracking-tight">
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row mt-12 gap-10 lg:gap-20 w-full">
+          {/* Text Section */}
+          <div className="flex flex-col gap-5 lg:gap-8 w-full lg:w-1/2">
+            <h3 className="text-xl md:text-4xl lg:max-w-2xl font-bold tracking-tight">
               Smart solutions. Trusted team. Built to grow with you.
             </h3>
             <p className="text-base md:text-lg leading-relaxed">
@@ -32,22 +32,20 @@ export default function About() {
               bold ideas into real-world solutions.
             </p>
 
-            <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-5 text-sm md:text-lg w-52 md:w-72 flex justify-center items-center gap-2">
+            <Button className="bg-[#543CDA] text-white rounded-lg py-3 md:py-3 text-sm md:text-lg w-fit px-6 flex items-center gap-8">
               <Link href="/get-a-quote">GET STARTED</Link>
-              <span>
-                <Image
-                  src="/Arrow right.svg"
-                  alt="arrow right"
-                  width={16}
-                  height={16}
-                />
-              </span>
+              <Image
+                src="/Arrow right.svg"
+                alt="arrow right"
+                width={16}
+                height={16}
+              />
             </Button>
           </div>
 
-          {/* Images */}
-          <div className="flex gap-4 md:gap-10">
-            <div className="w-40 h-44 md:w-64 md:h-64 relative md:mt-28 rounded-lg overflow-hidden">
+          {/* Image Section */}
+          <div className="flex gap-4 md:gap-10 w-full lg:w-1/2">
+            <div className="flex-1 h-[180px] md:h-[280px] lg:h-[320px] relative mt-6 md:mt-20 rounded-lg overflow-hidden">
               <Image
                 src="/about-us-first.webp"
                 alt="about-us-first"
@@ -56,7 +54,7 @@ export default function About() {
                 className="rounded-lg"
               />
             </div>
-            <div className="w-40 h-44 md:w-64 md:h-[369px] relative rounded-lg overflow-hidden">
+            <div className="flex-1 h-[180px] md:h-[320px] mt-6 md:mt-0 relative rounded-lg overflow-hidden">
               <Image
                 src="/about-us-second.webp"
                 alt="about-us-second"

@@ -4,12 +4,12 @@ function WeSolve() {
   return (
     <section className="">
       {/* Main container */}
-      <div className="flex flex-col items-center justify-center py-10 lg:py-20 gap-15 container mx-auto ">
+      <div className="flex flex-col  py-10 lg:py-12 gap-15 px-4 sm:px-14 lg:px-24 ">
         {/* Section heading */}
         <h3 className="font-bold text-2xl md:text-3xl text-center">
           Problems We Solve
         </h3>
-        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8 lg:w-290">
+        <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8 ">
           <div className="shadow-xl">
             <div className="h-2 bg-[#543CDA] rounded-tr-2xl rounded-tl-2xl"></div>
             <Image
@@ -20,7 +20,7 @@ function WeSolve() {
               className="m-5"
             />
             <p className="p-5">
-              Users abandon your <br /> app because it feels <br /> clunky or
+              Users abandon your app because it feels  clunky or
               confusing
             </p>
           </div>
@@ -35,7 +35,7 @@ function WeSolve() {
               className="m-5"
             />
             <p className="p-5">
-              Design consistency <br /> breaks down across <br /> teams or
+              Design consistency breaks down across  teams or
               platforms
             </p>
           </div>
@@ -50,7 +50,7 @@ function WeSolve() {
               className="m-5"
             />
             <p className="p-5">
-              You’re launching fast <br /> but design can’t <br /> keep up
+              You’re launching fast  but design can’t  keep up
             </p>
           </div>
 
@@ -64,7 +64,7 @@ function WeSolve() {
               className="m-5"
             />
             <p className="p-5">
-              Stakeholders love <br /> ideas, but devs need <br /> real assets
+              Stakeholders love ideas, but devs need real assets
             </p>
           </div>
 
@@ -78,7 +78,7 @@ function WeSolve() {
               className="m-5"
             />
             <p className="p-5">
-              You’ve outgrown <br /> templates and need a <br /> polished,
+              You’ve outgrown templates and need a polished,
               branded experience
             </p>
           </div>

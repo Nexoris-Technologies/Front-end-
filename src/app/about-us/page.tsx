@@ -12,7 +12,7 @@ export default function AboutUs() {
       <StyledContainer className=" font-serif text-md text-gray-400 ">
         <Breadcrumbs breadcrumbs={breadcrumbs} />
       </StyledContainer>
-      <div className="px-4">
+      <div className="">
         <AboutNexoris />
       </div>
     </main>

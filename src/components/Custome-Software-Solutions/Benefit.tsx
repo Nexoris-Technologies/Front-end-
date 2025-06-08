@@ -10,7 +10,7 @@ export default function Keys() {
         </h3>
 
         {/* Cards Container */}
-        <div className="flex flex-col lg:flex-row gap-6 items-center md:px-10 max-w-7xl">
+        <div className="flex flex-col  lg:flex-row gap-6 items-center md:px-10 max-w-7xl">
           {/* Card 1 */}
           <div className="flex flex-col gap-4 bg-white shadow-2xl p-6 border-t-14 border-[#543CDA] rounded-tl-2xl rounded-tr-2xl w-full max-w-[360px] min-h-[200px]">
             <Image src="/Number 1.svg" alt="Number 1" width={40} height={40} />

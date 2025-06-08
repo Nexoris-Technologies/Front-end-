@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function WhatWeDo() {
   return (
-    <section>
+    <section className="">
       {/* Housing What we do */}
-      <div className="flex flex-col items-center gap-15 mt-20 md:mt-15 lg:mt-40  mx-auto container">
+      <div className="flex flex-col  lg:gap-8 mt-20 md:mt-15 lg:mt-40 py-4 lg:py-5  ">
         {/* Housing What we do and paragraph text */}
-        <div className="flex flex-col gap-2 lg:gap-6">
+        <div className="flex flex-col mx-auto gap-2 lg:gap-6">
           <h3 className="text-2xl md:text-5xl text-center font-semibold text-[#000000]">
             What We Do
           </h3>
@@ -36,7 +36,7 @@ export default function WhatWeDo() {
               <h3 className="text-lg md:text-xl font-medium text-center">
                 Product Development
               </h3>
-              <p className=" md:text-md text-center max-w-[343px] md:max-w-[240px]">
+              <p className=" md:text-md text-center ">
                 We develop websites, mobile apps, and custom software from
                 scratch, built to perform, scale, and evolve with your business.
               </p>
@@ -58,7 +58,7 @@ export default function WhatWeDo() {
               <h3 className="text-lg md:text-xl font-medium text-center">
                 Design & Strategy
               </h3>
-              <p className="md:text-md text-center max-w-[343px] md:max-w-[240px]">
+              <p className="md:text-md text-center ">
                 Our team combines clean UI/UX design with strategic thinking to
                 deliver products that aren’t just beautiful, but genuinely
                 useful.
@@ -81,7 +81,7 @@ export default function WhatWeDo() {
               <h3 className="text-lg md:text-xl font-medium text-center">
                 Business Tools & Automation
               </h3>
-              <p className="md:text-md text-center max-w-[343px] md:max-w-[280px]">
+              <p className="md:text-md text-center ">
                 From cloud storage to secure logins, from integrations to
                 automation, we streamline your backend so you can focus on what
                 matters.
@@ -104,7 +104,7 @@ export default function WhatWeDo() {
               <h3 className="text-lg md:text-xl font-medium text-center">
                 Ongoing Support
               </h3>
-              <p className="md:text-md text-center max-w-[343px] md:max-w-[280px]">
+              <p className="md:text-md text-center lg:max-w-sm">
                 We don’t disappear after delivery. We monitor, test, update, and
                 improve because your tools should keep getting better over time.
               </p>
@@ -112,7 +112,7 @@ export default function WhatWeDo() {
           </div>
         </div>
 
-        <Button className="bg-[#543CDA]  text-[#FFFFFF] rounded-[8px] py-[14px] text-[14px] md:text-[18px] md:py-[21.5px] w-[200px]  md:w-[260px] flex justify-center mb-9 items-center gap-[10px]">
+        <Button className="bg-[#543CDA]  text-[#FFFFFF] rounded-[8px] py-3 text-[14px] md:text-[18px] md:py-3  flex mx-auto items-center justify-center gap-8">
           <Link href="/contact-us">Get In Touch</Link>
           <span>
             <Image
