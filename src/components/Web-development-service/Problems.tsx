@@ -10,7 +10,7 @@ function Problems() {
   return (
     <section className="">
       {/* Main container */}
-      <div className="flex flex-col py-12 lg:px-24 px-6 md:px-14 sm:px-14 gap-4 lg:gap-8">
+      <div className="flex flex-col py-12 lg:py-20 lg:px-24 px-6 md:px-14 sm:px-14 gap-4 lg:gap-8">
         {/* Section heading */}
         <h3 className="font-bold text-2xl md:text-3xl text-center">
           Problems We Solve

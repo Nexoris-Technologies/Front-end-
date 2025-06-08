@@ -81,7 +81,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="px-4 sm:px-6 md:px-8 lg:px-50 lg:py-12 py-6 bg-white">
+    <section className="px-4 sm:px-6 md:px-8 lg:px-50 lg:py-20 py-6 bg-white">
       <div className="text-center mb-10">
         <h1 className="font-extrabold text-[#543CDA] text-xl sm:text-2xl lg:text-3xl">
           FAQs

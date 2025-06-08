@@ -3,7 +3,7 @@ import Image from "next/image";
 function Benefits() {
   return (
     <section className="">
-      <div className="flex flex-col  gap-10 py-8 lg:py-12 px-4 sm:px-14 lg:px-24">
+      <div className="flex flex-col  gap-10 py-8 lg:py-30 px-4 sm:px-14 lg:px-24">
         <h1 className="text-center font-bold text-2xl md:text-3xl">
           Key Benefits at a Glance
         </h1>
